@@ -1,0 +1,46 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% MASTER THESIS
+%
+% This is the first part of the preamble for my master thesis.
+% In here only belong options such as shortcuts, macros, new environments, etc.
+% Have fun writing!
+%
+% Fabian Burghart, 2018/02/17
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% NEWCOMMANDS %%
+
+% doublestroke
+
+\newcommand{\IR}{\mathbb{R}}
+
+% greek
+
+\newcommand{\gd}{\delta}
+
+% mathcal
+
+\newcommand{\cH}{\mathcal{H}}
+
+% dimensions & related
+
+\newcommand{\diam}{\operatorname{diam}}
+\newcommand{\dimh}{\dim_{\mathcal{H}}}  %Hausdorff dimension
+\newcommand{\dims}{\dim_{\mathcal{S}}}  %spectral dimension
+\newcommand{\dimw}{\dim_{\mathcal{W}}}  %walk dimension
+
+% math symbols
+
+\newcommand{\ssq}{\subseteq}
+\newcommand{\Di}{\operatorname{d}\!}
+
+
+
+
+%% ENVIRNOMENTS %%
+
+\theoremstyle{definition}
+\newtheorem{defin}{Definition}
+

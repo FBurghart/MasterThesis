@@ -1,0 +1,72 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% MASTER THESIS
+%
+% This is the first part of the preamble for my master thesis.
+% In here only belong options such as shortcuts, macros, new environments, etc.
+% Have fun writing!
+%
+% Fabian Burghart, 2018/02/17
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% GENERAL OPTIONS %%
+
+\setlength\parindent{0pt}   %Better paragraphs
+\setlength{\parskip}{4pt}
+
+\setstretch{1.1}
+
+
+
+%% NEWCOMMANDS %%
+
+% doublestroke
+
+\newcommand{\IR}{\mathbb{R}}
+
+% greek
+
+\newcommand{\gd}{\delta}
+\newcommand{\gs}{\sigma}
+
+% mathcal
+
+\newcommand{\cH}{\mathcal{H}}
+
+% dimensions & related
+
+\newcommand{\diam}{\operatorname{diam}}
+\newcommand{\dimh}{\dim_{\mathcal{H}}}  %Hausdorff dimension
+\newcommand{\dims}{\dim_{\mathcal{S}}}  %spectral dimension
+\newcommand{\dimw}{\dim_{\mathcal{W}}}  %walk dimension
+
+% math symbols
+
+\newcommand{\ssq}{\subseteq}
+\newcommand{\Di}{\operatorname{d}\!}
+
+
+
+
+%% ENVIRNOMENTS %%
+
+\makeatletter
+\newtheoremstyle{defindented}
+  {3pt}% space before
+  {3pt}% space after
+  {\addtolength{\@totalleftmargin}{1em}
+   \addtolength{\linewidth}{-2em}
+   \parshape 1 1em \linewidth}% body font
+  {}% indent
+  {\bfseries}% header font
+  {.}% punctuation
+  {.5em}% after theorem header
+  {}% header specification (empty for default)
+\makeatother
+
+
+\newtheorem{prop}{Proposition}
+\theoremstyle{defindented}
+\newtheorem{defin}{Definition}
+

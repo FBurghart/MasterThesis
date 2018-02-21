@@ -1,0 +1,45 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.4 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{anyt}{anyt}
+    \entry{mattila1999geometry}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=9dd01179436f3de34874e7b67f1dec14}{Mattila}{M\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9dd01179436f3de34874e7b67f1dec14}{Mattila}{M\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{9dd01179436f3de34874e7b67f1dec14}
+      \strng{fullhash}{9dd01179436f3de34874e7b67f1dec14}
+      \field{labelalpha}{Mat99}
+      \field{sortinit}{M}
+      \field{sortinithash}{4203d16473bc940d4ac780773cb7c5dd}
+      \field{labeltitle}{Geometry of Sets and Measures in Euclidean Spaces: Fractals and Rectifiability}
+      \field{series}{Cambridge Studies in Advanced Mathematics}
+      \field{title}{Geometry of Sets and Measures in Euclidean Spaces: Fractals and Rectifiability}
+      \field{year}{Cambridge 1999}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

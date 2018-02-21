@@ -1,0 +1,43 @@
+\chapter{An Introduction to the Einstein Relation}
+
+In this introductory chapter, we wish to briefly expose the ingredients of the ER - the Hausdorff dimension $\dimh$, the spectral dimension $\dims$, and the walk dimension $\dimw$ - and state some of their properties. 
+
+\section{Hausdorff measure and Hausdorff dimension}
+
+Although the concepts of Hausdorff measure and dimension are well-known, we give the definitions in the interest of completeness. In what follows, let $(X,d)$ be a metric space.
+\begin{defin}[Hausdorff outer measure]
+  For fixed $s\geq0$, any subset $S\ssq X$ and any $\gd>0$, let 
+  \[
+    \cH^s_\gd(S)
+      :=\inf \left\{\sum_{i\in I}(\diam U_i)^s:
+            |I|\leq\aleph_0,S\ssq\bigcup_{i\in I}U_i\ssq X,\diam U_i\leq\gd\right\},
+  \]
+  i.e. the infimum is taken over all countable coverings of $S$ with diameter at most $\gd$. The $s$-dimensional Hausdorff outer measure of $S$ is now defined to be
+  \begin{equation}\label{eq:DHM}
+    \cH^s(S):=\lim_{\gd\searrow0}\cH^s_\gd(S).
+  \end{equation}
+\end{defin}
+Observe that the limit in \eqref{eq:DHM} exists or equals $\infty$, since $\cH^s_\gd(S)$ is monotonically nonincreasing in $\gd$, yet bounded from below by 0. Furthermore, it can be shown that $\cH^s$ defines a metric outer measure on $X$, thus restricting to a measure on a $\gs$-algebra containing the Borel $\gs$-algera $\mathcal{B}(X)$ (cf. \cite[p.54ff]{mattila1999geometry}). By definition, the obtained measure then is the $s$-dimensional Hausdorff measure which we will denote by $\cH^s$ as well.
+
+Since exponential functions are monotonically increasing, the Hausdorff measures' dependence on $s$ exhibits the same behavior. At the same time, simple estimates yield that if $\cH^s(S)$ is finite for some $s$, it vanishes for all $s'<s$, and conversely, if $\cH^s(S)>0$, then $\cH^{s'}(S)=\infty$ for all $s'>s$. Therefore, there exists precisely one real number $s$ where $\cH^\cdot(S)$ jumps from $0$ to $\infty$ (by possibly attaining any value of $[0,\infty]$ there). This motivates the following definition of Hausdorff dimension:
+\begin{defin}
+  The Hausdorff dimension $\dimh(S)$ of $S\ssq X$ is defined as
+  \[
+    \dimh(S):=\inf\{s\geq0:\cH^s(S)>0\}.
+  \]
+\end{defin}
+Due to the above discussion, we have the following equalities:
+\begin{align*}
+   \dimh(S)&=\inf\{s\geq0:\cH^s(S)>0\}=\inf\{s\geq0:\cH^s(S)=\infty\}\\
+           &=\sup\{s\geq0:\cH^s(S)=0\}=\sup\{s\geq0:\cH^s(S)<\infty\},
+\end{align*}
+providing some alternative characterisations of the Hausdorff dimension.
+
+
+
+
+
+\section{Weyl asymptotics and spectral dimension}
+
+\section{Diffusion processes and walk dimension}
+

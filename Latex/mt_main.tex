@@ -1,0 +1,60 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% MASTER THESIS
+%
+% This is the main .tex-document for my master thesis.
+% In here only belong necessary things, such as the declaration of the document class.
+% Everything else is supposed to be in seperate files which are then included via \input.
+% Have fun writing!
+%
+% Fabian Burghart, 2018/02/17
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage[l2tabu, orthodox]{nag}
+\documentclass[a4paper,12pt,twoside]{report}
+\usepackage[a4paper, inner=3cm, outer=2cm, top=3cm, bottom=2.5cm]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Remaining packages %
+\input{mt_preamble_packages.tex}
+
+% Options and shortcuts %
+\input{mt_preamble_options.tex}
+
+
+%Bibliography
+\addbibresource{mt_bib.bib}
+
+% Title Page
+\title{\textsc{Master Thesis}}
+\author{me}
+
+%%%%%%%%%%%%%%
+%% DOCUMENT %%
+%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+
+
+\tableofcontents
+
+\begin{abstract}
+We consider $\mathbb{R}$ as well as $\dims, \dimh\ssq \dimw$.
+\end{abstract}
+
+% Chapter I. An introduction to the Einstein Relation
+\include{mt_ch1}
+
+% Chapter II. Examples and Non-examples
+\include{mt_ch2}
+
+% Bibliography
+\printbibliography
+
+\end{document} 
+
+
