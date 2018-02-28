@@ -1972,6 +1972,8 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">mattila1999geometry</bcf:citekey>
+    <bcf:citekey order="2">falconer2007fractal</bcf:citekey>
+    <bcf:citekey order="3">ma2012introduction</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="anyt" type="entry" sortscheme="anyt">
   <bcf:sorting>

@@ -4,24 +4,26 @@ In this introductory chapter, we wish to briefly expose the ingredients of the E
 
 \section{Hausdorff measure and Hausdorff dimension}
 
-Although the concepts of Hausdorff measure and dimension are well-known, we give the definitions in the interest of completeness. In what follows, let $(X,d)$ be a metric space.
+Although the concepts of Hausdorff measure and dimension are well-known, we give the definitions in the interest of completeness. In what follows, let $(E,d)$ be a metric space.
 \begin{defin}[Hausdorff outer measure]
-  For fixed $s\geq0$, any subset $S\ssq X$ and any $\gd>0$, let 
+  For fixed $s\geq0$, any subset $S\ssq E$ and any $\gd>0$, let 
   \[
     \cH^s_\gd(S)
       :=\inf \left\{\sum_{i\in I}(\diam U_i)^s:
-            |I|\leq\aleph_0,S\ssq\bigcup_{i\in I}U_i\ssq X,\diam U_i\leq\gd\right\},
+            |I|\leq\aleph_0,S\ssq\bigcup_{i\in I}U_i\ssq E,\diam U_i\leq\gd\right\},
   \]
   i.e. the infimum is taken over all countable coverings of $S$ with diameter at most $\gd$. The $s$-dimensional Hausdorff outer measure of $S$ is now defined to be
   \begin{equation}\label{eq:DHM}
     \cH^s(S):=\lim_{\gd\searrow0}\cH^s_\gd(S).
   \end{equation}
 \end{defin}
-Observe that the limit in \eqref{eq:DHM} exists or equals $\infty$, since $\cH^s_\gd(S)$ is monotonically nonincreasing in $\gd$, yet bounded from below by 0. Furthermore, it can be shown that $\cH^s$ defines a metric outer measure on $X$, thus restricting to a measure on a $\gs$-algebra containing the Borel $\gs$-algera $\mathcal{B}(X)$ (cf. \cite[p.54ff]{mattila1999geometry}). By definition, the obtained measure then is the $s$-dimensional Hausdorff measure which we will denote by $\cH^s$ as well.
+Observe that the limit in \eqref{eq:DHM} exists or equals $\infty$, since $\cH^s_\gd(S)$ is monotonically nonincreasing in $\gd$, yet bounded from below by 0. Furthermore, it can be shown that $\cH^s$ defines a metric outer measure on $E$, thus restricting to a measure on a $\gs$-algebra containing the Borel $\gs$-algera $\scB(E)$ (cf. \cite[p.54ff]{mattila1999geometry}). By definition, the obtained measure then is the $s$-dimensional Hausdorff measure which we will denote by $\cH^s$ as well.
 
-Since exponential functions are monotonically increasing, the Hausdorff measures' dependence on $s$ exhibits the same behavior. At the same time, simple estimates yield that if $\cH^s(S)$ is finite for some $s$, it vanishes for all $s'<s$, and conversely, if $\cH^s(S)>0$, then $\cH^{s'}(S)=\infty$ for all $s'>s$. Therefore, there exists precisely one real number $s$ where $\cH^\cdot(S)$ jumps from $0$ to $\infty$ (by possibly attaining any value of $[0,\infty]$ there). This motivates the following definition of Hausdorff dimension:
+In the special case of $(E,d)$ being an Euclidean space, Hausdorff measures interpolate between the usual Lebesgue measures $\gl^n$: For $s=0$, we have simply $\cH^0(S)=\# S$, whereas for any integer $n>0$, it can be shown that there exists a constant $c_n>0$ depending only on $n$ such that $\cH^n=c_n\gl^n$, where the constant evaluates to the volume of the unit ball.
+
+Since exponential functions are monotonically increasing, the Hausdorff measures' dependence on $s$ exhibits the same behaviour for a fixed set $S$. At the same time, simple estimates yield that if $\cH^s(S)$ is finite for some $s$, it vanishes for all $s'<s$, and conversely, if $\cH^s(S)>0$, then $\cH^{s'}(S)=\infty$ for all $s'>s$. Therefore, there exists precisely one real number $s$ where $\cH^\cdot(S)$ jumps from $0$ to $\infty$ (by possibly attaining any value of $[0,\infty]$ there). This motivates the following definition of Hausdorff dimension:
 \begin{defin}
-  The Hausdorff dimension $\dimh(S)$ of $S\ssq X$ is defined as
+  The Hausdorff dimension $\dimh(S)$ of $S\ssq E$ is defined as
   \[
     \dimh(S):=\inf\{s\geq0:\cH^s(S)>0\}.
   \]
@@ -33,11 +35,34 @@ Due to the above discussion, we have the following equalities:
 \end{align*}
 providing some alternative characterisations of the Hausdorff dimension.
 
+We further collect some important facts. To this end, let $S,S'$ and $S_1,S_2,...$ be subsets of $E$ as before. Then, the following properties hold (cf. \cite[p.32f]{falconer2007fractal} for a discussion in the Euclidean setting; however all arguments adapt to our more general situation without complication):
+\begin{description}
+  \item[Monotonicity.] If $S\ssq S'$ then $\dimh(S)\leq\dimh(S')$. 
+  \item[Countable Stability.] For a sequence $(S_n)_{n\geq1}$, we have the equality
+  \[ 
+    \dimh\left(\bigcup_{n\geq1}S_n\right)=\sup_{n\geq1} \dimh(S_n).
+  \]
+  \item[Countable Sets.] If $|S|\leq\aleph_0$ then $\dimh(S)=0$.
+  \item[H\"older continuous maps.] If $(E',d')$ is another metric space and $f:E\to E'$ is $\ga$ H\"older continuous for some $\ga\in(0,1]$ then $\dimh(f(S))\leq \ga^{-1}\dimh(S)$. In particular, the Hausdorff dimension is invariant under a bi-Lipschitz transformation (i.e. an invertible map $f$ with H\"older exponent $\ga=1$ for both $f$ and $f^{-1}$).
+  \item[Euclidean Case.] If $(E,d)$ happens to be an Euclidean space (or more generally a continuously differentiable manifold) of dimension $n$ and $S$ is an open subset then $\dimh(S)=n$.
+\end{description}
 
 
+
+
+
+\newpage
 
 
 \section{Weyl asymptotics and spectral dimension}
 
 \section{Diffusion processes and walk dimension}
+
+\subsection{From Dirichlet forms to Markov processes}
+
+We start with the following definition (cf. \cite[Def. IV.1.13]{ma2012introduction}):
+\begin{defin}
+  Given a filtered probability space $\left(\gO,\scA,\scF=\left(\scF_t\right)_{t\geq0},\Prob\right)$ satisfying the usual conditions, an $\scF$-adapted time-homogenous Markov process $X=(X_t)_{t\geq0}$ with state space $E_\gD$ is called a right process if it satisfies the strong Markov property for all $\scF$-stopping times and all its trajectories are right continuous.  
+\end{defin}
+
 

@@ -19,6 +19,26 @@
 
 \refsection{0}
   \sortlist{anyt}{anyt}
+    \entry{falconer2007fractal}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=25efdf09d1a24a6b2f6a04154ce3c8d1}{Falconer}{F\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=25efdf09d1a24a6b2f6a04154ce3c8d1}{Falconer}{F\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{25efdf09d1a24a6b2f6a04154ce3c8d1}
+      \strng{fullhash}{25efdf09d1a24a6b2f6a04154ce3c8d1}
+      \field{labelalpha}{Fal07}
+      \field{sortinit}{F}
+      \field{sortinithash}{9661cce5f16ac30b6b0c804d4583ed99}
+      \field{labeltitle}{Fractal Geometry: Mathematical Foundations and Applications}
+      \field{edition}{2}
+      \field{title}{Fractal Geometry: Mathematical Foundations and Applications}
+      \field{year}{Hoboken, 2007}
+    \endentry
     \entry{mattila1999geometry}{book}{}
       \name{labelname}{1}{}{%
         {{hash=9dd01179436f3de34874e7b67f1dec14}{Mattila}{M\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
@@ -37,7 +57,29 @@
       \field{labeltitle}{Geometry of Sets and Measures in Euclidean Spaces: Fractals and Rectifiability}
       \field{series}{Cambridge Studies in Advanced Mathematics}
       \field{title}{Geometry of Sets and Measures in Euclidean Spaces: Fractals and Rectifiability}
-      \field{year}{Cambridge 1999}
+      \field{year}{Cambridge, 1999}
+    \endentry
+    \entry{ma2012introduction}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=39571f32c5be7b34ae63fbecb9679f8e}{Ma}{M\bibinitperiod}{Z.M.}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=fa95c170741bfdf0d7fb36dd169525a4}{R{ö}ckner}{R\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=39571f32c5be7b34ae63fbecb9679f8e}{Ma}{M\bibinitperiod}{Z.M.}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=fa95c170741bfdf0d7fb36dd169525a4}{R{ö}ckner}{R\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ad141f4096ba2785736b09dffa171898}
+      \strng{fullhash}{ad141f4096ba2785736b09dffa171898}
+      \field{labelalpha}{MR12}
+      \field{sortinit}{M}
+      \field{sortinithash}{4203d16473bc940d4ac780773cb7c5dd}
+      \field{labeltitle}{Introduction to the Theory of (Non-Symmetric) Dirichlet Forms}
+      \field{series}{Universitext}
+      \field{title}{Introduction to the Theory of (Non-Symmetric) Dirichlet Forms}
+      \field{year}{Berlin Heidelberg, 2012}
     \endentry
   \endsortlist
 \endrefsection
