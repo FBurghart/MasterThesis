@@ -39,6 +39,29 @@
       \field{title}{Fractal Geometry: Mathematical Foundations and Applications}
       \field{year}{Hoboken, 2007}
     \endentry
+    \entry{hutchinson1981fractals}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=02a491e63f58523bed39df702b4036fb}{Hutchinson}{H\bibinitperiod}{John\bibnamedelima E}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=02a491e63f58523bed39df702b4036fb}{Hutchinson}{H\bibinitperiod}{John\bibnamedelima E}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{02a491e63f58523bed39df702b4036fb}
+      \strng{fullhash}{02a491e63f58523bed39df702b4036fb}
+      \field{labelalpha}{Hut81}
+      \field{sortinit}{H}
+      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
+      \field{labeltitle}{Fractals and self similarity}
+      \field{journaltitle}{Indiana University Mathematics Journal}
+      \field{number}{5}
+      \field{title}{Fractals and self similarity}
+      \field{volume}{30}
+      \field{year}{1981}
+      \field{pages}{713\bibrangedash 747}
+    \endentry
     \entry{mattila1999geometry}{book}{}
       \name{labelname}{1}{}{%
         {{hash=9dd01179436f3de34874e7b67f1dec14}{Mattila}{M\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
@@ -80,6 +103,26 @@
       \field{series}{Universitext}
       \field{title}{Introduction to the Theory of (Non-Symmetric) Dirichlet Forms}
       \field{year}{Berlin Heidelberg, 2012}
+    \endentry
+    \entry{schief1996self}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=f66839784cdee36fc99c076dc2ce4414}{Schief}{S\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f66839784cdee36fc99c076dc2ce4414}{Schief}{S\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f66839784cdee36fc99c076dc2ce4414}
+      \strng{fullhash}{f66839784cdee36fc99c076dc2ce4414}
+      \field{labelalpha}{Sch96}
+      \field{sortinit}{S}
+      \field{sortinithash}{4125bb4c3a0eb3eaee3ea6da32eb70c8}
+      \field{labeltitle}{Self-similar sets in complete metric spaces}
+      \field{journaltitle}{Proceedings of the American Mathematical Society}
+      \field{number}{2}
+      \field{title}{Self-similar sets in complete metric spaces}
+      \field{volume}{124}
+      \field{year}{1996}
+      \field{pages}{481\bibrangedash 490}
     \endentry
   \endsortlist
 \endrefsection

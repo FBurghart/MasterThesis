@@ -13,12 +13,13 @@
 
 \usepackage[english]{babel}			%language
 
-\usepackage[style=alphabetic]{biblatex}
+\usepackage[style=alphabetic,backend=biber]{biblatex}
+\usepackage{csquotes}
 \usepackage{graphicx}				%pictures
 \usepackage{tikz}				%drawing
 \usepackage{paralist}				%options on enumerating
 \usepackage{fancyhdr}				%header/footer
-\usepackage[hidelinks]{hyperref}		%allowing links (hidden, for esthetic reasons)
+\usepackage[hidelinks,pdfpagelabels]{hyperref}		%allowing links (hidden, for esthetic reasons)
 \usepackage{color}				%allows using colors
 
 % Mathematics %
@@ -36,3 +37,12 @@
 \usepackage{booktabs}				%nicer tables
 \usepackage{setspace}				%space between lines
 \usepackage{microtype}				%optimizing text
+
+\pagestyle{fancy}				%page layout
+\setlength{\headheight}{16pt}
+\lhead{}
+\chead{\leftmark}
+\rhead{}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}

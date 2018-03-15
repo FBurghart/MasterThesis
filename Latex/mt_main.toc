@@ -2,14 +2,18 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}An Introduction to the Einstein Relation}{2}{chapter.1}
+\contentsline {chapter}{\numberline {1}An Introduction to the Einstein Relation}{4}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Hausdorff measure and Hausdorff dimension}{2}{section.1.1}
+\contentsline {section}{\numberline {1.1}Hausdorff measure and Hausdorff dimension}{4}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Weyl asymptotics and spectral dimension}{4}{section.1.2}
+\contentsline {section}{\numberline {1.2}Weyl asymptotics and spectral dimension}{6}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Diffusion processes and walk dimension}{4}{section.1.3}
+\contentsline {section}{\numberline {1.3}Diffusion processes and walk dimension}{6}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}From Dirichlet forms to Markov processes}{4}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.1}From Dirichlet forms to Markov processes}{6}{subsection.1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Examples and Non-examples}{5}{chapter.2}
+\contentsline {section}{\numberline {1.4}Other versions of the Enistein relation}{6}{section.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Examples and Non-examples}{7}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{8}{chapter*.2}

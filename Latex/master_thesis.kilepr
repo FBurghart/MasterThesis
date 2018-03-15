@@ -97,10 +97,10 @@ order=5
 
 [item:mt_ch1.tex]
 archive=true
-column=8
+column=17
 encoding=windows-1252
 highlight=LaTeX
-line=45
+line=47
 mode=LaTeX
 open=true
 order=3
@@ -117,10 +117,10 @@ order=4
 
 [item:mt_main.tex]
 archive=true
-column=0
+column=25
 encoding=System
 highlight=LaTeX
-line=0
+line=14
 mode=LaTeX
 open=true
 order=0
@@ -152,8 +152,8 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:mt_ch1.tex]
-CursorColumn=8
-CursorLine=45
+CursorColumn=17
+CursorLine=47
 JumpList=
 ViMarks=
 
@@ -164,8 +164,8 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:mt_main.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=25
+CursorLine=14
 JumpList=
 ViMarks=
 

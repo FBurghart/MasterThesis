@@ -27,8 +27,10 @@
 
 % greek
 
+\newcommand{\ga}{\alpha}
 \newcommand{\gd}{\delta}
 \newcommand{\gD}{\Delta}
+\newcommand{\gl}{\lambda}
 \newcommand{\gs}{\sigma}
 \newcommand{\go}{\omega}
 \newcommand{\gO}{\Omega}
@@ -77,8 +79,22 @@
   {}% header specification (empty for default)
 \makeatother
 
+\makeatletter
+\newtheoremstyle{thmindented}
+  {3pt}% space before
+  {3pt}% space after
+  {\addtolength{\@totalleftmargin}{1em} \itshape
+   \addtolength{\linewidth}{-2em}
+   \parshape 1 1em \linewidth}% body font
+  {}% indent
+  {\bfseries}% header font
+  {.}% punctuation
+  {.5em}% after theorem header
+  {}% header specification (empty for default)
+\makeatother
 
-\newtheorem{prop}{Proposition}
+\theoremstyle{thmindented}
+\newtheorem{prop}{Proposition}[chapter]
 \theoremstyle{defindented}
-\newtheorem{defin}{Definition}
+\newtheorem{defin}[prop]{Definition}
 

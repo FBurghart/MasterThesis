@@ -12,14 +12,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \RequirePackage[l2tabu, orthodox]{nag}
-\documentclass[a4paper,12pt,twoside]{report}
-\usepackage[a4paper, inner=3cm, outer=2cm, top=3cm, bottom=2.5cm]{geometry}
+\documentclass[a4paper,11pt,twoside,notitlepage]{report}
+\usepackage[a4paper, inner=3cm, outer=2cm, top=3cm, bottom=3cm]{geometry}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
 % Remaining packages %
 \input{mt_preamble_packages.tex}
+
 
 % Options and shortcuts %
 \input{mt_preamble_options.tex}
@@ -38,9 +39,14 @@
 
 \begin{document}
 \maketitle
+\thispagestyle{empty}
+\newpage
 
 
 \tableofcontents
+
+\newpage
+\thispagestyle{plain}
 
 \begin{abstract}
 We consider $\mathbb{R}$ as well as $\dims, \dimh\ssq \dimw$.
@@ -53,7 +59,10 @@ We consider $\mathbb{R}$ as well as $\dims, \dimh\ssq \dimw$.
 \include{mt_ch2}
 
 % Bibliography
+
 \printbibliography
+\addcontentsline{toc}{chapter}{Bibliography}
+
 
 \end{document} 
 
