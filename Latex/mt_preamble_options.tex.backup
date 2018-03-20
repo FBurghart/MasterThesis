@@ -23,6 +23,7 @@
 
 % doublestroke
 
+\newcommand{\IN}{\mathbb{N}}
 \newcommand{\IR}{\mathbb{R}}
 
 % greek
@@ -40,6 +41,7 @@
 \newcommand{\cA}{\mathcal{A}}
 \newcommand{\cB}{\mathcal{B}}
 \newcommand{\cH}{\mathcal{H}}
+\newcommand{\cS}{\mathcal{S}}
 
 % mathscr
 
@@ -59,6 +61,7 @@
 \newcommand{\ssq}{\subseteq}
 \newcommand{\Di}{\operatorname{d}\!}
 \newcommand{\Prob}{\mathbf{P}}
+\newcommand{\Lip}{\operatorname{Lip}}
 
 
 
@@ -95,6 +98,7 @@
 
 \theoremstyle{thmindented}
 \newtheorem{prop}{Proposition}[chapter]
+\newtheorem{thm}[prop]{Theorem}
 \theoremstyle{defindented}
 \newtheorem{defin}[prop]{Definition}
 

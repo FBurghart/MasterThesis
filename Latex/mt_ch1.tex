@@ -1,4 +1,4 @@
-\chapter{An Introduction to the Einstein Relation}
+\chapter{Fractal Dimensions and the Einstein Relation}
 
 In this introductory chapter, we wish to briefly expose the ingredients of the ER - the Hausdorff dimension $\dimh$, the spectral dimension $\dims$, and the walk dimension $\dimw$ - and state some of their properties. 
 
@@ -17,7 +17,7 @@ Although the concepts of Hausdorff measure and dimension are well-known, we give
     \cH^s(S):=\lim_{\gd\searrow0}\cH^s_\gd(S).
   \end{equation}
 \end{defin}
-Observe that the limit in \eqref{eq:DHM} exists or equals $\infty$, since $\cH^s_\gd(S)$ is monotonically nonincreasing in $\gd$, yet bounded from below by 0. Furthermore, it can be shown that $\cH^s$ defines a metric outer measure on $E$, thus restricting to a measure on a $\gs$-algebra containing the Borel $\gs$-algera $\scB(E)$ (cf. \cite[p.54ff]{mattila1999geometry}). By definition, the obtained measure then is the $s$-dimensional Hausdorff measure which we will denote by $\cH^s$ as well.
+Observe that the limit in \eqref{eq:DHM} exists or equals $\infty$, since $\cH^s_\gd(S)$ is monotonically nonincreasing in $\gd$, yet bounded from below by 0. Furthermore, it can be shown that $\cH^s$ defines a metric outer measure on $E$, and thus restricts to a measure on a $\gs$-algebra containing the Borel $\gs$-algera $\scB(E)$ (cf. \cite[p.54ff]{mattila1999geometry}). By definition, the obtained measure then is the $s$-dimensional Hausdorff measure which we will denote by $\cH^s$ as well. Note that for $\cH^s$ to be a Radon measure, i.e. locally finite and inner regular, $\cH^s(E)<\infty$ is sufficient.
 
 In the special case of $(E,d)$ being an Euclidean space, Hausdorff measures interpolate between the usual Lebesgue measures $\gl^n$: For $s=0$, we have simply $\cH^0(S)=\# S$, whereas for any integer $n>0$, it can be shown that there exists a constant $c_n>0$ depending only on $n$ such that $\cH^n=c_n\gl^n$, where the constant evaluates to the volume of the unit ball.
 
@@ -52,7 +52,7 @@ We conclude this section by citing Hutchinson's theorem about the Hausdorff dime
   \Lip_F:=\sup_{\stackrel{x,y\in E}{x\neq y}}\frac{d(F(x),F(y))}{d(x,y)}<1.
 \]
 If the stronger condition $d(F(x),F(y))=\Lip_F d(x,y)$ holds for all $x,y\in E$, we call $F$ a similitude with contraction factor $\Lip_F$.
-\begin{thm}[Hutchinson, \cite{hutchinson1981fractals}]
+\begin{thm}[Hutchinson, \cite{hutchinson1981fractals}]\label{thm:hutchinson}
   Let $\cS=\{S_1,...,S_N\}$ be a finite set of strict contractions on the Euclidean space $\IR^n$. Then there exists a unique nonempty compact set denoted by $|\cS|$ invariant under $\cS$, i.e.
   \[
     |\cS|=\bigcup_{i=1}^N S_i(|\cS|).
@@ -69,6 +69,26 @@ While uniqueness and existence of $|\cS|$ are still ensured for maps on a comple
 
 \section{Weyl asymptotics and spectral dimension}
 
+The idea of introducing spectral dimension is inspired by Weyl's law for the eigenvalues of the Dirichlet-Laplace operator which we will discuss here shortly:
+
+Given a bounded open domain $E\ssq\IR^n$, consider the Laplace operator $\gD$ on $E$ acting on functions that satisfy the Dirichlet boundary condition $u\equiv0$ on $\partial E$. Then, the spectrum of $-\gD$ consists of non-negative eigenvalues with a single limit point at $\infty$. Hence we can order them in a non-increasing way, counting the geometric multiplicities, as
+\[
+  0\leq\gl_1\leq\gl_2\leq...\leq\gl_n\leq...\ \text{ with }\ \gl_n\nearrow\infty. 
+\]
+In this setting, it makes sense to define the eigenvalue counting function via 
+\begin{equation}\label{eq:DECF}
+  N_{-\gD}(x):=\max\{n\in\IN:\gl_n\leq x\}.
+\end{equation}
+Weyl's law now states that there is the asymptotic equivalence\footnote{We adopt the notation $f\sim g$ for the equivalence relation given by $\lim\frac{f}{g}=1$.}
+\begin{equation}\label{eq:WL}
+  N_{-\gD}(x)\sim C(n,E)x^{n/2},\quad x\nearrow\infty,
+\end{equation}
+where the constant $C(n,E)$ depends only on $E$ and its dimension (see \cite{Weyl1911} and \cite{Weyl1912} for the original publications).
+
+
+
+\newpage
+
 \section{Diffusion processes and walk dimension}
 
 \subsection{From Dirichlet forms to Markov processes}
@@ -78,7 +98,7 @@ We start with the following definition (cf. \cite[Def. IV.1.13]{ma2012introducti
   Given a filtered probability space $\left(\gO,\scA,\scF=\left(\scF_t\right)_{t\geq0},\Prob\right)$ satisfying the usual conditions, an $\scF$-adapted time-homogenous Markov process $X=(X_t)_{t\geq0}$ with state space $E_\gD$ is called a right process if it satisfies the strong Markov property for all $\scF$-stopping times and all its trajectories are right continuous.  
 \end{defin}
 
-\section{Other versions of the Enistein relation}
+\section{Other versions of the Einstein relation}
 
 Telcs, Mandelbrot, etc...
 

@@ -9,7 +9,7 @@ kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-PDFLaTeX
 kileprversion=2
 kileversion=2.9.60
-lastDocument=mt_ch1.tex
+lastDocument=mt_bib.bib
 masterDocument=
 name=master_thesis
 pkg_extIsRegExp=false
@@ -87,96 +87,96 @@ order=-1
 
 [item:mt_bib.bib]
 archive=true
-column=16
+column=27
 encoding=windows-1252
 highlight=BibTeX
-line=27
+line=96
 mode=BibTeX
 open=true
 order=5
 
 [item:mt_ch1.tex]
 archive=true
-column=17
+column=0
 encoding=windows-1252
 highlight=LaTeX
-line=47
+line=71
 mode=LaTeX
 open=true
 order=3
 
 [item:mt_ch2.tex]
 archive=true
-column=0
+column=30
 encoding=windows-1252
 highlight=LaTeX
-line=0
+line=8
 mode=LaTeX
 open=true
 order=4
 
 [item:mt_main.tex]
 archive=true
-column=25
+column=24
 encoding=System
 highlight=LaTeX
-line=14
+line=62
 mode=LaTeX
 open=true
 order=0
 
 [item:mt_preamble_options.tex]
 archive=true
-column=15
+column=21
 encoding=windows-1252
 highlight=LaTeX
-line=32
+line=62
 mode=LaTeX
 open=true
 order=2
 
 [item:mt_preamble_packages.tex]
 archive=true
-column=30
+column=35
 encoding=windows-1252
 highlight=LaTeX
-line=15
+line=21
 mode=LaTeX
 open=true
 order=1
 
 [view-settings,view=0,item:mt_bib.bib]
-CursorColumn=16
-CursorLine=27
+CursorColumn=27
+CursorLine=96
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:mt_ch1.tex]
-CursorColumn=17
-CursorLine=47
+CursorColumn=0
+CursorLine=71
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:mt_ch2.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=30
+CursorLine=8
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:mt_main.tex]
-CursorColumn=25
-CursorLine=14
+CursorColumn=24
+CursorLine=62
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:mt_preamble_options.tex]
-CursorColumn=15
-CursorLine=32
+CursorColumn=21
+CursorLine=62
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:mt_preamble_packages.tex]
-CursorColumn=30
-CursorLine=15
+CursorColumn=35
+CursorLine=21
 JumpList=
 ViMarks=

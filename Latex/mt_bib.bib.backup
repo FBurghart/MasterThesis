@@ -30,6 +30,18 @@
   publisher={Wiley}
 }
 
+@book{kallenberg2002foundations,
+  title={Foundations of Modern Probability},
+  author={Kallenberg, O.},
+  %isbn={9780387953137},
+  %lccn={2001032816},
+  series={Probability and Its Applications},
+  %url={https://books.google.de/books?id=L6fhXh13OyMC},
+  year={New York, 2002},
+  publisher={Springer}
+}
+
+
 @article{hutchinson1981fractals,
   title={Fractals and self similarity},
   author={Hutchinson, John E},
@@ -40,4 +52,60 @@
   year={1981},
   publisher={JSTOR}
 }
+
+@article{schief1996self,
+  title={Self-similar sets in complete metric spaces},
+  author={Schief, Andreas},
+  journal={Proceedings of the American Mathematical Society},
+  volume={124},
+  number={2},
+  pages={481--490},
+  year={1996}
+}
+
+@article{Weyl1912,
+author = {Weyl, H.},
+journal = {Mathematische Annalen},
+pages = {441-479},
+title = {Das asymptotische Verteilungsgesetz der Eigenwerte linearer partieller Differentialgleichungen (mit einer Anwendung auf die Theorie der Hohlraumstrahlung)},
+%url = {http://eudml.org/doc/158545},
+volume = {71},
+year = {1912},
+}
+
+@article{Weyl1911,
+author = {Weyl, H.},
+journal = {Nachrichten von der Gesellschaft der Wissenschaften zu G{\"o}ttingen, Mathematisch-Physikalische Klasse},
+pages = {110-117},
+title = {Ueber die asymptotische Verteilung der Eigenwerte},
+%url = {http://eudml.org/doc/58792},
+volume = {1911},
+year = {1911},
+}
+
+@article{bertacchi2006,
+author = {Bertacchi, Daniela},
+doi = {10.1214/EJP.v11-377},
+fjournal = {Electronic Journal of Probability},
+journal = {Electron. J. Probab.},
+pages = {1184--1203},
+pno = {45},
+publisher = {The Institute of Mathematical Statistics and the Bernoulli Society},
+title = {Asymptotic Behaviour of the Simple Random Walk on the 2-dimensional Comb},
+url = {https://doi.org/10.1214/EJP.v11-377},
+volume = {11},
+year = {2006}
+}
+
+@book{telcs2006art,
+  title={The Art of Random Walks},
+  author={Telcs, A.},
+  %isbn={9783540330271},
+  %lccn={2006922866},
+  series={Lecture Notes in Mathematics},
+  %url={https://books.google.de/books?id=sIHk7qzyUngC},
+  year={Berlin Heidelberg, 2006},
+  publisher={Springer}
+}
+
 

@@ -19,6 +19,35 @@
 
 \refsection{0}
   \sortlist{anyt}{anyt}
+    \entry{bertacchi2006}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=b85dbf52d6d9e349f4e1928d4ed88b3f}{Bertacchi}{B\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b85dbf52d6d9e349f4e1928d4ed88b3f}{Bertacchi}{B\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{2}{%
+        {The Institute of Mathematical Statistics}%
+        {the Bernoulli Society}%
+      }
+      \strng{namehash}{b85dbf52d6d9e349f4e1928d4ed88b3f}
+      \strng{fullhash}{b85dbf52d6d9e349f4e1928d4ed88b3f}
+      \field{labelalpha}{Ber06}
+      \field{sortinit}{B}
+      \field{sortinithash}{1a3a21dbed09540af12d49a0b14f4751}
+      \field{labeltitle}{Asymptotic Behaviour of the Simple Random Walk on the 2-dimensional Comb}
+      \field{journaltitle}{Electron. J. Probab.}
+      \field{title}{Asymptotic Behaviour of the Simple Random Walk on the 2-dimensional Comb}
+      \field{volume}{11}
+      \field{year}{2006}
+      \field{pages}{1184\bibrangedash 1203}
+      \verb{doi}
+      \verb 10.1214/EJP.v11-377
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1214/EJP.v11-377
+      \endverb
+    \endentry
     \entry{falconer2007fractal}{book}{}
       \name{labelname}{1}{}{%
         {{hash=25efdf09d1a24a6b2f6a04154ce3c8d1}{Falconer}{F\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
@@ -41,16 +70,16 @@
     \endentry
     \entry{hutchinson1981fractals}{article}{}
       \name{labelname}{1}{}{%
-        {{hash=02a491e63f58523bed39df702b4036fb}{Hutchinson}{H\bibinitperiod}{John\bibnamedelima E}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=6b814812017600e56c6932a98be8320d}{Hutchinson}{H\bibinitperiod}{J.E.}{J\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=02a491e63f58523bed39df702b4036fb}{Hutchinson}{H\bibinitperiod}{John\bibnamedelima E}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=6b814812017600e56c6932a98be8320d}{Hutchinson}{H\bibinitperiod}{J.E.}{J\bibinitperiod}{}{}{}{}}%
       }
       \list{publisher}{1}{%
         {JSTOR}%
       }
-      \strng{namehash}{02a491e63f58523bed39df702b4036fb}
-      \strng{fullhash}{02a491e63f58523bed39df702b4036fb}
+      \strng{namehash}{6b814812017600e56c6932a98be8320d}
+      \strng{fullhash}{6b814812017600e56c6932a98be8320d}
       \field{labelalpha}{Hut81}
       \field{sortinit}{H}
       \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
@@ -61,6 +90,26 @@
       \field{volume}{30}
       \field{year}{1981}
       \field{pages}{713\bibrangedash 747}
+    \endentry
+    \entry{kallenberg2002foundations}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=4e5ba01a7ad5963b1097885b5a1b5c28}{Kallenberg}{K\bibinitperiod}{O.}{O\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=4e5ba01a7ad5963b1097885b5a1b5c28}{Kallenberg}{K\bibinitperiod}{O.}{O\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{4e5ba01a7ad5963b1097885b5a1b5c28}
+      \strng{fullhash}{4e5ba01a7ad5963b1097885b5a1b5c28}
+      \field{labelalpha}{Kal02}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labeltitle}{Foundations of Modern Probability}
+      \field{series}{Probability and Its Applications}
+      \field{title}{Foundations of Modern Probability}
+      \field{year}{New York, 2002}
     \endentry
     \entry{mattila1999geometry}{book}{}
       \name{labelname}{1}{}{%
@@ -106,13 +155,13 @@
     \endentry
     \entry{schief1996self}{article}{}
       \name{labelname}{1}{}{%
-        {{hash=f66839784cdee36fc99c076dc2ce4414}{Schief}{S\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=ffab5cece6a0cbb03cabd6e51bcef4b9}{Schief}{S\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=f66839784cdee36fc99c076dc2ce4414}{Schief}{S\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=ffab5cece6a0cbb03cabd6e51bcef4b9}{Schief}{S\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{f66839784cdee36fc99c076dc2ce4414}
-      \strng{fullhash}{f66839784cdee36fc99c076dc2ce4414}
+      \strng{namehash}{ffab5cece6a0cbb03cabd6e51bcef4b9}
+      \strng{fullhash}{ffab5cece6a0cbb03cabd6e51bcef4b9}
       \field{labelalpha}{Sch96}
       \field{sortinit}{S}
       \field{sortinithash}{4125bb4c3a0eb3eaee3ea6da32eb70c8}
@@ -123,6 +172,64 @@
       \field{volume}{124}
       \field{year}{1996}
       \field{pages}{481\bibrangedash 490}
+    \endentry
+    \entry{telcs2006art}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=391062a611378fe7386cc3190ced7d7b}{Telcs}{T\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=391062a611378fe7386cc3190ced7d7b}{Telcs}{T\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{391062a611378fe7386cc3190ced7d7b}
+      \strng{fullhash}{391062a611378fe7386cc3190ced7d7b}
+      \field{labelalpha}{Tel06}
+      \field{sortinit}{T}
+      \field{sortinithash}{9378dd666f3c24d81538df53aa99e23d}
+      \field{labeltitle}{The Art of Random Walks}
+      \field{series}{Lecture Notes in Mathematics}
+      \field{title}{The Art of Random Walks}
+      \field{year}{Berlin Heidelberg, 2006}
+    \endentry
+    \entry{Weyl1911}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=dd457278ef24d2a2f8c91a8cde5c4d6a}{Weyl}{W\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=dd457278ef24d2a2f8c91a8cde5c4d6a}{Weyl}{W\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{dd457278ef24d2a2f8c91a8cde5c4d6a}
+      \strng{fullhash}{dd457278ef24d2a2f8c91a8cde5c4d6a}
+      \field{labelalpha}{Wey11}
+      \field{sortinit}{W}
+      \field{sortinithash}{e560dae78a85a037c3da51c61467873a}
+      \field{labeltitle}{Ueber die asymptotische Verteilung der Eigenwerte}
+      \field{journaltitle}{Nachrichten von der Gesellschaft der Wissenschaften zu G{ö}ttingen, Mathematisch-Physikalische Klasse}
+      \field{title}{Ueber die asymptotische Verteilung der Eigenwerte}
+      \field{volume}{1911}
+      \field{year}{1911}
+      \field{pages}{110\bibrangedash 117}
+    \endentry
+    \entry{Weyl1912}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=dd457278ef24d2a2f8c91a8cde5c4d6a}{Weyl}{W\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=dd457278ef24d2a2f8c91a8cde5c4d6a}{Weyl}{W\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{dd457278ef24d2a2f8c91a8cde5c4d6a}
+      \strng{fullhash}{dd457278ef24d2a2f8c91a8cde5c4d6a}
+      \field{labelalpha}{Wey12}
+      \field{sortinit}{W}
+      \field{sortinithash}{e560dae78a85a037c3da51c61467873a}
+      \field{labeltitle}{Das asymptotische Verteilungsgesetz der Eigenwerte linearer partieller Differentialgleichungen (mit einer Anwendung auf die Theorie der Hohlraumstrahlung)}
+      \field{journaltitle}{Mathematische Annalen}
+      \field{title}{Das asymptotische Verteilungsgesetz der Eigenwerte linearer partieller Differentialgleichungen (mit einer Anwendung auf die Theorie der Hohlraumstrahlung)}
+      \field{volume}{71}
+      \field{year}{1912}
+      \field{pages}{441\bibrangedash 479}
     \endentry
   \endsortlist
 \endrefsection
