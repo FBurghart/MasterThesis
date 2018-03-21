@@ -9,7 +9,7 @@ kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-PDFLaTeX
 kileprversion=2
 kileversion=2.9.60
-lastDocument=mt_bib.bib
+lastDocument=mt_main.tex
 masterDocument=
 name=master_thesis
 pkg_extIsRegExp=false
@@ -40,6 +40,15 @@ Indentation Mode=normal
 Mode=LaTeX
 
 [document-settings,item:mt_ch2.tex]
+Bookmarks=
+Encoding=windows-1252
+FoldedColumns=
+FoldedLines=
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
+[document-settings,item:mt_ch3.tex]
 Bookmarks=
 Encoding=windows-1252
 FoldedColumns=
@@ -87,96 +96,112 @@ order=-1
 
 [item:mt_bib.bib]
 archive=true
-column=27
+column=25
 encoding=windows-1252
 highlight=BibTeX
-line=96
+line=46
 mode=BibTeX
 open=true
-order=5
+order=6
 
 [item:mt_ch1.tex]
 archive=true
-column=0
+column=75
 encoding=windows-1252
 highlight=LaTeX
-line=71
+line=54
 mode=LaTeX
 open=true
 order=3
 
 [item:mt_ch2.tex]
 archive=true
-column=30
+column=110
 encoding=windows-1252
 highlight=LaTeX
-line=8
+line=2
 mode=LaTeX
 open=true
 order=4
 
+[item:mt_ch3.tex]
+archive=true
+column=67
+encoding=windows-1252
+highlight=LaTeX
+line=0
+mode=LaTeX
+open=true
+order=5
+
 [item:mt_main.tex]
 archive=true
-column=24
+column=15
 encoding=System
 highlight=LaTeX
-line=62
+line=61
 mode=LaTeX
 open=true
 order=0
 
 [item:mt_preamble_options.tex]
 archive=true
-column=21
+column=58
 encoding=windows-1252
 highlight=LaTeX
-line=62
+line=57
 mode=LaTeX
 open=true
 order=2
 
 [item:mt_preamble_packages.tex]
 archive=true
-column=35
+column=105
 encoding=windows-1252
 highlight=LaTeX
-line=21
+line=50
 mode=LaTeX
 open=true
 order=1
 
 [view-settings,view=0,item:mt_bib.bib]
-CursorColumn=27
-CursorLine=96
+CursorColumn=25
+CursorLine=46
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:mt_ch1.tex]
-CursorColumn=0
-CursorLine=71
+CursorColumn=75
+CursorLine=54
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:mt_ch2.tex]
-CursorColumn=30
-CursorLine=8
+CursorColumn=110
+CursorLine=2
+JumpList=
+ViMarks=
+
+[view-settings,view=0,item:mt_ch3.tex]
+CursorColumn=67
+CursorLine=0
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:mt_main.tex]
-CursorColumn=24
-CursorLine=62
+CursorColumn=15
+CursorLine=61
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:mt_preamble_options.tex]
-CursorColumn=21
-CursorLine=62
+CursorColumn=58
+CursorLine=57
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:mt_preamble_packages.tex]
-CursorColumn=35
-CursorLine=21
+CursorColumn=105
+CursorLine=50
 JumpList=
 ViMarks=

@@ -68,6 +68,31 @@
       \field{title}{Fractal Geometry: Mathematical Foundations and Applications}
       \field{year}{Hoboken, 2007}
     \endentry
+    \entry{fukushima2011dirichlet}{book}{}
+      \name{labelname}{3}{}{%
+        {{hash=e64628b7c7333774326c9ebf76e190ff}{Fukushima}{F\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=44e4536204746f3a5acd0df2052d814f}{Oshima}{O\bibinitperiod}{Y.}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=d66500f31123915dc7e099f574466b0a}{Takeda}{T\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=e64628b7c7333774326c9ebf76e190ff}{Fukushima}{F\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=44e4536204746f3a5acd0df2052d814f}{Oshima}{O\bibinitperiod}{Y.}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=d66500f31123915dc7e099f574466b0a}{Takeda}{T\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {De Gruyter}%
+      }
+      \strng{namehash}{2c50148b617ccfab6fa0e5e19b2b95a3}
+      \strng{fullhash}{2c50148b617ccfab6fa0e5e19b2b95a3}
+      \field{labelalpha}{FOT11}
+      \field{sortinit}{F}
+      \field{sortinithash}{9661cce5f16ac30b6b0c804d4583ed99}
+      \field{labeltitle}{Dirichlet Forms and Symmetric Markov Processes}
+      \field{edition}{2}
+      \field{series}{De Gruyter studies in mathematics}
+      \field{title}{Dirichlet Forms and Symmetric Markov Processes}
+      \field{year}{Berlin Boston, 2011}
+    \endentry
     \entry{hutchinson1981fractals}{article}{}
       \name{labelname}{1}{}{%
         {{hash=6b814812017600e56c6932a98be8320d}{Hutchinson}{H\bibinitperiod}{J.E.}{J\bibinitperiod}{}{}{}{}}%
@@ -107,6 +132,7 @@
       \field{sortinit}{K}
       \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
       \field{labeltitle}{Foundations of Modern Probability}
+      \field{edition}{2}
       \field{series}{Probability and Its Applications}
       \field{title}{Foundations of Modern Probability}
       \field{year}{New York, 2002}

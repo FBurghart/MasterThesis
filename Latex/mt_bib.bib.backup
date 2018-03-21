@@ -38,13 +38,14 @@
   series={Probability and Its Applications},
   %url={https://books.google.de/books?id=L6fhXh13OyMC},
   year={New York, 2002},
-  publisher={Springer}
+  publisher={Springer},
+  edition={2nd edition}
 }
 
 
 @article{hutchinson1981fractals,
   title={Fractals and self similarity},
-  author={Hutchinson, John E},
+  author={Hutchinson, J.E.},
   journal={Indiana University Mathematics Journal},
   volume={30},
   number={5},
@@ -55,7 +56,7 @@
 
 @article{schief1996self,
   title={Self-similar sets in complete metric spaces},
-  author={Schief, Andreas},
+  author={Schief, A.},
   journal={Proceedings of the American Mathematical Society},
   volume={124},
   number={2},
@@ -64,37 +65,37 @@
 }
 
 @article{Weyl1912,
-author = {Weyl, H.},
-journal = {Mathematische Annalen},
-pages = {441-479},
-title = {Das asymptotische Verteilungsgesetz der Eigenwerte linearer partieller Differentialgleichungen (mit einer Anwendung auf die Theorie der Hohlraumstrahlung)},
-%url = {http://eudml.org/doc/158545},
-volume = {71},
-year = {1912},
+  author = {Weyl, H.},
+  journal = {Mathematische Annalen},
+  pages = {441-479},
+  title = {Das asymptotische Verteilungsgesetz der Eigenwerte linearer partieller Differentialgleichungen (mit einer Anwendung auf die Theorie der Hohlraumstrahlung)},
+  %url = {http://eudml.org/doc/158545},
+  volume = {71},
+  year = {1912},
 }
 
 @article{Weyl1911,
-author = {Weyl, H.},
-journal = {Nachrichten von der Gesellschaft der Wissenschaften zu G{\"o}ttingen, Mathematisch-Physikalische Klasse},
-pages = {110-117},
-title = {Ueber die asymptotische Verteilung der Eigenwerte},
-%url = {http://eudml.org/doc/58792},
-volume = {1911},
-year = {1911},
+  author = {Weyl, H.},
+  journal = {Nachrichten von der Gesellschaft der Wissenschaften zu G{\"o}ttingen, Mathematisch-Physikalische Klasse},
+  pages = {110-117},
+  title = {Ueber die asymptotische Verteilung der Eigenwerte},
+  %url = {http://eudml.org/doc/58792},
+  volume = {1911},
+  year = {1911},
 }
 
 @article{bertacchi2006,
-author = {Bertacchi, Daniela},
-doi = {10.1214/EJP.v11-377},
-fjournal = {Electronic Journal of Probability},
-journal = {Electron. J. Probab.},
-pages = {1184--1203},
-pno = {45},
-publisher = {The Institute of Mathematical Statistics and the Bernoulli Society},
-title = {Asymptotic Behaviour of the Simple Random Walk on the 2-dimensional Comb},
-url = {https://doi.org/10.1214/EJP.v11-377},
-volume = {11},
-year = {2006}
+  author = {Bertacchi, D.},
+  doi = {10.1214/EJP.v11-377},
+  fjournal = {Electronic Journal of Probability},
+  journal = {Electron. J. Probab.},
+  pages = {1184--1203},
+  pno = {45},
+  publisher = {The Institute of Mathematical Statistics and the Bernoulli Society},
+  title = {Asymptotic Behaviour of the Simple Random Walk on the 2-dimensional Comb},
+  url = {https://doi.org/10.1214/EJP.v11-377},
+  volume = {11},
+  year = {2006}
 }
 
 @book{telcs2006art,
@@ -107,5 +108,18 @@ year = {2006}
   year={Berlin Heidelberg, 2006},
   publisher={Springer}
 }
+
+@book{fukushima2011dirichlet,
+  title={Dirichlet Forms and Symmetric Markov Processes},
+  author={Fukushima, M. and Oshima, Y. and Takeda, M.},
+  %isbn={9783110218084},
+  %lccn={2010041939},
+  series={De Gruyter studies in mathematics},
+  %url={https://books.google.de/books?id=jkymRItPFo8C},
+  year={Berlin Boston, 2011},
+  publisher={De Gruyter},
+  edition={2nd edition}
+}
+
 
 

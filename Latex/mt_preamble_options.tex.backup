@@ -55,6 +55,7 @@
 \newcommand{\dimh}{\dim_{\mathcal{H}}}  %Hausdorff dimension
 \newcommand{\dims}{\dim_{\mathcal{S}}}  %spectral dimension
 \newcommand{\dimw}{\dim_{\mathcal{W}}}  %walk dimension
+\newcommand{\SG}{\operatorname{SG}}     %Sierpinski gasket
 
 % math symbols
 

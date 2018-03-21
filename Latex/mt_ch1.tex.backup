@@ -1,6 +1,6 @@
 \chapter{Fractal Dimensions and the Einstein Relation}
 
-In this introductory chapter, we wish to briefly expose the ingredients of the ER - the Hausdorff dimension $\dimh$, the spectral dimension $\dims$, and the walk dimension $\dimw$ - and state some of their properties. 
+In this introductory chapter, we wish to briefly expose the ingredients of the Einstein relation - the Hausdorff dimension $\dimh$, the spectral dimension $\dims$, and the walk dimension $\dimw$ - and state some of their properties. 
 
 \section{Hausdorff measure and Hausdorff dimension}
 
@@ -52,7 +52,7 @@ We conclude this section by citing Hutchinson's theorem about the Hausdorff dime
   \Lip_F:=\sup_{\stackrel{x,y\in E}{x\neq y}}\frac{d(F(x),F(y))}{d(x,y)}<1.
 \]
 If the stronger condition $d(F(x),F(y))=\Lip_F d(x,y)$ holds for all $x,y\in E$, we call $F$ a similitude with contraction factor $\Lip_F$.
-\begin{thm}[Hutchinson, \cite{hutchinson1981fractals}]
+\begin{thm}[Hutchinson, \cite{hutchinson1981fractals}]\label{thm:hutchinson}
   Let $\cS=\{S_1,...,S_N\}$ be a finite set of strict contractions on the Euclidean space $\IR^n$. Then there exists a unique nonempty compact set denoted by $|\cS|$ invariant under $\cS$, i.e.
   \[
     |\cS|=\bigcup_{i=1}^N S_i(|\cS|).
@@ -71,7 +71,9 @@ While uniqueness and existence of $|\cS|$ are still ensured for maps on a comple
 
 The idea of introducing spectral dimension is inspired by Weyl's law for the eigenvalues of the Dirichlet-Laplace operator which we will discuss here shortly:
 
-Given a bounded open domain $E\ssq\IR^n$, consider the Laplace operator $\gD$ on $E$ acting on functions that satisfy the Dirichlet boundary condition $u\equiv0$ on $\partial E$. Then, the spectrum of $-\gD$ consists of non-negative eigenvalues with a single limit point at $\infty$. Hence we can order them in a non-increasing way, counting the geometric multiplicities, as
+\subsection{The classical case}
+
+Given a bounded open domain $E\ssq\IR^n$, consider the Laplace operator $\gD$ on $E$ acting on functions satisfying the Dirichlet boundary condition $u\equiv0$ on $\partial E$. Then, the spectrum of $-\gD$ consists of non-negative eigenvalues with a single limit point at $\infty$. Hence we can order them in a non-increasing way, counting the geometric multiplicities, as
 \[
   0\leq\gl_1\leq\gl_2\leq...\leq\gl_n\leq...\ \text{ with }\ \gl_n\nearrow\infty. 
 \]
@@ -81,9 +83,14 @@ In this setting, it makes sense to define the eigenvalue counting function via
 \end{equation}
 Weyl's law now states that there is the asymptotic equivalence\footnote{We adopt the notation $f\sim g$ for the equivalence relation given by $\lim\frac{f}{g}=1$.}
 \begin{equation}\label{eq:WL}
-  N_{-\gD}(x)\sim C(n,E)x^{n/2},\quad x\nearrow\infty,
+  N_{-\gD}(x)\sim C_n\cH^n(E)x^{n/2},\quad x\nearrow\infty,
 \end{equation}
-where the constant $C(n,E)$ depends only on $E$ and its dimension (see \cite{Weyl1911} and \cite{Weyl1912} for the original publications).
+where the constant $C_n$ is independent of the domain $E$ (see \cite{Weyl1911} and \cite{Weyl1912} for the original publications). Motivated by \eqref{eq:WL}, we define the spectral dimension of $\gD$ on $E$ by
+\begin{equation}
+  \dims(E,\gD):=\lim_{x\to\infty}\frac{\log N_{-\gD}(x)}{\log x}
+\end{equation}
+which yields $n/2$ in the situation examined by Weyl's law. Note that the usual definition of $\dims$ differs by a factor of 2 (cf. [QUOTE!!]) so that $\dims(E,\gD)$ coincides with $\dimh(E)=n$, but comes at the cost of an additional factor in the Einstein relation. Therefore, we take the liberty to deviate from the established ... in this minor aspect.
+
 
 
 
@@ -92,6 +99,25 @@ where the constant $C(n,E)$ depends only on $E$ and its dimension (see \cite{Wey
 \section{Diffusion processes and walk dimension}
 
 \subsection{From Dirichlet forms to Markov processes}
+
+For the following definition taken from \cite[p.3ff]{fukushima2011dirichlet}, set $H=L^2(E,\mu)$ where $\mu$ is a $\gs$-finite Borel-measure on $E$. 
+\begin{defin}
+  A map $\cE:\cD(\cE)\times\cD(\cE)\to\IR$ is a Dirichlet form if it satisfies the following conditions:
+  \begin{enumerate}[i.]
+  \item The domain $\cD(\cE)\ssq H$ of $\cE$ is a dense linear subspace.
+  \item $\cE$ is a symmetric, non-negative definite bilinear form.
+  \item This form is closed, that is, the inner product space $(\cD(\cE),\cE_\ga)$ equipped with the inner product
+  \[
+    \cE_\ga(u,v):=\cE(u,v)+\ga\left<u,v\right>\ \text{ for }\ u,v\in\cD(\cE_\ga)=\cD(\cE),\ \ga>0,
+  \]
+  is complete (and thus itself a Hilbert space).
+  \item $\cE$ is a Markovian form, i.e. for all $u\in\cD(\cE)$, $v:=(0\vee u)\wedge 1\in\cD(\cE)$ and we have $\cE[v]\leq\cE[u]$ for the quadratic form of $\cE$. 
+  \end{enumerate}
+\end{defin}
+We remark that the choice of $\ga>0$ is irrelevant for the completeness of $(\cD(\cE),\cE_\ga)$ since all induced norms are equivalent to each other. 
+
+
+
 
 We start with the following definition (cf. \cite[Def. IV.1.13]{ma2012introduction}):
 \begin{defin}
