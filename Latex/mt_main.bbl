@@ -93,6 +93,33 @@
       \field{title}{Dirichlet Forms and Symmetric Markov Processes}
       \field{year}{Berlin Boston, 2011}
     \endentry
+    \entry{hambly_kigami_kumagai_2002}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=7aec73978627f7dd41002c0c95153ceb}{Hambly}{H\bibinitperiod}{B.\bibnamedelimi M.}{B\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=a19df97a07c2b8ad42daced00bc4dd8e}{Kigami}{K\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=88f8c264ff9937ea471ea1181f40af33}{Kumagai}{K\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=7aec73978627f7dd41002c0c95153ceb}{Hambly}{H\bibinitperiod}{B.\bibnamedelimi M.}{B\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=a19df97a07c2b8ad42daced00bc4dd8e}{Kigami}{K\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=88f8c264ff9937ea471ea1181f40af33}{Kumagai}{K\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{90979a8e1df6c4ff32e69983faf32a26}
+      \strng{fullhash}{90979a8e1df6c4ff32e69983faf32a26}
+      \field{labelalpha}{HKK02}
+      \field{sortinit}{H}
+      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
+      \field{labeltitle}{Multifractal formalisms for the local spectral and walk dimensions}
+      \field{journaltitle}{Mathematical Proceedings of the Cambridge Philosophical Society}
+      \field{number}{3}
+      \field{title}{Multifractal formalisms for the local spectral and walk dimensions}
+      \field{volume}{132}
+      \field{year}{2002}
+      \field{pages}{555\bibrangedash 571}
+    \endentry
     \entry{hutchinson1981fractals}{article}{}
       \name{labelname}{1}{}{%
         {{hash=6b814812017600e56c6932a98be8320d}{Hutchinson}{H\bibinitperiod}{J.E.}{J\bibinitperiod}{}{}{}{}}%
@@ -136,6 +163,31 @@
       \field{series}{Probability and Its Applications}
       \field{title}{Foundations of Modern Probability}
       \field{year}{New York, 2002}
+    \endentry
+    \entry{kigami1993weyl}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=a19df97a07c2b8ad42daced00bc4dd8e}{Kigami}{K\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=28480731a77f7e713ad3e9d0d0920ffe}{Lapidus}{L\bibinitperiod}{M.L.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=a19df97a07c2b8ad42daced00bc4dd8e}{Kigami}{K\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=28480731a77f7e713ad3e9d0d0920ffe}{Lapidus}{L\bibinitperiod}{M.L.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{91bb7449782904fc409263359f31534b}
+      \strng{fullhash}{91bb7449782904fc409263359f31534b}
+      \field{labelalpha}{KL93}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labeltitle}{Weyl's problem for the spectral distribution of Laplacians on pcf self-similar fractals}
+      \field{journaltitle}{Communications in mathematical physics}
+      \field{number}{1}
+      \field{title}{Weyl's problem for the spectral distribution of Laplacians on pcf self-similar fractals}
+      \field{volume}{158}
+      \field{year}{1993}
+      \field{pages}{93\bibrangedash 125}
     \endentry
     \entry{mattila1999geometry}{book}{}
       \name{labelname}{1}{}{%

@@ -1,15 +1,15 @@
 [0] Config.pm:320> INFO - This is Biber 1.9
 [0] Config.pm:323> INFO - Logfile is 'mt_main.blg'
-[50] biber-MSWIN:274> INFO - === %a %b %e, %Y, %H:%M:%S
-[51] Biber.pm:333> INFO - Reading 'mt_main.bcf'
-[158] Biber.pm:632> INFO - Using all citekeys in bib section 0
-[206] Biber.pm:3051> INFO - Processing section 0
-[252] Biber.pm:3189> INFO - Looking for bibtex format file 'mt_bib.bib' for section 0
-[256] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
-[259] bibtex.pm:864> INFO - Found BibTeX data source 'mt_bib.bib'
-[475] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[475] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[475] Biber.pm:2928> INFO - Sorting list 'anyt' of type 'entry' with scheme 'anyt' and locale 'en-US'
-[475] Biber.pm:2932> INFO - No sort tailoring available for locale 'en-US'
-[518] bbl.pm:517> INFO - Writing 'mt_main.bbl' with encoding 'UTF-8'
-[520] bbl.pm:606> INFO - Output to mt_main.bbl
+[49] biber-MSWIN:274> INFO - === %a %b %e, %Y, %H:%M:%S
+[49] Biber.pm:333> INFO - Reading 'mt_main.bcf'
+[154] Biber.pm:632> INFO - Using all citekeys in bib section 0
+[203] Biber.pm:3051> INFO - Processing section 0
+[248] Biber.pm:3189> INFO - Looking for bibtex format file 'mt_bib.bib' for section 0
+[252] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[255] bibtex.pm:864> INFO - Found BibTeX data source 'mt_bib.bib'
+[498] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[498] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[498] Biber.pm:2928> INFO - Sorting list 'anyt' of type 'entry' with scheme 'anyt' and locale 'en-US'
+[498] Biber.pm:2932> INFO - No sort tailoring available for locale 'en-US'
+[551] bbl.pm:517> INFO - Writing 'mt_main.bbl' with encoding 'UTF-8'
+[554] bbl.pm:606> INFO - Output to mt_main.bbl

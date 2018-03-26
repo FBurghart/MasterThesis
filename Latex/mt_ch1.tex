@@ -69,14 +69,14 @@ While uniqueness and existence of $|\cS|$ are still ensured for maps on a comple
 
 \section{Weyl asymptotics and spectral dimension}
 
-The idea of introducing spectral dimension is inspired by Weyl's law for the eigenvalues of the Dirichlet-Laplace operator which we will discuss here shortly:
+The idea of introducing spectral dimension is inspired by Weyl's law for the eigenvalues of the Dirichlet-Laplace operator which we will discuss here shortly.
 
 \subsection{The classical case}
 
 Given a bounded open domain $E\ssq\IR^n$, consider the Laplace operator $\gD$ on $E$ acting on functions satisfying the Dirichlet boundary condition $u\equiv0$ on $\partial E$. Then, the spectrum of $-\gD$ consists of non-negative eigenvalues with a single limit point at $\infty$. Hence we can order them in a non-increasing way, counting the geometric multiplicities, as
-\[
+\begin{equation}\label{eq:EVs}
   0\leq\gl_1\leq\gl_2\leq...\leq\gl_n\leq...\ \text{ with }\ \gl_n\nearrow\infty. 
-\]
+\end{equation}
 In this setting, it makes sense to define the eigenvalue counting function via 
 \begin{equation}\label{eq:DECF}
   N_{-\gD}(x):=\max\{n\in\IN:\gl_n\leq x\}.
@@ -89,7 +89,29 @@ where the constant $C_n$ is independent of the domain $E$ (see \cite{Weyl1911} a
 \begin{equation}
   \dims(E,\gD):=\lim_{x\to\infty}\frac{\log N_{-\gD}(x)}{\log x}
 \end{equation}
-which yields $n/2$ in the situation examined by Weyl's law. Note that the usual definition of $\dims$ differs by a factor of 2 (cf. [QUOTE!!]) so that $\dims(E,\gD)$ coincides with $\dimh(E)=n$, however coming at the cost of an additional factor in the Einstein relation. Therefore, we take the liberty to deviate from the established convention in this minor aspect.
+which yields $n/2$ in the situation examined by Weyl's law. Note that the usual definition of $\dims$ differs by a factor of 2 (cf. \cite{kigami1993weyl},\cite{hambly_kigami_kumagai_2002}) so that $\dims(E,\gD)$ normally coincides with $\dimh(E)=n$, however coming at the cost of an additional factor in the Einstein relation. Therefore, we take the liberty to deviate from the established convention in this minor aspect.
+
+\subsection{The general case}
+
+How can we generalise the concepts just introduced to sets $E$ which are not bounded open subsets of $\IR^n$? For this, suppose we are given a metric measure space $(E,d,\mu)$, where $(E,d)$ is a separable metric space and $\mu$ is a Radon measure on $E$.
+
+Of course, the notion of an eigenvalue counting function as outlined above works for any operator $A$ whose set of eigenvalues possesses only one limit point at $+\infty$. However, as we will explain in the next section, we also wish to associate a reasonably well-behaved Markov process to $A$. Therefore, we choose to impose the following conditions on $A$:
+\begin{description}
+  \item[Self-adjointness.] $A$ is a densely defined, self-adjoint operator on the Hilbert space $L^2(E,\mu)$.
+  \item[Eigenvalues.] The set of eigenvalues is a subset of $\IR_{\geq0}$ and can be enumerated as in \eqref{eq:EVs}.
+  \item[Dissipativeness.] $-A$ is dissipative. In other words, for all $f\in\cD(A)$ and all $\gl>0$, we have 
+  $\|(\gl+A)f\|\geq\gl\|f\|$.
+\end{description}
+The first of these assumptions guarantees that $A$ is a closed operator, whereas the second ensures that $\gl+A$ is surjective for at least one $\gl>0$. Thus, the Hille-Yosida theorem states that there is a strongly continuous semigroup of contractive linear operators $T_t$ on $H$ such that $-A$ is its infinitesimal generator. That is to say:
+\begin{thm}[Hille-Yosida]
+  There exists a monoid morphism $t\mapsto T_t$ from $\IR_{\geq0}$ to the space of bounded linear operators on $H$, $\IB(H)$, with $\|T_t\|\leq1$ for all $t\geq0$ and $\lim_{t\searrow0}\|T_tf-f\|=0$ for all $f\in H$, such that 
+  $(-A,\cD(A))$ is the operator defined via
+  \[
+    (-A)f=\lim_{t\searrow0}\frac{T_tf-f}{t},
+  \]
+  where $\cD(A)$ is the set of elements in $H$ for which this limit exists, if and only if $-A$ is a densely defined, closed, dissipative operator such that for some $\gl>0$, the map $\gl+A$ is surjective. 
+\end{thm}
+
 
 
 
@@ -106,7 +128,7 @@ For the following definition taken from \cite[p.3ff]{fukushima2011dirichlet}, se
   \begin{enumerate}[i.]
   \item The domain $\cD(\cE)\ssq H$ of $\cE$ is a dense linear subspace.
   \item $\cE$ is a symmetric, non-negative definite bilinear form.
-  \item This form is closed, that is, the inner product space $(\cD(\cE),\cE_\ga)$ equipped with the inner product
+  \item This form is closed, that is, the inner product space $(\cD(\cE),\cE_\ga)$ equipped with the scalar product
   \[
     \cE_\ga(u,v):=\cE(u,v)+\ga\left<u,v\right>\ \text{ for }\ u,v\in\cD(\cE_\ga)=\cD(\cE),\ \ga>0,
   \]
@@ -126,5 +148,5 @@ We start with the following definition (cf. \cite[Def. IV.1.13]{ma2012introducti
 
 \section{Other versions of the Einstein relation}
 
-Telcs, Mandelbrot, etc...
+Some references to further literature, such as Telcs, Mandelbrot, etc... is planned to be included here.
 
