@@ -39,7 +39,7 @@
   %url={https://books.google.de/books?id=L6fhXh13OyMC},
   year={New York, 2002},
   publisher={Springer},
-  edition={2nd edition}
+  edition={2}
 }
 
 
@@ -118,8 +118,33 @@
   %url={https://books.google.de/books?id=jkymRItPFo8C},
   year={Berlin Boston, 2011},
   publisher={De Gruyter},
-  edition={2nd edition}
+  edition={2}
 }
+
+@article{hambly_kigami_kumagai_2002, 
+  title={Multifractal formalisms for the local spectral and walk dimensions}, 
+  volume={132}, 
+  %DOI={10.1017/S0305004101005618}, 
+  number={3}, 
+  journal={Mathematical Proceedings of the Cambridge Philosophical Society}, 
+  publisher={Cambridge University Press}, 
+  author={Hambly, B. M. and Kigami, J. and Kumagai, T.}, 
+  year={2002}, 
+  pages={555--571}
+}
+
+@article{kigami1993weyl,
+  title={Weyl's problem for the spectral distribution of Laplacians on pcf self-similar fractals},
+  author={Kigami, J. and Lapidus, M.L.},
+  journal={Communications in mathematical physics},
+  volume={158},
+  number={1},
+  pages={93--125},
+  year={1993},
+  publisher={Springer}
+}
+
+
 
 
 

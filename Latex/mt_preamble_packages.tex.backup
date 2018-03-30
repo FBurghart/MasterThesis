@@ -1,0 +1,52 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% MASTER THESIS
+%
+% This is the first part of the preamble for my master thesis.
+% In here only belong packages which are not already included in mt_main.tex, 
+% and options tied to them.
+% Have fun writing!
+%
+% Fabian Burghart, 2018/02/17
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[english]{babel}			%language
+
+\usepackage[style=alphabetic,backend=biber]{biblatex}
+
+\usepackage{csquotes}
+\usepackage{graphicx}				%pictures
+\usepackage{tikz}				%drawing
+\usepackage{enumitem}
+\usepackage{paralist}				%options on enumerating
+\usepackage{fancyhdr}				%header/footer
+
+\usepackage{color}				%allows using colors
+
+% Mathematics %
+
+\usepackage{amsmath}				%maths
+\usepackage{amssymb}				%symbols 
+\usepackage{amsthm}				%theorems
+
+\usepackage{mathtools}				%more maths
+\usepackage{mathrsfs}				%fancy letters
+\usepackage{dsfont}				%variations of double-stroked letters
+
+% Esthetic %
+
+\usepackage{booktabs}				%nicer tables
+\usepackage{setspace}				%space between lines
+\usepackage{microtype}				%optimizing text
+
+\pagestyle{fancy}				%page layout
+\setlength{\headheight}{16pt}
+\lhead{}
+\chead{\leftmark}
+\rhead{}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+\usepackage[hidelinks,pdfpagelabels]{hyperref}		%allowing links (hidden, for esthetic reasons) also, last

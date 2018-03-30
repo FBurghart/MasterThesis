@@ -23,6 +23,7 @@
 
 % doublestroke
 
+\newcommand{\IB}{\mathbb{B}}
 \newcommand{\IN}{\mathbb{N}}
 \newcommand{\IR}{\mathbb{R}}
 
@@ -99,9 +100,26 @@
   {}% header specification (empty for default)
 \makeatother
 
+\makeatletter
+\newtheoremstyle{remindented}
+  {3pt}% space before
+  {3pt}% space after
+  {\addtolength{\@totalleftmargin}{1em}
+   \addtolength{\linewidth}{-2em}
+   \parshape 1 1em \linewidth}% body font
+  {}% indent
+  {\itshape}% header font
+  {.}% punctuation
+  {.5em}% after theorem header
+  {}% header specification (empty for default)
+\makeatother
+
 \theoremstyle{thmindented}
 \newtheorem{prop}{Proposition}[chapter]
 \newtheorem{thm}[prop]{Theorem}
 \theoremstyle{defindented}
 \newtheorem{defin}[prop]{Definition}
+\theoremstyle{remindented}
+\newtheorem{rem}[prop]{Remark}
+\newtheorem{cond}[prop]{Assumptions}
 

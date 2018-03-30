@@ -19,6 +19,27 @@
 
 \refsection{0}
   \sortlist{anyt}{anyt}
+    \entry{barlow1998diffusions}{incollection}{}
+      \name{labelname}{1}{}{%
+        {{hash=aace1a7625f0af60868ff5993346ece9}{Barlow}{B\bibinitperiod}{Martin\bibnamedelima T}{M\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=aace1a7625f0af60868ff5993346ece9}{Barlow}{B\bibinitperiod}{Martin\bibnamedelima T}{M\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{aace1a7625f0af60868ff5993346ece9}
+      \strng{fullhash}{aace1a7625f0af60868ff5993346ece9}
+      \field{labelalpha}{Bar98}
+      \field{sortinit}{B}
+      \field{sortinithash}{1a3a21dbed09540af12d49a0b14f4751}
+      \field{labeltitle}{Diffusions on fractals}
+      \field{booktitle}{Lectures on probability theory and statistics. {É}cole d'{É}t{é} de Probabilit{é}s de Saint--Flour XXV}
+      \field{title}{Diffusions on fractals}
+      \field{year}{1998}
+      \field{pages}{1\bibrangedash 121}
+    \endentry
     \entry{bertacchi2006}{article}{}
       \name{labelname}{1}{}{%
         {{hash=b85dbf52d6d9e349f4e1928d4ed88b3f}{Bertacchi}{B\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
@@ -250,6 +271,26 @@
       \field{volume}{124}
       \field{year}{1996}
       \field{pages}{481\bibrangedash 490}
+    \endentry
+    \entry{strichartz2006differential}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=180138372c89dae116141f6e46184674}{Strichartz}{S\bibinitperiod}{R.S.}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=180138372c89dae116141f6e46184674}{Strichartz}{S\bibinitperiod}{R.S.}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{180138372c89dae116141f6e46184674}
+      \strng{fullhash}{180138372c89dae116141f6e46184674}
+      \field{labelalpha}{Str06}
+      \field{sortinit}{S}
+      \field{sortinithash}{4125bb4c3a0eb3eaee3ea6da32eb70c8}
+      \field{labeltitle}{Differential Equations on Fractals: A Tutorial}
+      \field{series}{Princeton Paperbacks}
+      \field{title}{Differential Equations on Fractals: A Tutorial}
+      \field{year}{Princeton, 2006}
     \endentry
     \entry{telcs2006art}{book}{}
       \name{labelname}{1}{}{%

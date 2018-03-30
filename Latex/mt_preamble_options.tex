@@ -26,6 +26,7 @@
 \newcommand{\IB}{\mathbb{B}}
 \newcommand{\IN}{\mathbb{N}}
 \newcommand{\IR}{\mathbb{R}}
+\newcommand{\IZ}{\mathbb{Z}}
 
 % greek
 
@@ -44,6 +45,7 @@
 \newcommand{\cD}{\mathcal{D}}
 \newcommand{\cE}{\mathcal{E}}
 \newcommand{\cH}{\mathcal{H}}
+\newcommand{\cM}{\mathcal{M}}
 \newcommand{\cS}{\mathcal{S}}
 
 % mathscr
@@ -51,6 +53,10 @@
 \newcommand{\scA}{\mathscr{A}}
 \newcommand{\scB}{\mathscr{B}}
 \newcommand{\scF}{\mathscr{F}}
+
+% bold
+
+\newcommand{\bC}{\mathbf{C}}
 
 % dimensions & related
 
@@ -65,7 +71,10 @@
 \newcommand{\ssq}{\subseteq}
 \newcommand{\Di}{\operatorname{d}\!}
 \newcommand{\Prob}{\mathbf{P}}
+\newcommand{\PTE}[1]{\mathbf{E}\left[{#1}\right]}
+\newcommand{\PTEp}[2]{\mathbf{E}_{{#2}}\left[{#1}\right]}
 \newcommand{\Lip}{\operatorname{Lip}}
+\newcommand{\supp}{\operatorname{supp}}
 
 
 
@@ -100,9 +109,27 @@
   {}% header specification (empty for default)
 \makeatother
 
+\makeatletter
+\newtheoremstyle{remindented}
+  {3pt}% space before
+  {3pt}% space after
+  {\addtolength{\@totalleftmargin}{1em}
+   \addtolength{\linewidth}{-2em}
+   \parshape 1 1em \linewidth}% body font
+  {}% indent
+  {\itshape}% header font
+  {.}% punctuation
+  {.5em}% after theorem header
+  {}% header specification (empty for default)
+\makeatother
+
 \theoremstyle{thmindented}
 \newtheorem{prop}{Proposition}[chapter]
 \newtheorem{thm}[prop]{Theorem}
 \theoremstyle{defindented}
 \newtheorem{defin}[prop]{Definition}
+\newtheorem{cond}[prop]{Assumptions}
+\theoremstyle{remindented}
+\newtheorem{rem}[prop]{Remark}
+
 
