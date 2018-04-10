@@ -1,8 +1,46 @@
 \chapter{Examples and Non-examples}
 
-In this chapter, we will explore the Einstein relation by examining some examples and will thusly motivate some of the more general results of the next chapter.
+In this chapter, we will discuss the necessity of some of the restrictive assumptions made previously and explore the Einstein relation by examining some examples and will motivate some of the more general results of the next chapter.
 
 \section{Euclidean Space}
+
+We start by examining the classical setting of paragraph 1.2.1 in greater detail: Let once again $E\ssq\IR^n$ be an open, bounded, non-empty domain, equipped with Euclidean metric and $n$-dimensional Lebesgue-measure $\gl^n$. Trivially, $\dimh(E)=n$. 
+
+\subsection{The Dirichlet--Laplace operator}
+
+TO DO: The Dirichlet boundary conditions translate to a BM killed on the boundary, I should pay some more attention to that (results hold regardless).\\
+
+For the Dirichlet--Laplace operator as introduced earlier, we obtain $\dims(E,-\gD)=\frac{n}{2}$ due to \eqref{eq:DECF}-\eqref{eq:dims}. Simultaneously, it is well-known that $\frac{1}{2}\gD$ is the generator of the $n$-dimensional Brownian motion $B_t$, which can easily be seen as follows:
+
+By \eqref{eq:MPtoOp}, the semigroup $(T_t)_{t\geq0}$ induced by $B_t$ reads
+\[
+  T_tf(x)=\PTEp{f(X_t)}{x}=\frac{1}{(2\pi t)^{n/2}}\int_{\IR^n} \exp\left(-\frac{|x-y|^2}{2t}\right)f(y)\,\Di y,\ f\in L^2(\IR^n,\gl^n)\cap C_c(E),
+\]
+Comparing this expression to the well-known convolution formula
+\[
+  u(x,t)=\frac{1}{(4\pi t)^{n/2}}\int_{\IR^n} \exp\left(-\frac{|x-y|^2}{4t}\right)f(y)\,\Di y,\ x\in\IR^n, t\geq0,
+\]
+for the solution of the heat equation $\gD u=\partial_t u$ with initial value $u(x,0)=f(x)$, we can quickly derive that $\gD T_tf(x)=2\partial_t T_tf(x)$ and thus obtain by definition \ref{def:semigroup} the generator
+\[
+  Af=\frac{1}{2}\gD f,
+\]
+extended to its maximal domain $H_0^1(E,\mu)$. We conclude that the Markov process associated with $\gD$ is $2B_t$.
+
+It remains to determine the walk dimension of the $n$-dimensional Brownian motion. This can be done in several ways, for example by appealing to Brownian scaling or by invoking Dynkin's formula after a standard truncation argument: By applying \cite[Lemma 19.21]{kallenberg2002foundations} to the function $u_x(y)=\frac{1}{2}|y|^2-x$, we get
+\[
+  \PTEp{\tau_{B(x,r)}}{x}
+  =\PTEp{\int_0^{\tau_{B(x,r)}}\gD u_x(2B_s)\,\Di s}{x}
+  =\PTEp{u_x\left(2B_{\tau_{B(x,r)}}\right)-u_x(0)}{x}
+  =\PTEp{\frac{2r^2}{n}}{x}
+  =\frac{2r^2}{n}
+\]
+Therefore, by definition \ref{def:dimw}, we obtain $\dimw(E,2B_t)=2$ which implies together with the results obtained previously that the Einstein relation (with constant 1) holds on $E$. 
+
+
+\subsection{Other partial differential operators}
+
+TO DO: Get spectral estimates for more general second-order partial differential operators; afterwards, the walk dimension should follow again from Dynkin's formula. 
+
 
 \section{Sierpinski Gasket}
 
@@ -18,6 +56,11 @@ see PICTURE! Since $\SG$ satisfies the (OSC), e.g. by taking the open equilatera
 \end{equation}
 and $\cH^s(\SG)\in(0,\infty)$ by a second appeal to Hutchinson's theorem. 
 
+We will use the remainder of this section to establish the validity of the Einstein relation on $\SG$ with respect to the standard Laplace operator on $\SG$, which can be obtained in two different ways:
+
+TO DO: Give an overview of these constructions, \cite{strichartz2006differential} for the approach via graph approximation and \cite{barlow1998diffusions} for the probabilistic approach.
+
+\newpage
 
 \section{Combs and inhomogenous graphs}
 
@@ -25,6 +68,50 @@ In this section, we start by considering the graph $\bC_2$, called the two-dimen
 \[
   \left\{\{(n_1,n_2),(m_1,m_2)\}\in\IZ^2\times\IZ^2:|n_1-m_1|=1,n_2=m_2=0\ \text{ or }\ |n_2-m_2|=1,n_1=m_1\right\}
 \]
+TO DO: This example satisfies the Einstein relation with a constant $c\neq1$ \cite{bertacchi2006}, but it also requires an adapted definition of wak dimension, since the vertex set is not path connected. The usual way to solve this problem is by considering the quantity (cf. \cite{freiberg2012einstein})
+\begin{equation}\label{eq:defdimwrong}
+  \lim_{R\nearrow\infty}\frac{\log \PTEp{\tau_{B(x,R)}}{x}}{\log R}.
+\end{equation}
+On a countable connected graph, this limit will be independent of $x$. 
 
 
 \section{Bounded metric spaces}
+
+Bounded metric spaces form the most important class of spaces for which too naive of an adaption of \eqref{eq:defdimwrong} does not yield useful results. Indeed, consider the metric measure space 
+$E=(\IR,d_{\arctan},\gl^1)$, where the metric is defined as $d_{\arctan}(x,y)=|\arctan(x)-\arctan(y)|$. Since 
+\[
+  \tan:\left(\left(-\frac{\pi}{2},\frac{\pi}{2}\right),|\cdot|\right)\to(\IR,d_{\arctan}) 
+\]
+provides an isometry, we have $\dimh(E)=1$. On this space, we consider the negative of the usual weak Laplace operator, $-\gD_{\gl^1}$, defined by mapping a function $u\in H_0^1(\IR,\gl^1)$ to the unique $g\in L^2(\IR,\gl^1)$ such that
+\[
+  \int_\IR g\gp\,\Di\gl^1=\int_\IR \partial_x u\partial_x \gp\,\Di\gl^1
+\]
+holds for all $\gp\in H_0^1(\IR,\gl^1)$. Notice how this does not differ from the negative weak Laplace operator on $(\IR,|\cdot|,\gl^1)$ since we did not change the measure and both metrics induce the same topology. Thus, we get from Weyl's classical result $\dims(E,-\gD_{\gl^1})=\frac{1}{2}$ and from the arguments developed in section 2.1 that the associated Markov process is $2(B_t)_{t\geq0}$. 
+
+It is now easy to see that \eqref{eq:defdimwrong} does not provide a useful notion of a walk dimension: Since $B_{\arctan}(x,R)=\IR$ for every radius $R\geq\pi$, the expression diverges to $\infty$. Even the more careful approach 
+\[
+  \lim_{R\nearrow\frac{\pi}{2}}\frac{\log \PTEp{\tau_{B(x,R)}}{0}}{\log R}
+\]
+runs into similar problems: Using the formula $\PTE{\tau_{[a,b]}}=-ab$ for the exit time of a standard Brownian motion from the intervall $[a,b]\ni 0$, we get
+\[
+  \log \PTEp{\tau_{B_{\arctan}(0,R)}}{0}=2\log \tan R =\infty.
+\]
+However, the local walk dimension from definition \ref{def:dimw} works out quite elgantly: Setting $y=\arctan x\in\left(-\frac{\pi}{2},\frac{\pi}{2}\right)$, we obtain for some $\xi_1\in (y,y+r),\xi_2\in(y-r,y)$
+\begin{multline*}
+  \frac{\log \PTEp{\tau_{B_{\arctan}(0,R)}}{0}}{\log r}
+  =\frac{\log\left(\tan(y+r)-\tan y\right)}{\log r}+\frac{\log\left(\tan y-\tan (y-r)\right)}{\log r}\\
+  =\frac{\log\frac{r}{\cos^2 \xi_1}}{\log r}+\frac{\log\frac{r}{\cos^2 \xi_2}}{\log r}
+  =2-\frac{\log \cos^2 \xi_1}{\log r}-\frac{\log\cos^2 \xi_2}{\log r}
+\end{multline*}
+by using the mean value theorem. Taking the limit for $r\searrow0$ on both sides implies $\xi_1,\xi_2\to y$ and thus $\dimw(E,2B_t,x)=2$. 
+
+TO DO: At present, this is still a bit surprising to me, because it suggests that the ER is more stable under a deformation of the underlying space than I expected it. I suspect that the reason for this behavior is that $\tan$ is locally Lipschitz-continuous. 
+
+Also TO DO: Prof. Freiberg suggested to look at a metric variant of the Laplace operator on $(\IR,d_{\arctan},\gl^1)$ instead, defined as in \cite[def. 7.43]{shioya2016metric}.
+Moreover, this example is open to generalisations to other weak differential operators, much in the spirit of my plans for 2.1.2
+
+
+
+
+
+

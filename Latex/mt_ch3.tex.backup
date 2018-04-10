@@ -64,17 +64,8 @@ and we can perform the same calculations for $\left<f,(\Phi A)g\right>_{L^2(Y,\n
   Thus, up to killing on polar sets the processes $N_t$ and $M^{(\gp)}$ coincide. In particular, we have the equality $\PTEp{\tau_{B(x,r)}}{x}=\PTEp{\tau_{B(\gp(x),r)}^{(\gp)}}{\gp(x)}$ for all 
   sufficiently small $r>0$.
 \end{proof}
-TO DO: How weak can the assumptions be chosen? 
 
-\newpage
 
-\section{Change of metric for fixed measure}
-
-TO DO: What is the theoretical background for the phenomena observed in section 2.4? Especially, what happens if the map is not locally Lipschitz-continuous?
-
-\section{Change of measure for fixed metric}
-
-TO DO: Complementary discussion to the previous section.
 
 
 

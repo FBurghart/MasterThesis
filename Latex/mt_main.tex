@@ -17,6 +17,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{lmodern}
 
 % Remaining packages %
 \input{mt_preamble_packages.tex}
@@ -26,12 +27,17 @@
 \input{mt_preamble_options.tex}
 
 
-%Bibliography
+% Bibliography
 \addbibresource{mt_bib.bib}
 
 % Title Page
-\title{\textsc{Master Thesis}}
-\author{me}
+
+\title{$\ $\\ \textsc{The Einstein Relation on Fractals and Other Singular Sets}\\$\ $}
+\author{{\Large {Fabian Burghart}}\\[1em]
+  {\large April 2, 2018}\\[10em]}
+\date{{\large Master thesis in mathematics}\\
+  {\large Advisor: Prof. Dr. Uta Renata Freiberg}\\[7em]
+  {\large \textsc{Fakult{\"a}t f{\"u}r Mathematik und Physik der Universit{\"a}t Stuttgart}}} 
 
 %%%%%%%%%%%%%%
 %% DOCUMENT %%
@@ -42,15 +48,19 @@
 \thispagestyle{empty}
 \newpage
 
+\thispagestyle{empty}
+
+\section*{Preface: Beware of construction works!}
+
+This is an early draft of my Master thesis on the so-called Einstein relation. ``Early'' because I started working on the topic after the German winter term finished (which was mid-February at my university) and since spent most of my time reading literature to understand the existing theory. Accordingly, a lot of the ideas I currently have are not yet worked out completely, a lot of the text is still unrefined, pictures for the examples in chapter 2 are non-existent, there are several gaps in the material that still have to be filled out - and even the title might be subject to future changes. However, I added short remarks denoted by ``TO DO'' to signify my overall plans, and I do hope that this current draft - despite admittedly resembling a desolate construction site more than a newly finished building - fulfills the needs as part of this application.
+
+\begin{flushright}
+  Fabian Burghart, 2nd April 2018. 
+\end{flushright}
+
 
 \tableofcontents
 
-\newpage
-\thispagestyle{plain}
-
-\begin{abstract}
-We consider $\mathbb{R}$ as well as $\dims, \dimh\ssq \dimw$.
-\end{abstract}
 
 % Chapter I. An introduction to the Einstein Relation
 \include{mt_ch1}

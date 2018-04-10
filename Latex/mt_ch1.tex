@@ -100,13 +100,13 @@ Of course, the notion of an eigenvalue counting function as outlined above works
 For an operator $A:L^2(E,d)\supseteq\cD(A)\to L^2(E,d)$, we assume the following holds:
 \begin{compactdesc}
   \item[Self-adjointness.] $A$ is a densely defined, self-adjoint operator on the Hilbert space $L^2(E,\mu)$.
-  \item[Eigenvalues.] The set of eigenvalues is a subset of $\IR_{\geq0}$ and can be enumerated as in \eqref{eq:EVs}.
+  \item[Eigenvalues.] The spectrum is contained in $\IR_{\geq0}$ and the set of eigenvalues can be enumerated as in \eqref{eq:EVs}.
   \item[Dissipativeness.] $-A$ is dissipative. In other words, for all $f\in\cD(A)$ and all $\gl>0$, we have 
   $\|(\gl+A)f\|\geq\gl\|f\|$.
 \end{compactdesc}
 \end{cond}
 The first of these assumptions guarantees that $A$ is a closed operator, whereas the second ensures that $\gl+A$ is surjective for at least one $\gl>0$. Thus, the Hille-Yosida theorem states that there is a strongly continuous semigroup of contractive linear operators $T_t$ on $H$ such that $-A$ is its infinitesimal generator. That is to say:
-\begin{defin}
+\begin{defin}\label{def:semigroup}
   A strongly continuous semigroup $(T_t)_{t\geq0}$ on a Hilbert space $H$ is a monoid homomorphism $t\mapsto T_t$ from $(\IR_{\geq0},+)$ to the space of bounded linear operators $(\IB(H),\cdot)$ on $H$ (equipped with composition) satisfying for all $f\in H$ the additional property
   \[
     \lim_{t\searrow0} \|T_tf-f\|=0.
@@ -134,7 +134,7 @@ Having discussed the motivation for the assumptions \ref{cond:A}, we now proceed
   \end{equation}
 \end{defin}
 
-
+TO DO: Provide examples for operators satisfying assumptions 1.4 - e.g. one-sided inverses of injective bounded compact operators. Also, streamline those assumptions, as of now, they are somewhat redundant. Stronger emphasis on Feller semigroups might also be needed, since Dynkin's probabilistic characterisation of the generator \cite[Theorem 19.23]{kallenberg2002foundations} might help in providing some general results concerning the validity of the Einstein relation.
 
 
 \section{Markov processes and walk dimension}
@@ -200,11 +200,13 @@ As hinted above, those processes are not unique: One can modify $X$ to $\tilde X
 
 \subsection{Local walk dimension and Einstein relation}
 
+The walk dimension is meant to quantify how fast a given Markov process on $E$ moves away from its starting point $x$. This is best expressed in terms of the stopping time $\tau_{B(x,r)}$, which is supposed to be the first exit time of the Ball $B(x,r)=\{y\in E:d(x,y)<r\}$. Note that this is indeed an $\scF$-stopping time by right continuity of the process in question and by \cite[Lemma 7.6]{kallenberg2002foundations}.
+
 For the next definition to make sense, we need to impose some additional assumption on the metric space $(E,d)$. We choose to demand for now that $E$ is path connected, but will discuss other scenarios in the next chapter. 
-\begin{defin}
+\begin{defin}\label{def:dimw}(Cf. \cite{hambly_kigami_kumagai_2002})
   We define the quantity
   \[
-    \dimw(E,X,x)=\lim_{r\searrow0}\frac{\log \PTEp{\tau_r}{x}}{\log r}
+    \dimw(E,X,x)=\lim_{r\searrow0}\frac{\log \PTEp{\tau_{B(x,r)}}{x}}{\log r}
   \]
   and call it the (local) walk dimension of $(E,d)$ at $x\in E$ with respect to the Markov process $(X_t)_{t\geq0}$. If $\dimw(E,X,x)$ is $\mu$--a.e. constant on $E$, we shorten our notation to $\dimw(E,X)$.
 \end{defin}
@@ -222,5 +224,5 @@ We are now finally able to state the Einstein relation:
 
 \section{Other versions of the Einstein relation}
 
-TO DO: A discussion of further literature, such as Telcs, Mandelbrot, etc... are planned to be included here.
+TO DO: A discussion of further literature, such as Telcs, Mandelbrot, etc... is planned to be included here. Also, hints to the physical background. 
 
