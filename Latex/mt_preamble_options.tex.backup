@@ -24,8 +24,10 @@
 % doublestroke
 
 \newcommand{\IB}{\mathbb{B}}
+\newcommand{\IL}{\mathbb{L}}
 \newcommand{\IN}{\mathbb{N}}
 \newcommand{\IR}{\mathbb{R}}
+\newcommand{\IZ}{\mathbb{Z}}
 
 % greek
 
@@ -33,6 +35,7 @@
 \newcommand{\gd}{\delta}
 \newcommand{\gD}{\Delta}
 \newcommand{\gl}{\lambda}
+\newcommand{\gp}{\varphi}
 \newcommand{\gs}{\sigma}
 \newcommand{\go}{\omega}
 \newcommand{\gO}{\Omega}
@@ -44,6 +47,7 @@
 \newcommand{\cD}{\mathcal{D}}
 \newcommand{\cE}{\mathcal{E}}
 \newcommand{\cH}{\mathcal{H}}
+\newcommand{\cM}{\mathcal{M}}
 \newcommand{\cS}{\mathcal{S}}
 
 % mathscr
@@ -51,6 +55,11 @@
 \newcommand{\scA}{\mathscr{A}}
 \newcommand{\scB}{\mathscr{B}}
 \newcommand{\scF}{\mathscr{F}}
+\newcommand{\scG}{\mathscr{G}}
+
+% bold
+
+\newcommand{\bC}{\mathbf{C}}
 
 % dimensions & related
 
@@ -65,7 +74,10 @@
 \newcommand{\ssq}{\subseteq}
 \newcommand{\Di}{\operatorname{d}\!}
 \newcommand{\Prob}{\mathbf{P}}
+\newcommand{\PTE}[1]{\mathbf{E}\left[{#1}\right]}
+\newcommand{\PTEp}[2]{\mathbf{E}_{{#2}}\left[{#1}\right]}
 \newcommand{\Lip}{\operatorname{Lip}}
+\newcommand{\supp}{\operatorname{supp}}
 
 
 
@@ -119,7 +131,8 @@
 \newtheorem{thm}[prop]{Theorem}
 \theoremstyle{defindented}
 \newtheorem{defin}[prop]{Definition}
+\newtheorem{cond}[prop]{Assumptions}
 \theoremstyle{remindented}
 \newtheorem{rem}[prop]{Remark}
-\newtheorem{cond}[prop]{Assumptions}
+
 

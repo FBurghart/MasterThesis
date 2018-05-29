@@ -1,17 +1,17 @@
-[0] Config.pm:340> INFO - This is Biber 2.4
-[0] Config.pm:343> INFO - Logfile is 'mt_main.blg'
-[48] biber:287> INFO - === So Apr  1, 2018, 17:02:55
-[157] Biber.pm:348> INFO - Reading 'mt_main.bcf'
-[329] Biber.pm:739> INFO - Using all citekeys in bib section 0
-[336] Biber.pm:3151> INFO - Processing section 0
-[370] Biber.pm:3308> INFO - Looking for bibtex format file 'mt_bib.bib' for section 0
-[401] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
-[427] bibtex.pm:974> INFO - Found BibTeX data source 'mt_bib.bib'
-[574] Utils.pm:147> WARN - The field 'pages' in entry 'freiberg2012einstein' cannot be null, deleting it
-[758] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[758] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[759] Biber.pm:3028> INFO - Sorting list 'anyt/global' of type 'entry' with scheme 'anyt' and locale 'en-US'
-[759] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
-[782] bbl.pm:519> INFO - Writing 'mt_main.bbl' with encoding 'UTF-8'
-[832] bbl.pm:615> INFO - Output to mt_main.bbl
-[832] Biber.pm:109> INFO - WARNINGS: 1
+[0] Config.pm:320> INFO - This is Biber 1.9
+[0] Config.pm:323> INFO - Logfile is 'mt_main.blg'
+[146] biber-MSWIN:274> INFO - === %a %b %e, %Y, %H:%M:%S
+[146] Biber.pm:333> INFO - Reading 'mt_main.bcf'
+[254] Biber.pm:632> INFO - Using all citekeys in bib section 0
+[451] Biber.pm:3051> INFO - Processing section 0
+[684] Biber.pm:3189> INFO - Looking for bibtex format file 'mt_bib.bib' for section 0
+[689] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[692] bibtex.pm:864> INFO - Found BibTeX data source 'mt_bib.bib'
+[969] Utils.pm:144> WARN - The field 'pages' in entry 'freiberg2012einstein' cannot be null, deleting it
+[1286] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1286] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1287] Biber.pm:2928> INFO - Sorting list 'anyt' of type 'entry' with scheme 'anyt' and locale 'en-US'
+[1287] Biber.pm:2932> INFO - No sort tailoring available for locale 'en-US'
+[1358] bbl.pm:517> INFO - Writing 'mt_main.bbl' with encoding 'UTF-8'
+[1361] bbl.pm:606> INFO - Output to mt_main.bbl
+[1361] Biber.pm:106> INFO - WARNINGS: 1

@@ -1,54 +1,103 @@
-\chapter{The ER under Change of Measure and Metric}
+\chapter{The Einstein Relation on Metric Measure Spaces}
 
-TO DO: Improve chapter title and add introduction text.
+This chapter is devoted to the investigation of the Einstein relation in the setting of an abstract mm-space. First, we focus on the behaviour under morphisms between mm-spaces to derive invariance properties of the Einstein relation.  We will then use some of these properties to construct a sequence of mm-spaces each satisfying the Einstein relation with constants that diverge, thus showing that these constants can become arbitrarily large.
 
-\section{The Einstein Relation under mm-isomorphisms}
+\section{The Einstein Relation under Lipschitz-isomorphisms}
 
-TO DO: This entire section will be rewritten, as the isometry condition appears far too strong.
+\subsection{Lipschitz and mm-isomorphisms}
 
-Recall that by definition, an isomorphism between metric measure spaces $X=(X,d_X,\mu)$ and $Y=(Y,d_Y,\nu)$ (or mm-isomorphism, for short) is an isometry $\gp:\supp\mu\to\supp\nu$ such that the push-forward measure $\gp_*\mu$ coincides with $\nu$, see definition 2.8. in \cite{shioya2016metric}. We point out that such $\gp$ is necessarily a bijection between $\supp\mu$ and $\supp\nu$: Since every isometry is necessarily injective, so too is $\gp$, and we only have to verify surjectivity. To this end, suppose there exists $y\in\supp\nu\setminus \gp(\supp\mu)=:Z$. Since $\supp\mu$ is closed, so is its image under the isometry $\gp$, and hence $Z\ssq \supp\nu$ is open. As every open subset of $\supp\nu$ is required to have positive measure, we obtain the contradiction
+We will use this section to introduce two different categories $\mathsf{MM}_L$ and $\mathsf{MM}_{\leq1}$ whose objects are mm-spaces, but with different morphisms: 
+\begin{compactitem}
+  \item In $\mathsf{MM}_L$, the set $\mathsf{MM}_L(X,Y)$ of morphisms from an object $X=(X,d_X,\mu_X)$ to another object $Y=(Y,d_Y,\mu_Y)$ is the set of all Lipschitz-continuous functions 
+  \[ 
+    \gp:\supp\mu_X\to\supp\mu_Y
+  \]
+  satisfying $\gp_*\mu_X=\mu_Y$.
+  \item In $\mathsf{MM}_{\leq1}$, the set $\mathsf{MM}_{\leq1}(X,Y)$ of morphisms from an object $X=(X,d_X,\mu_X)$ to another object $Y=(Y,d_Y,\mu_Y)$ is the subset of $\mathsf{MM}_L(X,Y)$ consisting of all contraction maps (i.e. Lipschitz-continuous functions $f$ with $\Lip_f\leq1$, cf. \eqref{eq:Lip}).
+\end{compactitem}
+In both of those categories, composition of morphisms is to be understood as the usual composition of maps. By definition, $\mathsf{MM}_{\leq1}$ is a subcategory of $\mathsf{MM}_L$. Considering the usual notion of isomorphism, both categories give rise to a meaningful concept of isomorphy for mm-spaces: 
+\begin{defin}
+  A Lipschitz-isomorphism between mm-spaces $(X,d_X,\mu_X)$ and $(Y,d_Y,\mu_Y)$ is a map 
+  $\gp:\supp\mu_X\to\supp\mu_Y$ with $\gp_*\mu_X=\mu_Y$ satisfying the bi-Lipschitz condition
+  \[
+    \frac{1}{C}d_X(x,y)\leq d_Y(\gp(x),\gp(y))\leq Cd_X(x,y)
+  \]
+  for all $x,y\in\supp\mu_X$ and a constant $C\in[1,\infty)$ not depending on $x,y$.
+  
+  Similarly, an mm-isomorphism is defined to be a Lipschitz-isomorphism with constant $C=1$. (This coincides with definition 2.8 in \cite{shioya2016metric})
+\end{defin}
+As it turns out, Lipschitz-isomorphisms are precisely the isomorphisms in $\mathsf{MM}_L$, whereas mm-isomorphisms are the ones in $\mathsf{MM}_{\leq1}$.
+
+Indeed, consider a Lipschitz-isomorphism $\gp:X\supseteq\supp\mu_X\to\supp\mu_Y\ssq Y$. By definition, this is an injective morphism from $\mathsf{MM}_L(X,Y)$. We need to show that $\gp$ is surjective to ensure the existence of a two-sided inverse in $\mathsf{MM}_L(Y,X)$. To this end, suppose there exists $y\in\supp\mu_Y\setminus \gp(\supp\mu_X)=:Z$. Since $\supp\mu_X$ is closed, so is its image under the homeomorphism $\gp$, and hence $Z\ssq \supp\mu_Y$ is open. As every open subset of $\supp\mu_Y$ is required to have positive measure, we obtain the contradiction
 \[
-  0<\nu(Z)=\gp_*\mu(Z)=\mu\left((\gp^{-1}(\supp\nu\setminus \gp(\supp\mu))\right)=0.
+  0<\mu_Y(Z)=\gp_*\mu_X(Z)=\mu_X\left(\gp^{-1}\left(\supp\mu_Y\setminus \gp(\supp\mu_X)\right)\right)=0.
 \]
-Hence, $f$ is indeed a bijection. In what follows, we will always assume $\supp\mu=X$ and $\supp\nu=Y$. 
+Hence, $\gp$ is indeed a bijection. Conversely, if $\gp$ is an isomorphism from $\mathsf{MM}_L(X,Y)$ then we get the lower Lipschitz-bound from the Lipschitz-continuity of $\gp^{-1}\in\mathsf{MM}_L(Y,X)$, thus showing that $\gp$ is also a Lipschitz-isomorphism. Analogously, the corresponding statement for mm-isomorphisms can be derived.
 
-Note first that any mm-isomorphism $\gp:(X,d_X,\mu)\to(Y,d_Y,\nu)$ induces by precomposition an operator
+We will write $(X,d_X,\mu_X)\simeq (Y,d_Y,\mu_Y)$ if $X$ and $Y$ are Lipschitz-isomorphic, and 
+$(X,d_X,\mu_X)\cong (Y,d_Y,\mu_Y)$ if they are mm-isomorphic. Trivially, $X\cong Y$ implies $X\simeq Y$. 
+
+In what follows, we will always assume $\supp\mu_X=X$.
+\begin{rem}
+  Of course, we always have $(X,d_X,\mu_X)\cong(\supp\mu_X,d_X,\mu_X)$ by virtue of 
+  $\id:X\supseteq\supp\mu_X \to\supp\mu_X$. The restriction $\supp\mu_X=X$ becomes necessary for the Einstein relation since $\dimh(\supp\mu_X)$ might be strictly smaller than $\dimh(X)$, the term appearing in the Einstein relation \eqref{eq:ER}. We will later see (Proposition \ref{prop:mmiso}) that the Einstein relation is invariant under Lipschitz-isomorphisms which provides some motivation to circumvent this restriction by considering the relation
+  \[
+    \dimh(\supp\mu_X)=c\dims(\supp\mu_X,A)\dimw(\supp\mu_X,M)
+  \]
+  instead of \eqref{eq:ER}.
+\end{rem}
+
+\subsection{Transport of structure}
+
+Given two mm-spaces $(X,d_X,\mu_X)$ and $(Y,d_Y,\mu_Y)$ with a map $\gp:X\to Y$, where a suitable operator 
+$A:L^2(X,\mu_X)\supseteq\cD(A)\to L^2(X,\mu_X)$ satisfies the Einstein relation with constant $c$ on $X$. How can we transport $A$ alongside $\gp$ to become an operator on $L^2(Y,\mu_Y)$, and which restrictions do we need to impose no $\gp$ to ensure that this transport of structure is compatible with the theory from chapter 1?
+
+Note first that any bimeasurable bijection $\gp:(X,d_X,\mu_X)\to(Y,d_Y,\mu_Y)$ induces by precomposition an operator
 \begin{align*}
-  \gp_{L^2}:L^2(Y,\nu)&\to L^2(X,\mu)\\
+  \gp_*:L^2(Y,\nu)&\to L^2(X,\mu)\\
   f(y)&\mapsto(f\circ\gp)(x)
 \end{align*}
-which is an isometric isomorphism because $\gp^{-1}:(Y,d_Y,\nu)\to(X,d_X,\mu)$ induces its inverse and because of
+which is an isometric isomorphism because $\gp^{-1}:Y\to X$ induces its inverse and because of
 \begin{equation}\label{eq:isometry}
-  \left\|\gp_{L^2}f\right\|_{L^2(X,\mu)}^2
-  =\int_X |f(\gp(x))|^2\,\Di\mu
-  =\int_Y |f|^2\,\Di\gp_*\mu
-  =\int_Y |f|^2\,\Di\nu
-  =\|f\|_{L^2(Y,\nu)}^2,
+  \left\|\gp_*f\right\|_{L^2(X,\mu_X)}^2
+  =\int_X |f(\gp(x))|^2\,\Di\mu_X
+  =\int_Y |f|^2\,\Di\gp_*\mu_X
+  =\int_Y |f|^2\,\Di\mu_Y
+  =\|f\|_{L^2(Y,\mu_Y)}^2,
 \end{equation}
-by the change of variables formula. Denote by $\IL(H)$ the set of all linear operators on the Hilbert space $H$ (not necessarily bounded or everywhere definied). Given an operator $A\in\IL(L^2(X,\mu))$, we can now contruct an operator $\Phi A\in\IL(L^2(Y,\nu))$ by conjugating with $\gp_{L^2}$. More explicitly, we define the map
-\[
-  \Phi:\IL(L^2(X,\mu))\to\IL(L^2(Y,\mu))
-\]
-where $(\Phi A)f:=(\gp_{L^2}^{-1}\circ A\circ\gp_{L^2})f$ and $\cD(\Phi A)=\gp_{L^2}^{-1}(\cD(A))$. It follows immediately that $\cD(\Phi A)$ is dense iff $\cD(A)$ is, and $\Phi A$ is self-adjoint iff $A$ is. Indeed, consider arbitrary $f,g\in\cD(\Phi A)$ with $f=\gp_{L^2}^{-1}(\bar f)$ and $g=\gp_{L^2}^{-1}(\bar g)$, where $\bar f, \bar g\in \cD(A)$. Then, applying \eqref{eq:isometry}, we have
-\[
-  \left<(\Phi A)f,g\right>_{L^2(Y,\nu)}
-  =\left<\gp_{L^2}^{-1}A\gp_{L^2}\gp_{L^2}^{-1}\bar f,\gp_{L^2}^{-1}\bar g\right>_{L^2(Y,\nu)}
-  =\left<A\bar f,\bar g\right>_{L^2(X,\mu)}
-\]
-and we can perform the same calculations for $\left<f,(\Phi A)g\right>_{L^2(Y,\nu)}$, thus establishing the claimed equivalence. It is equally easy to check that the resolvent sets and the eigenvalues of $A$ and $\Phi A$ coincide, so we observe that $A$ satisfies assumptions \ref{cond:A} iff $\Phi A$ does. This motivates the following proposition:
+by the change of variables formula. 
 
-\begin{prop}
-  Let $(X,d_X,\mu)$ and $(Y,d_Y,\nu)$ be complete separable metric measure spaces with $\supp\mu=X$ and $\supp\nu=Y$ that are mm-isomorphic by virtue of the map $\phi:X\to Y$. Suppose the Einstein relation with constant $c$ holds on $X$ with respect to an operator $(A,\cD(A))$ satisfying assumptions \ref{cond:A}. Then, the Einstein relation also holds on $Y$ with the same constant $c$ and with respect to $\Phi A$.
+Denote by $\IL(H)$ the set of all partially defined linear maps (not necessarily bounded) on a Hilbert space $H$. Given an operator $A\in\IL(L^2(X,\mu_X))$, we can now contruct an operator $\gp_{\IL} A\in\IL(L^2(Y,\mu_Y))$ by conjugating with $\gp_*$. More explicitly, we define the map
+\[
+  \gp_{\IL}:\IL(L^2(X,\mu))\to\IL(L^2(Y,\mu))
+\]
+where $(\gp_{\IL} A)f:=(\gp_*^{-1}\circ A\circ\gp_*)f$ and $\cD(\gp_{\IL} A)=\gp_*^{-1}(\cD(A))$. It follows immediately that $\cD(\gp_{\IL} A)$ is dense iff $\cD(A)$ is, and $\gp_{\IL} A$ is self-adjoint iff $A$ is. Indeed, consider arbitrary $f,g\in\cD(\gp_{\IL} A)$ with $f=\gp_*^{-1}(\bar f)$ and $g=\gp_*^{-1}(\bar g)$, where $\bar f, \bar g\in \cD(A)$. Then, applying \eqref{eq:isometry}, we have
+\[
+  \left<(\gp_{\IL} A)f,g\right>_{L^2(Y,\mu_Y)}
+  =\left<\gp_*^{-1}A\gp_*\gp_*^{-1}\bar f,\gp_*^{-1}\bar g\right>_{L^2(Y,\mu_Y)}
+  =\left<A\bar f,\bar g\right>_{L^2(X,\mu_X)}
+\]
+and we can perform the same calculations for $\left<f,(\gp_{\IL} A)g\right>_{L^2(Y,\mu_Y)}$, thus establishing the claimed equivalence. It is equally easy to check that the resolvent sets and the eigenvalues of $A$ and $\gp_{\IL} A$ coincide.
+
+Note however that a bi-measurable bijection $\gp$ does not respect enough structure to ensure that 
+$\gp_\IL \sqrt{A}$ generates a regular Dirichlet form if and only if $\sqrt{A}$ does -- recall that this means the density of $\cD(\sqrt{A})\cap C_c(Y)$ in both $\cD(\sqrt{A})$ and $C_c(Y)$. To this end, suppose now that $\gp:X\to Y$ is a homeomorphism between $X$ and $Y$ (since both spaces are equipped with their Borel $\gs$-algebras, such $\gp$ is automatically bi-measurable and bijective). Similar to the case of $L^2$-spaces, this induces an isometric isomorphism $\gp_*:C_0(Y)\to C_0(X), \gp_*(f)=f\circ\gp$ between algebras of continuous functions vanishing at infinity, equipped with sup-norm $\|\cdot\|_{C_0}$. This isomorphism restricts to the subalgebras of compactly supported continuous functions $C_c(X)$, resp. $C_c(Y)$. 
+
+
+
+so we observe that $A$ satisfies assumptions \ref{cond:A} iff $\gp_{\IL} A$ does. This motivates the following proposition:
+
+\begin{prop}\label{prop:mmiso}
+  Let $(X,d_X,\mu)$ and $(Y,d_Y,\nu)$ be complete separable metric measure spaces with $\supp\mu=X$ and $\supp\nu=Y$ that are mm--isomorphic by virtue of the map $\phi:X\to Y$. Suppose the Einstein relation with constant $c$ holds on $X$ with respect to an operator $(A,\cD(A))$ satisfying assumptions \ref{cond:A}. Then, the Einstein relation also holds on $Y$ with the same constant $c$ and with respect to $\gp_{\IL} A$.
 \end{prop}
 \begin{proof}
-  Trivially, $\dimh(X)=\dimh(Y)$, and as observed above, $\dims(X,A)=\dims(Y,\Phi A)$. So, it remains to show $\dimw(X,M)=\dimw(X,M^{(\gp)})$ where $M$ is a Hunt process associated to $A$ and $M^{(\gp)}$ is one associated to $\Phi A$. 
+  Trivially, $\dimh(X)=\dimh(Y)$, and as observed above, $\dims(X,A)=\dims(Y,\gp_{\IL} A)$. So, it remains to show $\dimw(X,M)=\dimw(X,M^{(\gp)})$ where $M$ is a Hunt process associated to $A$ and $M^{(\gp)}$ is one associated to $\gp_{\IL} A$. 
   
   To this end, we remark first that if $(T_t)_{t\geq0}$ is a strongly continuous contraction semigroup on $L^2(X,\mu)$ with generator $(A,\cD(A))$ then 
-  $(\Phi T_t)_{t\geq0}$ is a semigroup with the same properties on $L^2(Y,\nu)$ and with generator $(\Phi A,\cD(\Phi A))$. Indeed, the semigroup property is trivial to check. For strong continuity, we calculate
+  $(\gp_{\IL} T_t)_{t\geq0}$ is a semigroup with the same properties on $L^2(Y,\nu)$ and with generator $(\gp_{\IL} A,\cD(\gp_{\IL} A))$. Indeed, the semigroup property is trivial to check. For strong continuity, we calculate
   \[
-    \left\|\Phi T_t f-\Phi T_0 f\right\|
-    =\left\|\gp_{L^2}^{-1}(T_t\gp_{L^2}f-\gp_{L^2}f)\right\|
-    =\left\|T_t(\gp_{L^2}f)-(\gp_{L^2}f)\right\| \to 0
+    \left\|\gp_{\IL} T_t f-\gp_{\IL} T_0 f\right\|
+    =\left\|\gp_*^{-1}(T_t\gp_*f-\gp_*f)\right\|
+    =\left\|T_t(\gp_*f)-(\gp_*f)\right\| \to 0
   \]
   for $t\searrow 0$ for arbitrary $f\in L^2(X,\mu)$, and verifying the generator works analogously. 
   
@@ -57,24 +106,84 @@ and we can perform the same calculations for $\left<f,(\Phi A)g\right>_{L^2(Y,\n
     T_t^{(N)}f(y)
     =\PTEp{f(N_t)}{y}
     =\PTEp{(f\circ\gp)(M_t)}{\gp^{-1}(y)}
-    =T_t[\gp_{L^2}f](\gp^{-1}(y))
-    =\gp_{L^2}^{-1}T_t\gp_{L^2} f
-    =\Phi T_t.
+    =T_t[\gp_*f](\gp^{-1}(y))
+    =\gp_*^{-1}T_t\gp_* f
+    =\gp_{\IL} T_t.
   \]
   Thus, up to killing on polar sets the processes $N_t$ and $M^{(\gp)}$ coincide. In particular, we have the equality $\PTEp{\tau_{B(x,r)}}{x}=\PTEp{\tau_{B(\gp(x),r)}^{(\gp)}}{\gp(x)}$ for all 
   sufficiently small $r>0$.
 \end{proof}
 TO DO: How weak can the assumptions be chosen? 
 
+
+
 \newpage
 
-\section{Change of metric for fixed measure}
+\section{H\"older regularity and graphs of functions}
 
-TO DO: What is the theoretical background for the phenomena observed in section 2.4? Especially, what happens if the map is not locally Lipschitz-continuous?
-
-\section{Change of measure for fixed metric}
-
-TO DO: Complementary discussion to the previous section.
-
-
+To see that some assumptions are indeed necessary, we consider the following example: For a suitable probability space $(\gO,\scA,\Prob)$, denote by $\scG=\scG(\go):=\left\{(t,B_t(\go)):t\in[0,1] \right\}$ for fixed $\go\in\gO$ the graph of a trajectory of a standard Brownian motion over the intervall $[0,1]$. This comes with the natural map $\gp=\gp_\go:[0,1]\to\scG$ sending $t$ to $(t,B_t)$. We equip $\scG$ with the metric $d_\infty$ induced by the maximum norm
+$|(x,y)|_\infty=\max\{|x|,|y|\}$ of the surrounding space $\IR^2$ and observe that by this choice, $\gp$ is continuous but not Lipschitz-continuous. Finally, $\scG$ becomes a metric measure space by endowing it with the push-forward measure $\gp_*\gl^1$. We can now observe the following:
+\begin{itemize}
+  \item The Hausdorff dimension of $(\scG,d_\infty)$ coincides with the Hausdorff dimension with respect to Euclidean  metric since all norms on finitely dimensional vector spaces are equivalent. Thus, $\dimh(\scG)=\frac{3}{2}$ $\Prob$-almost surely, see \cite[Theorem 16.7]{falconer2007fractal}. 
+  \item The same arguments as used in the proof of proposition \ref{prop:mmiso} yield that 
+  \[
+    \frac{1}{2}=\dims\left([0,1],-\frac{1}{2}\gD_{\gl^1}\right)
+    =\dims\left(\scG,\Phi \left(-\frac{1}{2}\gD_{\gl^1}\right)\right),
+  \]
+  where we once again applied Weyl's classical results. 
+  \item It remains to evaluate the walk dimension for $\gp(\bar B_t)$ on $\scG$, where $\bar B$ denotes a Brownian motion independent from $B$. As will be seen in the subsequent lemma, we have $\dimw(\scG(\go),\gp(\bar B))=4$ $\Prob$-almost surely.
+\end{itemize}
+Therefore, the Einstein relation -- despite holding with constant 1 on 
+$\left([0,1],-\frac{1}{2}\gD_{\gl^1},2\bar B\right)$ -- changes its constant to $4/3$ under application of $\gp$. 
+\begin{lem}
+  With the notation just introduced, we have 
+  \begin{equation}\label{eq:BMdimw}
+    \dimw\big(\scG(\go),\gp_\go(\bar B)\big)=4
+  \end{equation}
+  $\Prob$-almost surely.
+\end{lem}
+\begin{proof}
+  For brevity, set $x=x(\go)=(T,B_T(\go))\in\IR^2$ and chose $r>0$ small enough for $B_\infty(x,r)\ssq [0,1]\times\IR$, where $B_\infty(x,r)$ stands for the open ball of radius $r$ around $x$ with respect to $d_\infty$.
+  We begin by introducing the random times $\gT^+_r\big(B_\cdot(\go),T\big),\gT^-_r\big(B_\cdot(\go),T\big)$ to denote the time where the Brownian motion $B$ first resp. last exits $B_\infty(x,r)$ -- in other words,
+  \begin{align}\label{eq:Theta}
+    \gT^+_r\big(B_\cdot(\go),T\big)&:=\inf\left\{1\geq s>T:B_s\notin B_\infty(x,r)\right\}\notag\\
+    \gT^-_r\big(B_\cdot(\go),T\big)&:=\sup\left\{0\leq s<T:B_s\notin B_\infty(x,r)\right\}.
+  \end{align}
+  Note first that by the Markov property of Brownian motion as well as by its time symmetry, these random variables are independent and the shifted random variables $\gT^+_r\big(B_\cdot(\go),T\big)-T,T-\gT^-_r\big(B_\cdot(\go),T\big)$ share the same distribution.
+  
+  By the standard result for the expectation of two-sided exit times for Brownian motion, we now obtain 
+  \[
+    \PTEp{\tau_{B_\infty(x,r)}^{(\gp(\bar B))}}{x}=-\big(T^+_r(\go)-T\big)\big(T^-_r(\go)-T\big)
+  \]
+  and consequentially
+  \[
+    \frac{\log  \PTEp{\tau_{B_\infty(x,r)}^{(\gp(\bar B))}}{x}}{\log r}
+    =\frac{\log \big(\gT^+_r\big(B_\cdot(\go),T\big)-T\big)}{\log r}
+     +\frac{\log \big(T-\gT^-_r\big(B_\cdot(\go),T\big))\big)}{\log r}.
+  \]
+  Therefore, it will suffice to show that $\Prob$-almost surely, 
+  \begin{equation}\label{eq:limtwo}
+    \lim_{r\searrow 0}\frac{\log \big(\gT^+_r\big(B_\cdot(\go),T\big)-T\big)}{\log r}
+    =\lim_{r\searrow 0}\frac{\log \big(T-\gT^-_r\big(B_\cdot(\go),T\big)\big)}{\log r}=2,
+  \end{equation}
+  where it is enough to prove that one of the limits exist and equals 2. To this end, we consider more generally for a continuous function $f:[0,1]\to \IR$ the functionals
+  \begin{align*}
+    w:f(T)\mapsto &\liminf_{r\searrow0}\frac{\log\big(\gT^+_r(f,T)-T\big)}{\log r}\\
+    W:f(T)\mapsto &\limsup_{r\searrow0}\frac{\log\big(\gT^+_r(f,T)-T\big)}{\log r}
+  \end{align*}
+  where $\gT^\pm_r(f,T)$ is defined analogously to \eqref{eq:Theta}. Suppose now that $f$ is $\ga$-H\"{o}lder 
+  continuous ($0<\ga\leq 1$) in a given point $T\in[0,1]$, that is, there exists a constant $C>0$ and a 
+  $\gep$-neighbourhood of $T$ such that for all $s$ inside this neighbourhood,
+  \[
+    |f(T)-f(s)|\leq C|T-s|^\ga
+  \]
+  is satisfied. This yields $\gT^+_r(f,T)\geq (r/C)^{1/\ga}$ for $r<\gep$ and therefore $(Wf)(T)\leq \frac{1}{\ga}$. Conversely, suppose that $f$ is not $\gb$-H\"{o}lder continuous ($\ga<\gb\leq 1$) in $T$. In particular, there exists a sequence $s_n=T+r_n\to T$ fulfilling the estimate 
+  \[
+    |f(T)-f(s_n)|>|T-s_n|^\gb=r_n^\gb,
+  \]
+  from which we deduce $\gT^+_{r_n}(f,T)\leq r_n^{1/\gb}$ and thus $(wf)(T)\geq\frac{1}{\gb}$. In particular, 
+  $(Wf)(T)=(wf)(T)=\frac{1}{c}$ if $f$ is $\ga$-H\"{o}lder continuous in $T$ for all $\ga<c$ but not $\gb$-H\"{o}lder continuous for any $\gb>c$. 
+  
+  Having established this claim, the limit in equation \eqref{eq:limtwo} is a direct consequence of Paley-Zygmunds regularity theorem for paths of Brownian motion. Moreover, this also shows that the limit does not depend on $T\in(0,1)$. 
+\end{proof}
 
