@@ -142,7 +142,7 @@ TO DO: Provide examples for operators satisfying assumptions 1.4 - e.g. one-side
 \subsection{From Dirichlet forms to Markov processes}
 
 The theory presented here is mostly taken from \cite{fukushima2011dirichlet} and \cite[ch. 4]{ma2012introduction}. Set $H=L^2(E,\mu)$ where $\mu$ is a $\gs$-finite Borel-measure on $E$. 
-\begin{defin}
+\begin{defin}\label{defin:DF}
   A map $\cE:\cD(\cE)\times\cD(\cE)\to\IR$ is a Dirichlet form if it satisfies the following conditions:
   \begin{compactenum}[i.]
   \item The domain $\cD(\cE)\ssq H$ of $\cE$ is a dense linear subspace.
@@ -190,7 +190,7 @@ for any initial distribution $\ga$. We can now easily translate Markov processes
   (T_tf)(x):=\PTEp{f(X_t)}{x},\ t\geq0.
 \end{equation}
 The other direction is more involved, and the process attached to a Dirichlet form is generally non-unique. We have, however, (cf. \cite[theorems 7.2.1 and 7.2.2]{fukushima2011dirichlet})
-\begin{thm}
+\begin{thm}\label{thm:fukushima}
   Let $\cE$ be a regular Dirichlet form on $L^2(X,\mu)$. Then, there exists a Hunt process $X$ on $(E,d)$ such that the operators $T_t, t\geq0$, from \eqref{eq:MPtoOp} are symmetric and $\cE$ is the Dirichlet form belonging to this semigroup.
   
   Moreover, if $\cE$ is local, $X$ is a diffusion process.

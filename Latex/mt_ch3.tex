@@ -1,6 +1,6 @@
 \chapter{The Einstein Relation on Metric Measure Spaces}
 
-This chapter is devoted to the investigation of the Einstein relation in the setting of an abstract mm-space. First, we focus on the behaviour under morphisms between mm-spaces to derive invariance properties of the Einstein relation.  We will then use some of these properties to construct a sequence of mm-spaces each satisfying the Einstein relation with constants that diverge, thus showing that these constants can become arbitrarily large.
+This chapter is devoted to the investigation of the Einstein relation in the setting of an abstract mm-space. First, we focus on the behaviour under morphisms between mm-spaces to derive invariance properties of the Einstein relation. 
 
 \section{The Einstein Relation under Lipschitz-isomorphisms}
 
@@ -50,7 +50,7 @@ In what follows, we will always assume $\supp\mu_X=X$.
 \subsection{Transport of structure}
 
 Given two mm-spaces $(X,d_X,\mu_X)$ and $(Y,d_Y,\mu_Y)$ with a map $\gp:X\to Y$, where a suitable operator 
-$A:L^2(X,\mu_X)\supseteq\cD(A)\to L^2(X,\mu_X)$ satisfies the Einstein relation with constant $c$ on $X$. How can we transport $A$ alongside $\gp$ to become an operator on $L^2(Y,\mu_Y)$, and which restrictions do we need to impose no $\gp$ to ensure that this transport of structure is compatible with the theory from chapter 1?
+$A:L^2(X,\mu_X)\supseteq\cD(A)\to L^2(X,\mu_X)$ satisfies the Einstein relation with constant $c$ on $X$. How can we transport $A$ alongside $\gp$ to become an operator on $L^2(Y,\mu_Y)$, and which restrictions do we need to impose on $\gp$ to ensure that this transport of structure is compatible with the theory from chapter 1?
 
 Note first that any bimeasurable bijection $\gp:(X,d_X,\mu_X)\to(Y,d_Y,\mu_Y)$ induces by precomposition an operator
 \begin{align*}
@@ -65,7 +65,7 @@ which is an isometric isomorphism because $\gp^{-1}:Y\to X$ induces its inverse 
   =\int_Y |f|^2\,\Di\mu_Y
   =\|f\|_{L^2(Y,\mu_Y)}^2,
 \end{equation}
-by the change of variables formula. 
+by the change of variables formula for Lebesgue integrals. 
 
 Denote by $\IL(H)$ the set of all partially defined linear maps (not necessarily bounded) on a Hilbert space $H$. Given an operator $A\in\IL(L^2(X,\mu_X))$, we can now contruct an operator $\gp_{\IL} A\in\IL(L^2(Y,\mu_Y))$ by conjugating with $\gp_*$. More explicitly, we define the map
 \[
@@ -79,29 +79,63 @@ where $(\gp_{\IL} A)f:=(\gp_*^{-1}\circ A\circ\gp_*)f$ and $\cD(\gp_{\IL} A)=\gp
 \]
 and we can perform the same calculations for $\left<f,(\gp_{\IL} A)g\right>_{L^2(Y,\mu_Y)}$, thus establishing the claimed equivalence. It is equally easy to check that the resolvent sets and the eigenvalues of $A$ and $\gp_{\IL} A$ coincide.
 
+Moreover, $\gp_{\IL}$ respects operator semigroups: If $(T_t)_{t\geq0}$ is a strongly continuous contraction semigroup on $L^2(X,\mu)$ with generator $(-A,\cD(A))$ then $(\gp_{\IL} T_t)_{t\geq0}$ is a semigroup with the same properties on $L^2(Y,\mu_Y)$ and with generator $(-\gp_{\IL} A,\cD(\gp_{\IL} A))$. Indeed, the semigroup property is trivial to check. For contractiveness, note that for $L^2(Y,\mu_Y)\ni f=\gp_*^{-1}\bar f$ with 
+$\bar f\in L^2(X,\mu_X)$
+\[
+  \left\|(\gp_{\IL}T_t)f\right\|_{L^2(Y,\mu_Y)}
+  =\left\|\gp_*^{-1}T_t\gp_*\gp_*^{-1}\bar f\right\|_{L^2(Y,\mu_Y)}
+  =\left\|T_t\bar f\right\|_{L^2(X,\mu_X)}
+  \leq\|\bar f\|_{L^2(X,\mu_X)}=\|f\|_{L^2(Y,\mu_Y)}.
+\]
+For strong continuity, we calculate
+\[
+  \left\|\gp_{\IL} T_t f-\gp_{\IL} T_0 f\right\|
+  =\left\|\gp_*^{-1}(T_t\gp_*f-\gp_*f)\right\|
+  =\left\|T_t(\gp_*f)-(\gp_*f)\right\| \to 0
+\]
+for $t\searrow 0$ and arbitrary $f\in L^2(X,\mu)$, and verifying the generator works analogously. 
+
 Note however that a bi-measurable bijection $\gp$ does not respect enough structure to ensure that 
-$\gp_\IL \sqrt{A}$ generates a regular Dirichlet form if and only if $\sqrt{A}$ does -- recall that this means the density of $\cD(\sqrt{A})\cap C_c(Y)$ in both $\cD(\sqrt{A})$ and $C_c(Y)$. To this end, suppose now that $\gp:X\to Y$ is a homeomorphism between $X$ and $Y$ (since both spaces are equipped with their Borel $\gs$-algebras, such $\gp$ is automatically bi-measurable and bijective). Similar to the case of $L^2$-spaces, this induces an isometric isomorphism $\gp_*:C_0(Y)\to C_0(X), \gp_*(f)=f\circ\gp$ between algebras of continuous functions vanishing at infinity, equipped with sup-norm $\|\cdot\|_{C_0}$. This isomorphism restricts to the subalgebras of compactly supported continuous functions $C_c(X)$, resp. $C_c(Y)$. 
+$\gp_\IL \sqrt{A}$ generates a regular Dirichlet form if and only if $\sqrt{A}$ does -- recall that this means the density of $\cD(\sqrt{A})\cap C_c(Y)$ in both $\cD(\sqrt{A})$ and $C_c(Y)$. To this end, suppose now that $\gp:X\to Y$ is a homeomorphism between $X$ and $Y$ (since both spaces are equipped with their Borel $\gs$-algebras, such $\gp$ is automatically bi-measurable and bijective). Similar to the case of $L^2$-spaces, this induces an isometric isomorphism $\gp_*:C_0(Y)\to C_0(X), \gp_*(f)=f\circ\gp$ between algebras of continuous functions vanishing at infinity, equipped with sup-norm $\|\cdot\|_{C_0}$. This isomorphism restricts to the subalgebras of compactly supported continuous functions $C_c(X)$ resp. $C_c(Y)$. 
 
+\begin{lem}
+  With the notation just introduced, if the Dirichlet form on $L^2(X,\mu_X)$ defined by 
+  \[
+    \cE(f,g):=\left<\sqrt{A}f,\sqrt{A}g\right>_{L^2(X,\mu_X)}\ \text{ for } f,g\in\cD(\sqrt{A})
+  \]
+ is regular then so is the Dirichlet form on $L^2(Y,\mu_Y)$ defined by 
+ \[
+   (\gp_\IL)^*\cE(\bar f,\bar g):=\left<(\gp_\IL\sqrt{A})\bar f,(\gp_\IL\sqrt{A})\bar g\right>_{L^2(Y,\mu_Y)}\ \text{ for } \bar f,\bar g\in\gp_*^{-1}(\cD(\sqrt{A})).
+ \]
+\end{lem}
+\begin{proof}
+  We need to show that the intersection of $\cD(\gp_\IL\sqrt{A})=\gp_*^{-1}(\cD(\sqrt{A}))$ and $C_c(Y)$ is dense both in $C_c(Y)$ w.r.t $\|\cdot\|_{C_0(Y)}$ and in $\cD(\gp_\IL\sqrt{A})$ w.r.t. $((\gp_\IL)^*\cE)_1$ as introduced in definition \ref{defin:DF}.
+  
+  For the first part, take $C_c(Y)\ni f=\gp_*^{-1} g$ for $g\in C_c(X)$. Then, there exists a sequence $(g_n)_{n\in\IN}\ssq \cD(\sqrt{A})\cap C_c(X)$ with $\|g_n-g\|_{C_0(X)}\to 0$ as $n\to\infty$. Since $\gp_*^{-1}$ is isometric, we conlude that $f_n:=\gp_*^{-1}g_n\in \cD(\gp_\IL\sqrt{A})\cap C_c(Y)$ converges to $f$ in 
+  $\|\cdot\|_{C_0(Y)}$.
+  
+  For the second part, we analogously take $\cD(\gp_\IL\sqrt{A})\ni f=\gp_*^{-1} g$ for $g\in\cD(\sqrt{A})$. By regularity of $\cE$, there exists again a sequence $(g_n)_{n\in\IN}\ssq\cD(\sqrt{A})\cap C_c(X)$ with $\cE_1[g_n-g]\to 0$ as $n\to\infty$. Setting $f_n:=\gp_*^{-1} g_n\in\cD(\gp_\IL\sqrt{A})\cap C_c(Y)$, we obtain
+  \begin{align*}
+    ((\gp_\IL)^*\cE)_1[f_n-f]
+    &=\left\|\left(\gp_\IL\sqrt{A}\right)(f_n-f)\right\|_{L^2(Y,\mu_Y)}^2
+        +\|f_n-f\|_{L^2(Y,\mu_Y)}^2\\
+    &=\left\|\gp_*^{-1}\sqrt{A}\gp_*\gp_*^{-1}(g_n-g)\right\|_{L^2(Y,\mu_Y)}^2
+        +\|\gp_*^{-1}(g_n-g)\|_{L^2(Y,\mu_Y)}^2\\
+    &=\left\|\sqrt{A}(g_n-g)\right\|_{L^2(X,\mu_X)}^2+\|g_n-g\|_{L^2(X,\mu_X)}^2\\
+    &=\cE_1[g_n-g]\to 0
+  \end{align*}
+  which concludes the proof.
+\end{proof}
 
-
-so we observe that $A$ satisfies assumptions \ref{cond:A} iff $\gp_{\IL} A$ does. This motivates the following proposition:
+Putting everything together, we observe that $A$ satisfies the assumptions in \ref{cond:A} iff $\gp_\IL A$ does whenever $\gp:X\to Y$ is a homeomorphism, and then $\dims(X,A)=\dims(Y,\gp_\IL A)$.
 
 \begin{prop}\label{prop:mmiso}
-  Let $(X,d_X,\mu)$ and $(Y,d_Y,\nu)$ be complete separable metric measure spaces with $\supp\mu=X$ and $\supp\nu=Y$ that are mm--isomorphic by virtue of the map $\phi:X\to Y$. Suppose the Einstein relation with constant $c$ holds on $X$ with respect to an operator $(A,\cD(A))$ satisfying assumptions \ref{cond:A}. Then, the Einstein relation also holds on $Y$ with the same constant $c$ and with respect to $\gp_{\IL} A$.
+  Let $(X,d_X,\mu)$ and $(Y,d_Y,\nu)$ be complete separable locally compact path-connected metric measure spaces with $\supp\mu=X$ and $\supp\nu=Y$ that are Lipschitz-isomorphic by virtue of the map $\gp:X\to Y$. Suppose the Einstein relation with constant $c$ holds on $X$ with respect to an operator $(A,\cD(A))$ satisfying assumptions \ref{cond:A}. Then, the Einstein relation also holds on $Y$ with the same constant $c$ and with respect to $\gp_{\IL} A$.
 \end{prop}
 \begin{proof}
-  Trivially, $\dimh(X)=\dimh(Y)$, and as observed above, $\dims(X,A)=\dims(Y,\gp_{\IL} A)$. So, it remains to show $\dimw(X,M)=\dimw(X,M^{(\gp)})$ where $M$ is a Hunt process associated to $A$ and $M^{(\gp)}$ is one associated to $\gp_{\IL} A$. 
+  As the Hausdorff dimension is invariant under bi-Lipschitz maps we obtain $\dimh(X)=\dimh(Y)$, and as observed above, $\dims(X,A)=\dims(Y,\gp_{\IL} A)$. So, it remains to show $\dimw(X,M)=\dimw(X,M^{(\gp)})$ where $M$ is a Hunt process associated to $A$ and $M^{(\gp)}$ is one associated to $\gp_{\IL} A$. 
   
-  To this end, we remark first that if $(T_t)_{t\geq0}$ is a strongly continuous contraction semigroup on $L^2(X,\mu)$ with generator $(A,\cD(A))$ then 
-  $(\gp_{\IL} T_t)_{t\geq0}$ is a semigroup with the same properties on $L^2(Y,\nu)$ and with generator $(\gp_{\IL} A,\cD(\gp_{\IL} A))$. Indeed, the semigroup property is trivial to check. For strong continuity, we calculate
-  \[
-    \left\|\gp_{\IL} T_t f-\gp_{\IL} T_0 f\right\|
-    =\left\|\gp_*^{-1}(T_t\gp_*f-\gp_*f)\right\|
-    =\left\|T_t(\gp_*f)-(\gp_*f)\right\| \to 0
-  \]
-  for $t\searrow 0$ for arbitrary $f\in L^2(X,\mu)$, and verifying the generator works analogously. 
-  
-  In the next step, we consider the process $N_t:=\gp(M_t)$. This process is a Hunt process with values in $Y$, and possesses the semigroup
+  We consider the process $N_t:=\gp(M_t)$. This process is a Hunt process with values in $Y$, and possesses the semigroup
   \[
     T_t^{(N)}f(y)
     =\PTEp{f(N_t)}{y}
@@ -110,10 +144,20 @@ so we observe that $A$ satisfies assumptions \ref{cond:A} iff $\gp_{\IL} A$ does
     =\gp_*^{-1}T_t\gp_* f
     =\gp_{\IL} T_t.
   \]
-  Thus, up to killing on polar sets the processes $N_t$ and $M^{(\gp)}$ coincide. In particular, we have the equality $\PTEp{\tau_{B(x,r)}}{x}=\PTEp{\tau_{B(\gp(x),r)}^{(\gp)}}{\gp(x)}$ for all 
-  sufficiently small $r>0$.
+  Thus, due to theorem \ref{thm:fukushima}, the processes $N_t$ and $M^{(\gp)}$ coincide up to their behaviour on a polar set.  
+  
+  TO DO: Walk dimension
 \end{proof}
-TO DO: How weak can the assumptions be chosen? 
+We immediately obtain the following two corollaries:
+\begin{cor}
+  If $(X,d_X,\mu_X)\cong(Y,d_Y,\mu_Y)$ and the Einstein relation with constant $c$ holds on $X$ w.r.t. $(A,\cD(A))$ is an operator on $L^2(X,\mu)$, then it also holds on $Y$ with the same constant w.r.t. $\gp_{\IL}A$. 
+\end{cor}
+\begin{cor}
+  If $X\ssq\IR^n$ and $d_1$ and $d_2$ are metrics which are induced by norms, then $\id_X:(X,d_1,\mu)\to(X,d_2,\mu)$ will preserve the constant in the Einstein relation.
+\end{cor}
+The second corollary follows from the well-known fact that all norms on a finite-dimensional Banach space are equivalent. 
+
+
 
 
 
