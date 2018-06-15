@@ -1,17 +1,23 @@
-[0] Config.pm:320> INFO - This is Biber 1.9
-[0] Config.pm:323> INFO - Logfile is 'mt_main.blg'
-[146] biber-MSWIN:274> INFO - === %a %b %e, %Y, %H:%M:%S
-[146] Biber.pm:333> INFO - Reading 'mt_main.bcf'
-[254] Biber.pm:632> INFO - Using all citekeys in bib section 0
-[451] Biber.pm:3051> INFO - Processing section 0
-[684] Biber.pm:3189> INFO - Looking for bibtex format file 'mt_bib.bib' for section 0
-[689] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
-[692] bibtex.pm:864> INFO - Found BibTeX data source 'mt_bib.bib'
-[969] Utils.pm:144> WARN - The field 'pages' in entry 'freiberg2012einstein' cannot be null, deleting it
-[1286] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1286] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1287] Biber.pm:2928> INFO - Sorting list 'anyt' of type 'entry' with scheme 'anyt' and locale 'en-US'
-[1287] Biber.pm:2932> INFO - No sort tailoring available for locale 'en-US'
-[1358] bbl.pm:517> INFO - Writing 'mt_main.bbl' with encoding 'UTF-8'
-[1361] bbl.pm:606> INFO - Output to mt_main.bbl
-[1361] Biber.pm:106> INFO - WARNINGS: 1
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'mt_main.blg'
+[80] biber-MSWIN32:313> INFO - === 
+[286] Biber.pm:371> INFO - Reading 'mt_main.bcf'
+[416] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[438] Biber.pm:3976> INFO - Processing section 0
+[508] Biber.pm:4136> INFO - Looking for bibtex format file 'mt_bib.bib' for section 0
+[513] bibtex.pm:1500> INFO - LaTeX decoding ...
+[554] bibtex.pm:1316> INFO - Found BibTeX data source 'mt_bib.bib'
+[566] Utils.pm:193> WARN - year field 'Hoboken, 2007' in entry 'falconer2007fractal' is not an integer - this will probably not sort properly.
+[651] Utils.pm:193> WARN - year field 'Berlin Heidelberg, 2012' in entry 'ma2012introduction' is not an integer - this will probably not sort properly.
+[655] Utils.pm:193> WARN - year field 'Princeton, 2006' in entry 'strichartz2006differential' is not an integer - this will probably not sort properly.
+[659] Utils.pm:193> WARN - year field 'New York, 2002' in entry 'kallenberg2002foundations' is not an integer - this will probably not sort properly.
+[676] Utils.pm:193> WARN - year field 'Berlin Heidelberg, 2006' in entry 'telcs2006art' is not an integer - this will probably not sort properly.
+[684] Utils.pm:193> WARN - year field 'Berlin Boston, 2011' in entry 'fukushima2011dirichlet' is not an integer - this will probably not sort properly.
+[688] Utils.pm:193> WARN - year field 'Cambridge, 1999' in entry 'mattila1999geometry' is not an integer - this will probably not sort properly.
+[752] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[752] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[752] Biber.pm:3804> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
+[752] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[849] bbl.pm:617> INFO - Writing 'mt_main.bbl' with encoding 'UTF-8'
+[859] bbl.pm:720> INFO - Output to mt_main.bbl
+[864] Biber.pm:110> INFO - WARNINGS: 7

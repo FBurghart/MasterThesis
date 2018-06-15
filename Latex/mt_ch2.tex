@@ -42,7 +42,7 @@ Therefore, by definition \ref{def:dimw}, we obtain $\dimw(E,2B_t)=2$ which impli
 TO DO: Get spectral estimates for more general second-order partial differential operators; afterwards, the walk dimension should follow again from Dynkin's formula. 
 
 
-\section{Sierpinski Gasket}
+\section{The Sierpinski Gasket}
 
 The Sierpinski Gasket is a simple example of an iterated function fractal and can be described according to theorem \ref{thm:hutchinson} as the unique non-empty compact set $\SG\ssq\IR^2$ which is invariant under the three similitudes 
 \[
@@ -56,7 +56,41 @@ see PICTURE! Since $\SG$ satisfies the (OSC), e.g. by taking the open equilatera
 \end{equation}
 and $\cH^s(\SG)\in(0,\infty)$ by a second appeal to Hutchinson's theorem. 
 
-We will use the remainder of this section to establish the validity of the Einstein relation on $\SG$ with respect to the standard Laplace operator on $\SG$, which can be obtained in two different ways:
+We will use the remainder of this section to establish the validity of the Einstein relation on $\SG$ with respect to the standard Laplace operator on $\SG$, which can be obtained in two different ways. In order to describe these constructions, we first need to fix some notation. 
+
+Let $\scS=\{S_1,S_2,S_3\}$ as in section 1.1, set $\gS=\{1,2,3\}$ and denote by 
+\[
+  \gS^*:=\{\gep\}\cup\bigcup_{n\geq 1}\gS^n
+\]
+the free monoid consisting of all finite words over the alphabet $\gS$, where the monoid operation is given by concatenation and $\gep$ is supposed to represent the empty word. Using the monoid isomorphism 
+$\gS^*\cong (\scS^*,\circ)$ given by extending 
+$\gS\ni i\mapsto S_i\in\scS$, we can identify a word of length $l$,
+\[
+  w=w_1...w_l\in\gS^l,
+\]
+with the composition 
+\[
+  S_w:=S_{w_1}\circ...\circ S_{w_l}.
+\]
+By abuse of notation, we will therefore write $w(x)$ instead of $S_w(x)$. By an $n$-cell we understand the set $w(\SG)\ssq\SG$, where $w$ is a word of length $n$. Note that two different cells are either disjoint, or intersect in a single point which we will then call conjunction point, or one of them is completely contained in the other one. 
+
+It is possible to approximate $\SG$ by a sequence of graphs $G_n$. Those graphs can be thought of as planar graphs with a triangle for each $n$-cell, where the vertices are the conjunction points between them. More precisely, let $G_n$ be the graph embedded in $\IR^2$ with vertex set $V_n$ inductively defined by
+\begin{align*}
+  V_0&:=
+  \left\{(0,0),(0,1),\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)\right\}\\
+  V_{n+1}&:=(S_1\cup S_2\cup S_3)(V_n),\ \ n\geq0.
+\end{align*}
+Note that $V_0\ssq V_1\ssq...\ssq V_n\ssq ...$ and that
+\[
+  V_n=\bigcup_{w\in\gS^n} w(V_0).
+\]
+In $G_n$, connect two vertices by a straight edge iff they belong to the same $n$-cell, cf PICTURE!!
+
+
+
+\subsection{Approximation by Dirichlet forms}
+
+This analytic approach works by establishing so-called energy forms on graphs $G_n$
 
 TO DO: Give an overview of these constructions, \cite{strichartz2006differential} for the approach via graph approximation and \cite{barlow1998diffusions} for the probabilistic approach.
 

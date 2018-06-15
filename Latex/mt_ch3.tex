@@ -7,14 +7,14 @@ This chapter is devoted to the investigation of the Einstein relation in the set
 \subsection{Lipschitz and mm-isomorphisms}
 
 We will use this section to introduce two different categories $\mathsf{MM}_L$ and $\mathsf{MM}_{\leq1}$ whose objects are mm-spaces, but with different morphisms: 
-\begin{compactitem}
+\begin{itemize}
   \item In $\mathsf{MM}_L$, the set $\mathsf{MM}_L(X,Y)$ of morphisms from an object $X=(X,d_X,\mu_X)$ to another object $Y=(Y,d_Y,\mu_Y)$ is the set of all Lipschitz-continuous functions 
   \[ 
     \gp:\supp\mu_X\to\supp\mu_Y
   \]
   satisfying $\gp_*\mu_X=\mu_Y$.
   \item In $\mathsf{MM}_{\leq1}$, the set $\mathsf{MM}_{\leq1}(X,Y)$ of morphisms from an object $X=(X,d_X,\mu_X)$ to another object $Y=(Y,d_Y,\mu_Y)$ is the subset of $\mathsf{MM}_L(X,Y)$ consisting of all contraction maps (i.e. Lipschitz-continuous functions $f$ with $\Lip_f\leq1$, cf. \eqref{eq:Lip}).
-\end{compactitem}
+\end{itemize}
 In both of those categories, composition of morphisms is to be understood as the usual composition of maps. By definition, $\mathsf{MM}_{\leq1}$ is a subcategory of $\mathsf{MM}_L$. Considering the usual notion of isomorphism, both categories give rise to a meaningful concept of isomorphy for mm-spaces: 
 \begin{defin}
   A Lipschitz-isomorphism between mm-spaces $(X,d_X,\mu_X)$ and $(Y,d_Y,\mu_Y)$ is a map 
@@ -71,13 +71,29 @@ Denote by $\IL(H)$ the set of all partially defined linear maps (not necessarily
 \[
   \gp_{\IL}:\IL(L^2(X,\mu))\to\IL(L^2(Y,\mu))
 \]
-where $(\gp_{\IL} A)f:=(\gp_*^{-1}\circ A\circ\gp_*)f$ and $\cD(\gp_{\IL} A)=\gp_*^{-1}(\cD(A))$. It follows immediately that $\cD(\gp_{\IL} A)$ is dense iff $\cD(A)$ is, and $\gp_{\IL} A$ is self-adjoint iff $A$ is. Indeed, consider arbitrary $f,g\in\cD(\gp_{\IL} A)$ with $f=\gp_*^{-1}(\bar f)$ and $g=\gp_*^{-1}(\bar g)$, where $\bar f, \bar g\in \cD(A)$. Then, applying \eqref{eq:isometry}, we have
+where $(\gp_{\IL} A)f:=(\gp_*^{-1}\circ A\circ\gp_*)f$ and $\cD(\gp_{\IL} A)=\gp_*^{-1}(\cD(A))$. Note that $\gp_L$ is again a bijection with inverse given by $\gp_L^{-1}=(\gp^{-1})_L$ and that this bijection restricts to the spaces of bounded linear operators. 
+
+It follows immediately that $\cD(\gp_{\IL} A)$ is dense iff $\cD(A)$ is, and $\gp_{\IL} A$ is self-adjoint iff $A$ is. Indeed, consider arbitrary $f,g\in\cD(\gp_{\IL} A)$ with $f=\gp_*^{-1}(\bar f)$ and $g=\gp_*^{-1}(\bar g)$, where $\bar f, \bar g\in \cD(A)$. Then, applying \eqref{eq:isometry}, we have
 \[
   \left<(\gp_{\IL} A)f,g\right>_{L^2(Y,\mu_Y)}
   =\left<\gp_*^{-1}A\gp_*\gp_*^{-1}\bar f,\gp_*^{-1}\bar g\right>_{L^2(Y,\mu_Y)}
   =\left<A\bar f,\bar g\right>_{L^2(X,\mu_X)}
 \]
-and we can perform the same calculations for $\left<f,(\gp_{\IL} A)g\right>_{L^2(Y,\mu_Y)}$, thus establishing the claimed equivalence. It is equally easy to check that the resolvent sets and the eigenvalues of $A$ and $\gp_{\IL} A$ coincide.
+and we can perform the same calculations for $\left<f,(\gp_{\IL} A)g\right>_{L^2(Y,\mu_Y)}$, thus establishing the claimed equivalence. It is equally straightforward to check that the resolvent sets and the eigenvalues of $A$ and $\gp_{\IL} A$ coincide: Consider $\gl\in\rho(A)$, that is, 
+$(\gl-A)^{-1}$ is a bounded linear operator on $L^2(X,\mu_X)$. To show $\gl\in\rho(\gp_L A)$, we consider
+\[
+  (\gl-\gp_L A)^{-1}
+  =\left(\gl-\gp_*^{-1}A\gp_*\right)^{-1}
+  =\left(\gp_*^{-1}(\gl-A)\gp_*\right)^{-1}
+  =\gp_*^{-1}(\gl-A)^{-1}\gp_*
+  =\gp_L(\gl-A)^{-1}
+\]
+which is a bounded linear operator on $L^2(Y,\mu_Y)$. If $\gl\in\IC$ happens to be an eigenvalue of $A$ with eigenfunction $f\in L^2(X,\mu_X)$, then -- as might have been expected -- $\gp_*^{-1}f$ is an eigenfunction of 
+$\gp_L A$ to the eigenvalue $\gl$ as well. This can easily be checked by calculating
+\[
+  (\gp_L A)\big(\gp_*^{-1}f\big)=\gp_*^{-1}Af=\gl(\gp_*^{-1}f).
+\]
+
 
 Moreover, $\gp_{\IL}$ respects operator semigroups: If $(T_t)_{t\geq0}$ is a strongly continuous contraction semigroup on $L^2(X,\mu)$ with generator $(-A,\cD(A))$ then $(\gp_{\IL} T_t)_{t\geq0}$ is a semigroup with the same properties on $L^2(Y,\mu_Y)$ and with generator $(-\gp_{\IL} A,\cD(\gp_{\IL} A))$. Indeed, the semigroup property is trivial to check. For contractiveness, note that for $L^2(Y,\mu_Y)\ni f=\gp_*^{-1}\bar f$ with 
 $\bar f\in L^2(X,\mu_X)$
@@ -127,7 +143,7 @@ $\gp_\IL \sqrt{A}$ generates a regular Dirichlet form if and only if $\sqrt{A}$ 
   which concludes the proof.
 \end{proof}
 
-Putting everything together, we observe that $A$ satisfies the assumptions in \ref{cond:A} iff $\gp_\IL A$ does whenever $\gp:X\to Y$ is a homeomorphism, and then $\dims(X,A)=\dims(Y,\gp_\IL A)$.
+Putting everything together, we observe that $A$ satisfies the assumptions in \ref{cond:A} iff $\gp_\IL A$ does whenever $\gp:X\to Y$ is a homeomorphism, and then $\dims(X,A)=\dims(Y,\gp_\IL A)$. The spectral dimension is therefore stable under a very large class of transformations. As it turns out, this will not be the case for Hausdorff and walk dimension. 
 
 \begin{prop}\label{prop:mmiso}
   Let $(X,d_X,\mu)$ and $(Y,d_Y,\nu)$ be complete separable locally compact path-connected metric measure spaces with $\supp\mu=X$ and $\supp\nu=Y$ that are Lipschitz-isomorphic by virtue of the map $\gp:X\to Y$. Suppose the Einstein relation with constant $c$ holds on $X$ with respect to an operator $(A,\cD(A))$ satisfying assumptions \ref{cond:A}. Then, the Einstein relation also holds on $Y$ with the same constant $c$ and with respect to $\gp_{\IL} A$.
@@ -137,18 +153,44 @@ Putting everything together, we observe that $A$ satisfies the assumptions in \r
   
   We consider the process $N_t:=\gp(M_t)$. This process is a Hunt process with values in $Y$, and possesses the semigroup
   \[
-    T_t^{(N)}f(y)
-    =\PTEp{f(N_t)}{y}
-    =\PTEp{(f\circ\gp)(M_t)}{\gp^{-1}(y)}
-    =T_t[\gp_*f](\gp^{-1}(y))
+    T_t^{(N)}f
+    =\PTEp{f(N_t)}{\cdot}
+    =\PTEp{(f\circ\gp)(M_t)}{\gp^{-1}(\cdot)}
+    =T_t[\gp_*f](\gp^{-1}(\cdot))
     =\gp_*^{-1}T_t\gp_* f
-    =\gp_{\IL} T_t.
+    =(\gp_{\IL} T_t)f
   \]
-  Thus, due to theorem \ref{thm:fukushima}, the processes $N_t$ and $M^{(\gp)}$ coincide up to their behaviour on a polar set.  
+  where we used the notation from the discussion above. 
   
-  TO DO: Walk dimension
+  Thus, due to theorem \ref{thm:fukushima}, the processes $N$ and $M^{(\gp)}$ coincide up to their behaviour on a polar set. It is therefore enough to determine the walk dimension for $N_t$. By the bi-Lipschitz continuity of $\gp$, we obtain 
+  \[
+    \gp\left(B_X\left(x,C^{-1}r\right)\right)
+    \ssq B_Y\big(\gp(x),r\big) 
+    \ssq \gp\big(B_X(x,Cr)\big)
+  \]
+  where $C>0$ is the two-sided Lipschitz constant of $\gp$. Hence, $\tau_{C^{-1}r}^{(M)}\leq \tau_r^{(N)}\leq \tau_{Cr}^{(M)}$. From this, we get for all sufficiently small $r>0$
+  \[
+    \frac{\log Cr}{\log r}
+     \cdot\frac{\log \PTEp{\tau_{Cr}^{(M)}}{x}}{\log Cr}
+    \leq \frac{\log \PTEp{\tau_r^{(N)}}{\gp(x)}}{\log r}
+    \leq \frac{\log C^{-1}r}{\log r}
+     \cdot\frac{\log \PTEp{\tau_{C^{-1}r}^{(M)}}{x}}{\log C^{-1}r}.
+  \]
+  Taking the limit for $r\searrow0$ and applying a standard squeezing argument, we obtain $\dimw(X,M)=\dimw(Y,N)$. 
 \end{proof}
-We immediately obtain the following two corollaries:
+\begin{rem}\label{rem:ToS}
+  Note that we only needed the bi-Lipschitz property for determining 
+  $\dimh$ and $\dimw$, whereas we only needed $\gp$ to be a homeomorphism in order to show that $M^{(\gp)}$ and $N$ share the same semigroup. This allows us in the following sections -- given a homeomorphism $\gp:(X,d_X,\mu_X)\to(Y,d_Y)$ -- to transport the complete structure needed for the Einstein relation by 
+  \begin{itemize}
+    \item Endowing $(Y,\mu_Y)$ with the push-forward measure $\gp_*\mu_X$.
+    \item Mapping the generator $(A,\cD(A))$ to 
+    $(\gp_LA,\gp_*^{-1}\cD(A))$, thus also mapping the generated semigroup $T_t$ to $\gp_LT_t$.
+    \item Sending the Hunt process $M$ to $\gp(M)$. 
+  \end{itemize}
+  What we did so far ensures that all these constructions are compatible with each other. 
+\end{rem}
+
+From proposition \ref{prop:mmiso} we immediately obtain the following two corollaries:
 \begin{cor}
   If $(X,d_X,\mu_X)\cong(Y,d_Y,\mu_Y)$ and the Einstein relation with constant $c$ holds on $X$ w.r.t. $(A,\cD(A))$ is an operator on $L^2(X,\mu)$, then it also holds on $Y$ with the same constant w.r.t. $\gp_{\IL}A$. 
 \end{cor}
@@ -159,39 +201,66 @@ The second corollary follows from the well-known fact that all norms on a finite
 
 
 
-
-
-\newpage
-
 \section{H\"older regularity and graphs of functions}
 
-To see that some assumptions are indeed necessary, we consider the following example: For a suitable probability space $(\gO,\scA,\Prob)$, denote by $\scG=\scG(\go):=\left\{(t,B_t(\go)):t\in[0,1] \right\}$ for fixed $\go\in\gO$ the graph of a trajectory of a standard Brownian motion over the intervall $[0,1]$. This comes with the natural map $\gp=\gp_\go:[0,1]\to\scG$ sending $t$ to $(t,B_t)$. We equip $\scG$ with the metric $d_\infty$ induced by the maximum norm
-$|(x,y)|_\infty=\max\{|x|,|y|\}$ of the surrounding space $\IR^2$ and observe that by this choice, $\gp$ is continuous but not Lipschitz-continuous. Finally, $\scG$ becomes a metric measure space by endowing it with the push-forward measure $\gp_*\gl^1$. We can now observe the following:
+A natural question arising at this point is whether the invariance of the Einstein relation of propsition \ref{prop:mmiso} can be extended to a larger class of transformations. The following family of examples shows that this is not the case:
+
+Consider a 1-dimensional continuous $\ga$-self-similar time-homogeneous strong Markov process $(M_t)_{t\geq0}$ over a suitable probability space $(\gO,\scA,\Prob)$. Here, $\ga$-self-similar for $0<\ga\leq1$ means that the processes 
+$(M_t)_{t\geq0}$ and $\left(\xi^{-\ga}M_{\xi t}\right)_{t\geq0}$ have the same distribution. Denote by
+\[
+ \gr(M)=\gr(M_\cdot(\go)):=\left\{(t,M_t(\go)):t\geq0 \right\}\ssq \IR^2
+\]
+the graph of $M$ for fixed $\go\in\gO$. 
+
+We endow $\gr(M)$ with the metric $d_\infty$ obtained by restricting the maximum norm $|(x,y)|_\infty=\max\{|x|,|y|\}$ of the surrounding space $\IR^2$ to $\gr(M)$. By construction, $\gr(M)$ comes with the natural map $\gp=\gp_\go:\IR_{\geq0}\to\gr(M)$ sending $t$ to 
+$(t,M_t)$, providing a homeomorphism between $[0,1]$ and $\gr(M)$. 
+While $\gp^{-1}$ is always Lipschitz-continuous since it is the projection onto the first coordinate, $\gp$ is in general only H\"older continuous with an exponent strictly smaller than 1. In fact, $\gp_\go$ is $\gc$-H\"older continuous if and only if the trajectory $M_\cdot(\go)$ is.
+
+As pointed out in remark \ref{rem:ToS}, we can now transfer the analytic structure of section 2.1 on the half-line $\IR_{\geq0}$ via $\gp$ to 
+$\gr(M)$. More explicitly, we have the measure $\gp_*\gl^1$ on $\gr(M)$ and an operator $\gp_L\gD_{\gl^1}$ acting on $L^2(\gr(M),\gp_*\gl^1)$ that generates the Hunt process $(\gp(W_s^t))_{s\geq0}$, where 
+$(W_s^t)_{s\geq0}$ is a Wiener process independent from $M$ with start in $t\geq0$.
+
+We note the following:
 \begin{itemize}
-  \item The Hausdorff dimension of $(\scG,d_\infty)$ coincides with the Hausdorff dimension with respect to Euclidean  metric since all norms on finitely dimensional vector spaces are equivalent. Thus, $\dimh(\scG)=\frac{3}{2}$ $\Prob$-almost surely, see \cite[Theorem 16.7]{falconer2007fractal}. 
-  \item The same arguments as used in the proof of proposition \ref{prop:mmiso} yield that 
+  \item From \cite{liu1998hausdorff}, we get $\dimh(\gr(M))=2-\ga$ provided $M$ satisfies the technical conditions that there exist positive constants $K,K'$ and $0<r_0<1/3$ such that 
+  \begin{equation}
+    p(1,x,B(x,r_0))\geq K\ \ \text{ and }\ \ 
+    p(1,x,B(x,r))\leq K'(1\wedge r)
+  \end{equation}
+  holds for all $x\in\IR$ and every sufficiently small $r>0$. Here, $p(t,x,A)$ denotes the transition function for $M$.
+  \item As discussed in the last section we have
   \[
     \frac{1}{2}=\dims\left([0,1],-\frac{1}{2}\gD_{\gl^1}\right)
-    =\dims\left(\scG,\Phi \left(-\frac{1}{2}\gD_{\gl^1}\right)\right),
+    =\dims\left(\gr(B),\Phi \left(-\frac{1}{2}\gD_{\gl^1}\right)\right),
   \]
-  where we once again applied Weyl's classical results. 
-  \item It remains to evaluate the walk dimension for $\gp(\bar B_t)$ on $\scG$, where $\bar B$ denotes a Brownian motion independent from $B$. As will be seen in the subsequent lemma, we have $\dimw(\scG(\go),\gp(\bar B))=4$ $\Prob$-almost surely.
+  where we once again appealed to Weyl's classical results. 
+  \item It remains to evaluate the walk dimension for $\gp(W_s)$ on 
+  $\gr(M)$. As will be seen in the subsequent lemmata, we have 
+  $\dimw(\gr(M_\cdot(\go)),\gp(W))=\frac{2}{\ga}$ $\Prob$-almost surely.
 \end{itemize}
-Therefore, the Einstein relation -- despite holding with constant 1 on 
-$\left([0,1],-\frac{1}{2}\gD_{\gl^1},2\bar B\right)$ -- changes its constant to $4/3$ under application of $\gp$. 
+The Einstein relation -- despite holding with constant 1 on 
+$\left([0,1],-\frac{1}{2}\gD_{\gl^1},W\right)$ -- therefore changes its constant under application of $\gp$ to
+\[
+  c(\ga)=\ga(2-\ga),\ \ \ga\in(0,1].
+\]
 \begin{lem}
   With the notation just introduced, we have 
   \begin{equation}\label{eq:BMdimw}
-    \dimw\big(\scG(\go),\gp_\go(\bar B)\big)=4
+    \dimw\left(\gr(M_\cdot(\go)),\gp_\go(W),\big(T,M_T(\go)\big)\right)
+    =\frac{2}{\ga}
   \end{equation}
-  $\Prob$-almost surely.
+  $\Prob$-almost surely for each $T>0$.
 \end{lem}
 \begin{proof}
-  For brevity, set $x=x(\go)=(T,B_T(\go))\in\IR^2$ and chose $r>0$ small enough for $B_\infty(x,r)\ssq [0,1]\times\IR$, where $B_\infty(x,r)$ stands for the open ball of radius $r$ around $x$ with respect to $d_\infty$.
-  We begin by introducing the random times $\gT^+_r\big(B_\cdot(\go),T\big),\gT^-_r\big(B_\cdot(\go),T\big)$ to denote the time where the Brownian motion $B$ first resp. last exits $B_\infty(x,r)$ -- in other words,
+  For brevity, set $x=x(\go)=(T,M_T(\go))\in\gr(M_\cdot(\go))$ and chose $r>0$ small enough for $B_\infty(x,r)\ssq\IR_{\geq0}\times\IR$, where 
+  $B_\infty(x,r)$ stands for the open ball of radius $r$ around $x$ with respect to $d_\infty$.
+  
+  We begin by introducing the random times 
+  $\gT^+_r\big(M_\cdot(\go),T\big),\gT^-_r\big(M_\cdot(\go),T\big)$ to denote the time where the Markov process $M$ first resp. last exits 
+  $B_\infty(x,r)$ -- in other words,
   \begin{align}\label{eq:Theta}
-    \gT^+_r\big(B_\cdot(\go),T\big)&:=\inf\left\{1\geq s>T:B_s\notin B_\infty(x,r)\right\}\notag\\
-    \gT^-_r\big(B_\cdot(\go),T\big)&:=\sup\left\{0\leq s<T:B_s\notin B_\infty(x,r)\right\}.
+    \gT^+_r\big(M_\cdot(\go),T\big)&:=\inf\left\{1\geq t>T:M_t\notin B_\infty(x,r)\right\}\notag\\
+    \gT^-_r\big(M_\cdot(\go),T\big)&:=\sup\left\{0\leq t<T:M_t\notin B_\infty(x,r)\right\}.
   \end{align}
   Note first that by the Markov property of Brownian motion as well as by its time symmetry, these random variables are independent and the shifted random variables $\gT^+_r\big(B_\cdot(\go),T\big)-T,T-\gT^-_r\big(B_\cdot(\go),T\big)$ share the same distribution.
   

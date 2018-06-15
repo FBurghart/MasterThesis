@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.4 $
+% $ biblatex bbl format version 2.9 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,34 +18,42 @@
 
 
 \refsection{0}
-  \sortlist{anyt}{anyt}
+  \datalist[entry]{anyt/global//global/global}
     \entry{barlow1998diffusions}{incollection}{}
-      \name{labelname}{1}{}{%
-        {{hash=aace1a7625f0af60868ff5993346ece9}{Barlow}{B\bibinitperiod}{Martin\bibnamedelima T}{M\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{1}{}{%
-        {{hash=aace1a7625f0af60868ff5993346ece9}{Barlow}{B\bibinitperiod}{Martin\bibnamedelima T}{M\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+        {{hash=aace1a7625f0af60868ff5993346ece9}{%
+           family={Barlow},
+           familyi={B\bibinitperiod},
+           given={Martin\bibnamedelima T},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Springer}%
       }
       \strng{namehash}{aace1a7625f0af60868ff5993346ece9}
       \strng{fullhash}{aace1a7625f0af60868ff5993346ece9}
+      \strng{bibnamehash}{aace1a7625f0af60868ff5993346ece9}
+      \strng{authorbibnamehash}{aace1a7625f0af60868ff5993346ece9}
+      \strng{authornamehash}{aace1a7625f0af60868ff5993346ece9}
+      \strng{authorfullhash}{aace1a7625f0af60868ff5993346ece9}
       \field{labelalpha}{Bar98}
       \field{sortinit}{B}
-      \field{sortinithash}{1a3a21dbed09540af12d49a0b14f4751}
-      \field{labeltitle}{Diffusions on fractals}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{booktitle}{Lectures on probability theory and statistics. {É}cole d'{É}t{é} de Probabilit{é}s de Saint--Flour XXV}
       \field{title}{Diffusions on fractals}
       \field{year}{1998}
       \field{pages}{1\bibrangedash 121}
+      \range{pages}{121}
     \endentry
     \entry{bertacchi2006}{article}{}
-      \name{labelname}{1}{}{%
-        {{hash=b85dbf52d6d9e349f4e1928d4ed88b3f}{Bertacchi}{B\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{1}{}{%
-        {{hash=b85dbf52d6d9e349f4e1928d4ed88b3f}{Bertacchi}{B\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=b85dbf52d6d9e349f4e1928d4ed88b3f}{%
+           family={Bertacchi},
+           familyi={B\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
       }
       \list{publisher}{2}{%
         {The Institute of Mathematical Statistics}%
@@ -53,80 +61,113 @@
       }
       \strng{namehash}{b85dbf52d6d9e349f4e1928d4ed88b3f}
       \strng{fullhash}{b85dbf52d6d9e349f4e1928d4ed88b3f}
+      \strng{bibnamehash}{b85dbf52d6d9e349f4e1928d4ed88b3f}
+      \strng{authorbibnamehash}{b85dbf52d6d9e349f4e1928d4ed88b3f}
+      \strng{authornamehash}{b85dbf52d6d9e349f4e1928d4ed88b3f}
+      \strng{authorfullhash}{b85dbf52d6d9e349f4e1928d4ed88b3f}
       \field{labelalpha}{Ber06}
       \field{sortinit}{B}
-      \field{sortinithash}{1a3a21dbed09540af12d49a0b14f4751}
-      \field{labeltitle}{Asymptotic Behaviour of the Simple Random Walk on the 2-dimensional Comb}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{journaltitle}{Electron. J. Probab.}
       \field{title}{Asymptotic Behaviour of the Simple Random Walk on the 2-dimensional Comb}
       \field{volume}{11}
       \field{year}{2006}
       \field{pages}{1184\bibrangedash 1203}
+      \range{pages}{20}
       \verb{doi}
       \verb 10.1214/EJP.v11-377
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1214/EJP.v11-377
       \endverb
       \verb{url}
       \verb https://doi.org/10.1214/EJP.v11-377
       \endverb
     \endentry
     \entry{falconer2007fractal}{book}{}
-      \name{labelname}{1}{}{%
-        {{hash=25efdf09d1a24a6b2f6a04154ce3c8d1}{Falconer}{F\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{1}{}{%
-        {{hash=25efdf09d1a24a6b2f6a04154ce3c8d1}{Falconer}{F\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=25efdf09d1a24a6b2f6a04154ce3c8d1}{%
+           family={Falconer},
+           familyi={F\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Wiley}%
       }
       \strng{namehash}{25efdf09d1a24a6b2f6a04154ce3c8d1}
       \strng{fullhash}{25efdf09d1a24a6b2f6a04154ce3c8d1}
+      \strng{bibnamehash}{25efdf09d1a24a6b2f6a04154ce3c8d1}
+      \strng{authorbibnamehash}{25efdf09d1a24a6b2f6a04154ce3c8d1}
+      \strng{authornamehash}{25efdf09d1a24a6b2f6a04154ce3c8d1}
+      \strng{authorfullhash}{25efdf09d1a24a6b2f6a04154ce3c8d1}
       \field{labelalpha}{Fal07}
       \field{sortinit}{F}
-      \field{sortinithash}{9661cce5f16ac30b6b0c804d4583ed99}
-      \field{labeltitle}{Fractal Geometry: Mathematical Foundations and Applications}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{edition}{2}
       \field{title}{Fractal Geometry: Mathematical Foundations and Applications}
       \field{year}{Hoboken, 2007}
     \endentry
     \entry{fukushima2011dirichlet}{book}{}
-      \name{labelname}{3}{}{%
-        {{hash=e64628b7c7333774326c9ebf76e190ff}{Fukushima}{F\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
-        {{hash=44e4536204746f3a5acd0df2052d814f}{Oshima}{O\bibinitperiod}{Y.}{Y\bibinitperiod}{}{}{}{}}%
-        {{hash=d66500f31123915dc7e099f574466b0a}{Takeda}{T\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{3}{}{%
-        {{hash=e64628b7c7333774326c9ebf76e190ff}{Fukushima}{F\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
-        {{hash=44e4536204746f3a5acd0df2052d814f}{Oshima}{O\bibinitperiod}{Y.}{Y\bibinitperiod}{}{}{}{}}%
-        {{hash=d66500f31123915dc7e099f574466b0a}{Takeda}{T\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=e64628b7c7333774326c9ebf76e190ff}{%
+           family={Fukushima},
+           familyi={F\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=44e4536204746f3a5acd0df2052d814f}{%
+           family={Oshima},
+           familyi={O\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d66500f31123915dc7e099f574466b0a}{%
+           family={Takeda},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {De Gruyter}%
       }
       \strng{namehash}{2c50148b617ccfab6fa0e5e19b2b95a3}
       \strng{fullhash}{2c50148b617ccfab6fa0e5e19b2b95a3}
+      \strng{bibnamehash}{2c50148b617ccfab6fa0e5e19b2b95a3}
+      \strng{authorbibnamehash}{2c50148b617ccfab6fa0e5e19b2b95a3}
+      \strng{authornamehash}{2c50148b617ccfab6fa0e5e19b2b95a3}
+      \strng{authorfullhash}{2c50148b617ccfab6fa0e5e19b2b95a3}
       \field{labelalpha}{FOT11}
       \field{sortinit}{F}
-      \field{sortinithash}{9661cce5f16ac30b6b0c804d4583ed99}
-      \field{labeltitle}{Dirichlet Forms and Symmetric Markov Processes}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{edition}{2}
       \field{series}{De Gruyter studies in mathematics}
       \field{title}{Dirichlet Forms and Symmetric Markov Processes}
       \field{year}{Berlin Boston, 2011}
     \endentry
     \entry{freiberg2012einstein}{article}{}
-      \name{labelname}{1}{}{%
-        {{hash=ce22b36f9185f81f0188e010d1e41c2e}{Freiberg}{F\bibinitperiod}{Uta}{U\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{1}{}{%
-        {{hash=ce22b36f9185f81f0188e010d1e41c2e}{Freiberg}{F\bibinitperiod}{Uta}{U\bibinitperiod}{}{}{}{}}%
+        {{hash=ce22b36f9185f81f0188e010d1e41c2e}{%
+           family={Freiberg},
+           familyi={F\bibinitperiod},
+           given={Uta},
+           giveni={U\bibinitperiod}}}%
       }
       \strng{namehash}{ce22b36f9185f81f0188e010d1e41c2e}
       \strng{fullhash}{ce22b36f9185f81f0188e010d1e41c2e}
+      \strng{bibnamehash}{ce22b36f9185f81f0188e010d1e41c2e}
+      \strng{authorbibnamehash}{ce22b36f9185f81f0188e010d1e41c2e}
+      \strng{authornamehash}{ce22b36f9185f81f0188e010d1e41c2e}
+      \strng{authorfullhash}{ce22b36f9185f81f0188e010d1e41c2e}
       \field{labelalpha}{Fre12}
       \field{sortinit}{F}
-      \field{sortinithash}{9661cce5f16ac30b6b0c804d4583ed99}
-      \field{labeltitle}{Einstein Relation on Fractal Objects}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{journaltitle}{Discrete and Continuous Dynamical Systems. Series B}
       \field{month}{03}
       \field{title}{Einstein Relation on Fractal Objects}
@@ -134,262 +175,386 @@
       \field{year}{2012}
     \endentry
     \entry{hambly_kigami_kumagai_2002}{article}{}
-      \name{labelname}{3}{}{%
-        {{hash=7aec73978627f7dd41002c0c95153ceb}{Hambly}{H\bibinitperiod}{B.\bibnamedelimi M.}{B\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
-        {{hash=a19df97a07c2b8ad42daced00bc4dd8e}{Kigami}{K\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
-        {{hash=88f8c264ff9937ea471ea1181f40af33}{Kumagai}{K\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{3}{}{%
-        {{hash=7aec73978627f7dd41002c0c95153ceb}{Hambly}{H\bibinitperiod}{B.\bibnamedelimi M.}{B\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
-        {{hash=a19df97a07c2b8ad42daced00bc4dd8e}{Kigami}{K\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
-        {{hash=88f8c264ff9937ea471ea1181f40af33}{Kumagai}{K\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=7aec73978627f7dd41002c0c95153ceb}{%
+           family={Hambly},
+           familyi={H\bibinitperiod},
+           given={B.\bibnamedelimi M.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a19df97a07c2b8ad42daced00bc4dd8e}{%
+           family={Kigami},
+           familyi={K\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=88f8c264ff9937ea471ea1181f40af33}{%
+           family={Kumagai},
+           familyi={K\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Cambridge University Press}%
       }
       \strng{namehash}{90979a8e1df6c4ff32e69983faf32a26}
       \strng{fullhash}{90979a8e1df6c4ff32e69983faf32a26}
+      \strng{bibnamehash}{90979a8e1df6c4ff32e69983faf32a26}
+      \strng{authorbibnamehash}{90979a8e1df6c4ff32e69983faf32a26}
+      \strng{authornamehash}{90979a8e1df6c4ff32e69983faf32a26}
+      \strng{authorfullhash}{90979a8e1df6c4ff32e69983faf32a26}
       \field{labelalpha}{HKK02}
       \field{sortinit}{H}
-      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
-      \field{labeltitle}{Multifractal formalisms for the local spectral and walk dimensions}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{journaltitle}{Mathematical Proceedings of the Cambridge Philosophical Society}
       \field{number}{3}
       \field{title}{Multifractal formalisms for the local spectral and walk dimensions}
       \field{volume}{132}
       \field{year}{2002}
       \field{pages}{555\bibrangedash 571}
+      \range{pages}{17}
     \endentry
     \entry{hutchinson1981fractals}{article}{}
-      \name{labelname}{1}{}{%
-        {{hash=6b814812017600e56c6932a98be8320d}{Hutchinson}{H\bibinitperiod}{J.E.}{J\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{1}{}{%
-        {{hash=6b814812017600e56c6932a98be8320d}{Hutchinson}{H\bibinitperiod}{J.E.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=6b814812017600e56c6932a98be8320d}{%
+           family={Hutchinson},
+           familyi={H\bibinitperiod},
+           given={J.E.},
+           giveni={J\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {JSTOR}%
       }
       \strng{namehash}{6b814812017600e56c6932a98be8320d}
       \strng{fullhash}{6b814812017600e56c6932a98be8320d}
+      \strng{bibnamehash}{6b814812017600e56c6932a98be8320d}
+      \strng{authorbibnamehash}{6b814812017600e56c6932a98be8320d}
+      \strng{authornamehash}{6b814812017600e56c6932a98be8320d}
+      \strng{authorfullhash}{6b814812017600e56c6932a98be8320d}
       \field{labelalpha}{Hut81}
       \field{sortinit}{H}
-      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
-      \field{labeltitle}{Fractals and self similarity}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{journaltitle}{Indiana University Mathematics Journal}
       \field{number}{5}
       \field{title}{Fractals and self similarity}
       \field{volume}{30}
       \field{year}{1981}
       \field{pages}{713\bibrangedash 747}
+      \range{pages}{35}
     \endentry
     \entry{kallenberg2002foundations}{book}{}
-      \name{labelname}{1}{}{%
-        {{hash=4e5ba01a7ad5963b1097885b5a1b5c28}{Kallenberg}{K\bibinitperiod}{O.}{O\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{1}{}{%
-        {{hash=4e5ba01a7ad5963b1097885b5a1b5c28}{Kallenberg}{K\bibinitperiod}{O.}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=4e5ba01a7ad5963b1097885b5a1b5c28}{%
+           family={Kallenberg},
+           familyi={K\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Springer}%
       }
       \strng{namehash}{4e5ba01a7ad5963b1097885b5a1b5c28}
       \strng{fullhash}{4e5ba01a7ad5963b1097885b5a1b5c28}
+      \strng{bibnamehash}{4e5ba01a7ad5963b1097885b5a1b5c28}
+      \strng{authorbibnamehash}{4e5ba01a7ad5963b1097885b5a1b5c28}
+      \strng{authornamehash}{4e5ba01a7ad5963b1097885b5a1b5c28}
+      \strng{authorfullhash}{4e5ba01a7ad5963b1097885b5a1b5c28}
       \field{labelalpha}{Kal02}
       \field{sortinit}{K}
-      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
-      \field{labeltitle}{Foundations of Modern Probability}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{edition}{2}
       \field{series}{Probability and Its Applications}
       \field{title}{Foundations of Modern Probability}
       \field{year}{New York, 2002}
     \endentry
     \entry{kigami1993weyl}{article}{}
-      \name{labelname}{2}{}{%
-        {{hash=a19df97a07c2b8ad42daced00bc4dd8e}{Kigami}{K\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
-        {{hash=28480731a77f7e713ad3e9d0d0920ffe}{Lapidus}{L\bibinitperiod}{M.L.}{M\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{2}{}{%
-        {{hash=a19df97a07c2b8ad42daced00bc4dd8e}{Kigami}{K\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
-        {{hash=28480731a77f7e713ad3e9d0d0920ffe}{Lapidus}{L\bibinitperiod}{M.L.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=a19df97a07c2b8ad42daced00bc4dd8e}{%
+           family={Kigami},
+           familyi={K\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=28480731a77f7e713ad3e9d0d0920ffe}{%
+           family={Lapidus},
+           familyi={L\bibinitperiod},
+           given={M.L.},
+           giveni={M\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Springer}%
       }
       \strng{namehash}{91bb7449782904fc409263359f31534b}
       \strng{fullhash}{91bb7449782904fc409263359f31534b}
+      \strng{bibnamehash}{91bb7449782904fc409263359f31534b}
+      \strng{authorbibnamehash}{91bb7449782904fc409263359f31534b}
+      \strng{authornamehash}{91bb7449782904fc409263359f31534b}
+      \strng{authorfullhash}{91bb7449782904fc409263359f31534b}
       \field{labelalpha}{KL93}
       \field{sortinit}{K}
-      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
-      \field{labeltitle}{Weyl's problem for the spectral distribution of Laplacians on pcf self-similar fractals}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{journaltitle}{Communications in mathematical physics}
       \field{number}{1}
       \field{title}{Weyl's problem for the spectral distribution of Laplacians on pcf self-similar fractals}
       \field{volume}{158}
       \field{year}{1993}
       \field{pages}{93\bibrangedash 125}
+      \range{pages}{33}
+    \endentry
+    \entry{liu1998hausdorff}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b6d3d4bef510feacc2c3e3029c6c79ba}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Luqin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f0f4bfd9bcc2482e8ba4ed3278df932f}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Yimin},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {WROCLAW UNIVERSITY PRESS}%
+      }
+      \strng{namehash}{a2ed2d1fd0d001fa20019e83e2fe4081}
+      \strng{fullhash}{a2ed2d1fd0d001fa20019e83e2fe4081}
+      \strng{bibnamehash}{a2ed2d1fd0d001fa20019e83e2fe4081}
+      \strng{authorbibnamehash}{a2ed2d1fd0d001fa20019e83e2fe4081}
+      \strng{authornamehash}{a2ed2d1fd0d001fa20019e83e2fe4081}
+      \strng{authorfullhash}{a2ed2d1fd0d001fa20019e83e2fe4081}
+      \field{labelalpha}{LX98}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PROBABILITY AND MATHEMATICAL STATISTICS-WROCLAW UNIVERSITY}
+      \field{title}{Hausdorff dimension theorems for self-similar Markov processes}
+      \field{volume}{18}
+      \field{year}{1998}
+      \field{pages}{369\bibrangedash 383}
+      \range{pages}{15}
     \endentry
     \entry{mattila1999geometry}{book}{}
-      \name{labelname}{1}{}{%
-        {{hash=9dd01179436f3de34874e7b67f1dec14}{Mattila}{M\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{1}{}{%
-        {{hash=9dd01179436f3de34874e7b67f1dec14}{Mattila}{M\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=9dd01179436f3de34874e7b67f1dec14}{%
+           family={Mattila},
+           familyi={M\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Cambridge University Press}%
       }
       \strng{namehash}{9dd01179436f3de34874e7b67f1dec14}
       \strng{fullhash}{9dd01179436f3de34874e7b67f1dec14}
+      \strng{bibnamehash}{9dd01179436f3de34874e7b67f1dec14}
+      \strng{authorbibnamehash}{9dd01179436f3de34874e7b67f1dec14}
+      \strng{authornamehash}{9dd01179436f3de34874e7b67f1dec14}
+      \strng{authorfullhash}{9dd01179436f3de34874e7b67f1dec14}
       \field{labelalpha}{Mat99}
       \field{sortinit}{M}
-      \field{sortinithash}{4203d16473bc940d4ac780773cb7c5dd}
-      \field{labeltitle}{Geometry of Sets and Measures in Euclidean Spaces: Fractals and Rectifiability}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{series}{Cambridge Studies in Advanced Mathematics}
       \field{title}{Geometry of Sets and Measures in Euclidean Spaces: Fractals and Rectifiability}
       \field{year}{Cambridge, 1999}
     \endentry
     \entry{ma2012introduction}{book}{}
-      \name{labelname}{2}{}{%
-        {{hash=39571f32c5be7b34ae63fbecb9679f8e}{Ma}{M\bibinitperiod}{Z.M.}{Z\bibinitperiod}{}{}{}{}}%
-        {{hash=fa95c170741bfdf0d7fb36dd169525a4}{R{ö}ckner}{R\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{2}{}{%
-        {{hash=39571f32c5be7b34ae63fbecb9679f8e}{Ma}{M\bibinitperiod}{Z.M.}{Z\bibinitperiod}{}{}{}{}}%
-        {{hash=fa95c170741bfdf0d7fb36dd169525a4}{R{ö}ckner}{R\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=39571f32c5be7b34ae63fbecb9679f8e}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Z.M.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=fa95c170741bfdf0d7fb36dd169525a4}{%
+           family={R{ö}ckner},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Springer}%
       }
       \strng{namehash}{ad141f4096ba2785736b09dffa171898}
       \strng{fullhash}{ad141f4096ba2785736b09dffa171898}
+      \strng{bibnamehash}{ad141f4096ba2785736b09dffa171898}
+      \strng{authorbibnamehash}{ad141f4096ba2785736b09dffa171898}
+      \strng{authornamehash}{ad141f4096ba2785736b09dffa171898}
+      \strng{authorfullhash}{ad141f4096ba2785736b09dffa171898}
       \field{labelalpha}{MR12}
       \field{sortinit}{M}
-      \field{sortinithash}{4203d16473bc940d4ac780773cb7c5dd}
-      \field{labeltitle}{Introduction to the Theory of (Non-Symmetric) Dirichlet Forms}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{series}{Universitext}
       \field{title}{Introduction to the Theory of (Non-Symmetric) Dirichlet Forms}
       \field{year}{Berlin Heidelberg, 2012}
     \endentry
     \entry{schief1996self}{article}{}
-      \name{labelname}{1}{}{%
-        {{hash=ffab5cece6a0cbb03cabd6e51bcef4b9}{Schief}{S\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{1}{}{%
-        {{hash=ffab5cece6a0cbb03cabd6e51bcef4b9}{Schief}{S\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=ffab5cece6a0cbb03cabd6e51bcef4b9}{%
+           family={Schief},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
       }
       \strng{namehash}{ffab5cece6a0cbb03cabd6e51bcef4b9}
       \strng{fullhash}{ffab5cece6a0cbb03cabd6e51bcef4b9}
+      \strng{bibnamehash}{ffab5cece6a0cbb03cabd6e51bcef4b9}
+      \strng{authorbibnamehash}{ffab5cece6a0cbb03cabd6e51bcef4b9}
+      \strng{authornamehash}{ffab5cece6a0cbb03cabd6e51bcef4b9}
+      \strng{authorfullhash}{ffab5cece6a0cbb03cabd6e51bcef4b9}
       \field{labelalpha}{Sch96}
       \field{sortinit}{S}
-      \field{sortinithash}{4125bb4c3a0eb3eaee3ea6da32eb70c8}
-      \field{labeltitle}{Self-similar sets in complete metric spaces}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the American Mathematical Society}
       \field{number}{2}
       \field{title}{Self-similar sets in complete metric spaces}
       \field{volume}{124}
       \field{year}{1996}
       \field{pages}{481\bibrangedash 490}
+      \range{pages}{10}
     \endentry
     \entry{shioya2016metric}{book}{}
-      \name{labelname}{1}{}{%
-        {{hash=392335fbec580a4dfba82f6246c9a6da}{Shioya}{S\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{1}{}{%
-        {{hash=392335fbec580a4dfba82f6246c9a6da}{Shioya}{S\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=392335fbec580a4dfba82f6246c9a6da}{%
+           family={Shioya},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {European Mathematical Society}%
       }
       \strng{namehash}{392335fbec580a4dfba82f6246c9a6da}
       \strng{fullhash}{392335fbec580a4dfba82f6246c9a6da}
+      \strng{bibnamehash}{392335fbec580a4dfba82f6246c9a6da}
+      \strng{authorbibnamehash}{392335fbec580a4dfba82f6246c9a6da}
+      \strng{authornamehash}{392335fbec580a4dfba82f6246c9a6da}
+      \strng{authorfullhash}{392335fbec580a4dfba82f6246c9a6da}
       \field{labelalpha}{Shi16}
       \field{sortinit}{S}
-      \field{sortinithash}{4125bb4c3a0eb3eaee3ea6da32eb70c8}
-      \field{labeltitle}{Metric Measure Geometry: Gromov's Theory of Convergence and Concentration of Metrics and Measures}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{series}{IRMA lectures in mathematics and theoretical physics}
       \field{title}{Metric Measure Geometry: Gromov's Theory of Convergence and Concentration of Metrics and Measures}
       \field{year}{2016}
     \endentry
     \entry{strichartz2006differential}{book}{}
-      \name{labelname}{1}{}{%
-        {{hash=180138372c89dae116141f6e46184674}{Strichartz}{S\bibinitperiod}{R.S.}{R\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{1}{}{%
-        {{hash=180138372c89dae116141f6e46184674}{Strichartz}{S\bibinitperiod}{R.S.}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=180138372c89dae116141f6e46184674}{%
+           family={Strichartz},
+           familyi={S\bibinitperiod},
+           given={R.S.},
+           giveni={R\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Princeton University Press}%
       }
       \strng{namehash}{180138372c89dae116141f6e46184674}
       \strng{fullhash}{180138372c89dae116141f6e46184674}
+      \strng{bibnamehash}{180138372c89dae116141f6e46184674}
+      \strng{authorbibnamehash}{180138372c89dae116141f6e46184674}
+      \strng{authornamehash}{180138372c89dae116141f6e46184674}
+      \strng{authorfullhash}{180138372c89dae116141f6e46184674}
       \field{labelalpha}{Str06}
       \field{sortinit}{S}
-      \field{sortinithash}{4125bb4c3a0eb3eaee3ea6da32eb70c8}
-      \field{labeltitle}{Differential Equations on Fractals: A Tutorial}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{series}{Princeton Paperbacks}
       \field{title}{Differential Equations on Fractals: A Tutorial}
       \field{year}{Princeton, 2006}
     \endentry
     \entry{telcs2006art}{book}{}
-      \name{labelname}{1}{}{%
-        {{hash=391062a611378fe7386cc3190ced7d7b}{Telcs}{T\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{1}{}{%
-        {{hash=391062a611378fe7386cc3190ced7d7b}{Telcs}{T\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=391062a611378fe7386cc3190ced7d7b}{%
+           family={Telcs},
+           familyi={T\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Springer}%
       }
       \strng{namehash}{391062a611378fe7386cc3190ced7d7b}
       \strng{fullhash}{391062a611378fe7386cc3190ced7d7b}
+      \strng{bibnamehash}{391062a611378fe7386cc3190ced7d7b}
+      \strng{authorbibnamehash}{391062a611378fe7386cc3190ced7d7b}
+      \strng{authornamehash}{391062a611378fe7386cc3190ced7d7b}
+      \strng{authorfullhash}{391062a611378fe7386cc3190ced7d7b}
       \field{labelalpha}{Tel06}
       \field{sortinit}{T}
-      \field{sortinithash}{9378dd666f3c24d81538df53aa99e23d}
-      \field{labeltitle}{The Art of Random Walks}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{series}{Lecture Notes in Mathematics}
       \field{title}{The Art of Random Walks}
       \field{year}{Berlin Heidelberg, 2006}
     \endentry
     \entry{Weyl1911}{article}{}
-      \name{labelname}{1}{}{%
-        {{hash=dd457278ef24d2a2f8c91a8cde5c4d6a}{Weyl}{W\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{1}{}{%
-        {{hash=dd457278ef24d2a2f8c91a8cde5c4d6a}{Weyl}{W\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=dd457278ef24d2a2f8c91a8cde5c4d6a}{%
+           family={Weyl},
+           familyi={W\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
       }
       \strng{namehash}{dd457278ef24d2a2f8c91a8cde5c4d6a}
       \strng{fullhash}{dd457278ef24d2a2f8c91a8cde5c4d6a}
+      \strng{bibnamehash}{dd457278ef24d2a2f8c91a8cde5c4d6a}
+      \strng{authorbibnamehash}{dd457278ef24d2a2f8c91a8cde5c4d6a}
+      \strng{authornamehash}{dd457278ef24d2a2f8c91a8cde5c4d6a}
+      \strng{authorfullhash}{dd457278ef24d2a2f8c91a8cde5c4d6a}
       \field{labelalpha}{Wey11}
       \field{sortinit}{W}
-      \field{sortinithash}{e560dae78a85a037c3da51c61467873a}
-      \field{labeltitle}{Ueber die asymptotische Verteilung der Eigenwerte}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{journaltitle}{Nachrichten von der Gesellschaft der Wissenschaften zu G{ö}ttingen, Mathematisch-Physikalische Klasse}
       \field{title}{Ueber die asymptotische Verteilung der Eigenwerte}
       \field{volume}{1911}
       \field{year}{1911}
       \field{pages}{110\bibrangedash 117}
+      \range{pages}{8}
     \endentry
     \entry{Weyl1912}{article}{}
-      \name{labelname}{1}{}{%
-        {{hash=dd457278ef24d2a2f8c91a8cde5c4d6a}{Weyl}{W\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
-      }
       \name{author}{1}{}{%
-        {{hash=dd457278ef24d2a2f8c91a8cde5c4d6a}{Weyl}{W\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=dd457278ef24d2a2f8c91a8cde5c4d6a}{%
+           family={Weyl},
+           familyi={W\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
       }
       \strng{namehash}{dd457278ef24d2a2f8c91a8cde5c4d6a}
       \strng{fullhash}{dd457278ef24d2a2f8c91a8cde5c4d6a}
+      \strng{bibnamehash}{dd457278ef24d2a2f8c91a8cde5c4d6a}
+      \strng{authorbibnamehash}{dd457278ef24d2a2f8c91a8cde5c4d6a}
+      \strng{authornamehash}{dd457278ef24d2a2f8c91a8cde5c4d6a}
+      \strng{authorfullhash}{dd457278ef24d2a2f8c91a8cde5c4d6a}
       \field{labelalpha}{Wey12}
       \field{sortinit}{W}
-      \field{sortinithash}{e560dae78a85a037c3da51c61467873a}
-      \field{labeltitle}{Das asymptotische Verteilungsgesetz der Eigenwerte linearer partieller Differentialgleichungen (mit einer Anwendung auf die Theorie der Hohlraumstrahlung)}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{journaltitle}{Mathematische Annalen}
       \field{title}{Das asymptotische Verteilungsgesetz der Eigenwerte linearer partieller Differentialgleichungen (mit einer Anwendung auf die Theorie der Hohlraumstrahlung)}
       \field{volume}{71}
       \field{year}{1912}
       \field{pages}{441\bibrangedash 479}
+      \range{pages}{39}
     \endentry
-  \endsortlist
+  \enddatalist
 \endrefsection
 \endinput
 

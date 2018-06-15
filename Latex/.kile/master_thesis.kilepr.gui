@@ -1,0 +1,163 @@
+[General]
+kile_livePreviewEnabled=true
+kile_livePreviewStatusUserSpecified=false
+kile_livePreviewTool=LivePreview-PDFLaTeX
+lastDocument=mt_ch2.tex
+
+[document-settings,item:mt_bib.bib]
+Bookmarks=173
+Encoding=windows-1252
+FoldedColumns=
+FoldedLines=
+Highlighting=BibTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=BibTeX
+Mode Set By User=false
+
+[document-settings,item:mt_ch1.tex]
+Bookmarks=136
+Encoding=windows-1252
+FoldedColumns=
+FoldedLines=
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:mt_ch2.tex]
+Bookmarks=96
+Encoding=windows-1252
+FoldedColumns=
+FoldedLines=
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:mt_ch3.tex]
+Bookmarks=201
+Encoding=windows-1252
+FoldedColumns=
+FoldedLines=
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:mt_main.tex]
+Bookmarks=37
+Encoding=UTF-8
+FoldedColumns=
+FoldedLines=
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:mt_preamble_options.tex]
+Bookmarks=27
+Encoding=windows-1252
+FoldedColumns=
+FoldedLines=
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:mt_preamble_packages.tex]
+Bookmarks=
+Encoding=windows-1252
+FoldedColumns=
+FoldedLines=
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[item:master_thesis.kilepr]
+open=false
+order=-1
+
+[item:mt_bib.bib]
+open=true
+order=6
+
+[item:mt_ch1.tex]
+open=true
+order=1
+
+[item:mt_ch2.tex]
+open=true
+order=2
+
+[item:mt_ch3.tex]
+open=true
+order=3
+
+[item:mt_main.tex]
+open=true
+order=0
+
+[item:mt_preamble_options.tex]
+open=true
+order=4
+
+[item:mt_preamble_packages.tex]
+open=true
+order=5
+
+[view-settings,view=0,item:mt_bib.bib]
+CursorColumn=25
+CursorLine=187
+JumpList=
+TextFolding=[]
+ViMarks=.,195,0,[,186,0,],195,0,a,173,0
+
+[view-settings,view=0,item:mt_ch1.tex]
+CursorColumn=32
+CursorLine=192
+JumpList=
+TextFolding=[]
+ViMarks=.,136,453,[,136,439,],136,453,a,136,0
+
+[view-settings,view=0,item:mt_ch2.tex]
+CursorColumn=22
+CursorLine=84
+JumpList=
+TextFolding=[]
+ViMarks=.,84,21,[,84,21,],84,21,a,96,0
+
+[view-settings,view=0,item:mt_ch3.tex]
+CursorColumn=59
+CursorLine=264
+JumpList=
+TextFolding=[]
+ViMarks=.,262,16,[,262,16,],262,16,a,201,0,b,201,0
+
+[view-settings,view=0,item:mt_main.tex]
+CursorColumn=0
+CursorLine=68
+JumpList=
+TextFolding=[]
+ViMarks=.,37,41,[,37,40,],37,41,a,37,0
+
+[view-settings,view=0,item:mt_preamble_options.tex]
+CursorColumn=19
+CursorLine=44
+JumpList=
+TextFolding=[]
+ViMarks=.,44,18,[,44,18,],44,18,a,27,0
+
+[view-settings,view=0,item:mt_preamble_packages.tex]
+CursorColumn=40
+CursorLine=39
+JumpList=
+TextFolding=[]
+ViMarks=
