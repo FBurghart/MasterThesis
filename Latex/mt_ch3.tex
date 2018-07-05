@@ -50,7 +50,7 @@ In what follows, we will always assume $\supp\mu_X=X$.
 \subsection{Transport of structure}
 
 Given two mm-spaces $(X,d_X,\mu_X)$ and $(Y,d_Y,\mu_Y)$ with a map $\gp:X\to Y$, where a suitable operator 
-$A:L^2(X,\mu_X)\supseteq\cD(A)\to L^2(X,\mu_X)$ satisfies the Einstein relation with constant $c$ on $X$. How can we transport $A$ alongside $\gp$ to become an operator on $L^2(Y,\mu_Y)$, and which restrictions do we need to impose on $\gp$ to ensure that this transport of structure is compatible with the theory from chapter 1?
+$A:L^2(X,\mu_X)\supseteq\scD(A)\to L^2(X,\mu_X)$ satisfies the Einstein relation with constant $c$ on $X$. How can we transport $A$ alongside $\gp$ to become an operator on $L^2(Y,\mu_Y)$, and which restrictions do we need to impose on $\gp$ to ensure that this transport of structure is compatible with the theory from chapter 1?
 
 Note first that any bimeasurable bijection $\gp:(X,d_X,\mu_X)\to(Y,d_Y,\mu_Y)$ induces by precomposition an operator
 \begin{align*}
@@ -71,9 +71,9 @@ Denote by $\IL(H)$ the set of all partially defined linear maps (not necessarily
 \[
   \gp_{\IL}:\IL(L^2(X,\mu))\to\IL(L^2(Y,\mu))
 \]
-where $(\gp_{\IL} A)f:=(\gp_*^{-1}\circ A\circ\gp_*)f$ and $\cD(\gp_{\IL} A)=\gp_*^{-1}(\cD(A))$. Note that $\gp_L$ is again a bijection with inverse given by $\gp_L^{-1}=(\gp^{-1})_L$ and that this bijection restricts to the spaces of bounded linear operators. 
+where $(\gp_{\IL} A)f:=(\gp_*^{-1}\circ A\circ\gp_*)f$ and $\scD(\gp_{\IL} A)=\gp_*^{-1}(\scD(A))$. Note that $\gp_L$ is again a bijection with inverse given by $\gp_L^{-1}=(\gp^{-1})_L$ and that this bijection restricts to the spaces of bounded linear operators. 
 
-It follows immediately that $\cD(\gp_{\IL} A)$ is dense iff $\cD(A)$ is, and $\gp_{\IL} A$ is self-adjoint iff $A$ is. Indeed, consider arbitrary $f,g\in\cD(\gp_{\IL} A)$ with $f=\gp_*^{-1}(\bar f)$ and $g=\gp_*^{-1}(\bar g)$, where $\bar f, \bar g\in \cD(A)$. Then, applying \eqref{eq:isometry}, we have
+It follows immediately that $\scD(\gp_{\IL} A)$ is dense iff $\scD(A)$ is, and $\gp_{\IL} A$ is self-adjoint iff $A$ is. Indeed, consider arbitrary $f,g\in\scD(\gp_{\IL} A)$ with $f=\gp_*^{-1}(\bar f)$ and $g=\gp_*^{-1}(\bar g)$, where $\bar f, \bar g\in \scD(A)$. Then, applying \eqref{eq:isometry}, we have
 \[
   \left<(\gp_{\IL} A)f,g\right>_{L^2(Y,\mu_Y)}
   =\left<\gp_*^{-1}A\gp_*\gp_*^{-1}\bar f,\gp_*^{-1}\bar g\right>_{L^2(Y,\mu_Y)}
@@ -95,7 +95,7 @@ $\gp_L A$ to the eigenvalue $\gl$ as well. This can easily be checked by calcula
 \]
 
 
-Moreover, $\gp_{\IL}$ respects operator semigroups: If $(T_t)_{t\geq0}$ is a strongly continuous contraction semigroup on $L^2(X,\mu)$ with generator $(-A,\cD(A))$ then $(\gp_{\IL} T_t)_{t\geq0}$ is a semigroup with the same properties on $L^2(Y,\mu_Y)$ and with generator $(-\gp_{\IL} A,\cD(\gp_{\IL} A))$. Indeed, the semigroup property is trivial to check. For contractiveness, note that for $L^2(Y,\mu_Y)\ni f=\gp_*^{-1}\bar f$ with 
+Moreover, $\gp_{\IL}$ respects operator semigroups: If $(T_t)_{t\geq0}$ is a strongly continuous contraction semigroup on $L^2(X,\mu)$ with generator $(-A,\scD(A))$ then $(\gp_{\IL} T_t)_{t\geq0}$ is a semigroup with the same properties on $L^2(Y,\mu_Y)$ and with generator $(-\gp_{\IL} A,\scD(\gp_{\IL} A))$. Indeed, the semigroup property is trivial to check. For contractiveness, note that for $L^2(Y,\mu_Y)\ni f=\gp_*^{-1}\bar f$ with 
 $\bar f\in L^2(X,\mu_X)$
 \[
   \left\|(\gp_{\IL}T_t)f\right\|_{L^2(Y,\mu_Y)}
@@ -112,25 +112,25 @@ For strong continuity, we calculate
 for $t\searrow 0$ and arbitrary $f\in L^2(X,\mu)$, and verifying the generator works analogously. 
 
 Note however that a bi-measurable bijection $\gp$ does not respect enough structure to ensure that 
-$\gp_\IL \sqrt{A}$ generates a regular Dirichlet form if and only if $\sqrt{A}$ does -- recall that this means the density of $\cD(\sqrt{A})\cap C_c(Y)$ in both $\cD(\sqrt{A})$ and $C_c(Y)$. To this end, suppose now that $\gp:X\to Y$ is a homeomorphism between $X$ and $Y$ (since both spaces are equipped with their Borel $\gs$-algebras, such $\gp$ is automatically bi-measurable and bijective). Similar to the case of $L^2$-spaces, this induces an isometric isomorphism $\gp_*:C_0(Y)\to C_0(X), \gp_*(f)=f\circ\gp$ between algebras of continuous functions vanishing at infinity, equipped with sup-norm $\|\cdot\|_{C_0}$. This isomorphism restricts to the subalgebras of compactly supported continuous functions $C_c(X)$ resp. $C_c(Y)$. 
+$\gp_\IL \sqrt{A}$ generates a regular Dirichlet form if and only if $\sqrt{A}$ does -- recall that this means the density of $\scD(\sqrt{A})\cap C_c(Y)$ in both $\scD(\sqrt{A})$ and $C_c(Y)$. To this end, suppose now that $\gp:X\to Y$ is a homeomorphism between $X$ and $Y$ (since both spaces are equipped with their Borel $\gs$-algebras, such $\gp$ is automatically bi-measurable and bijective). Similar to the case of $L^2$-spaces, this induces an isometric isomorphism $\gp_*:C_0(Y)\to C_0(X), \gp_*(f)=f\circ\gp$ between algebras of continuous functions vanishing at infinity, equipped with sup-norm $\|\cdot\|_{C_0}$. This isomorphism restricts to the subalgebras of compactly supported continuous functions $C_c(X)$ resp. $C_c(Y)$. 
 
 \begin{lem}
   With the notation just introduced, if the Dirichlet form on $L^2(X,\mu_X)$ defined by 
   \[
-    \cE(f,g):=\left<\sqrt{A}f,\sqrt{A}g\right>_{L^2(X,\mu_X)}\ \text{ for } f,g\in\cD(\sqrt{A})
+    \cE(f,g):=\left<\sqrt{A}f,\sqrt{A}g\right>_{L^2(X,\mu_X)}\ \text{ for } f,g\in\scD(\sqrt{A})
   \]
  is regular then so is the Dirichlet form on $L^2(Y,\mu_Y)$ defined by 
  \[
-   (\gp_\IL)^*\cE(\bar f,\bar g):=\left<(\gp_\IL\sqrt{A})\bar f,(\gp_\IL\sqrt{A})\bar g\right>_{L^2(Y,\mu_Y)}\ \text{ for } \bar f,\bar g\in\gp_*^{-1}(\cD(\sqrt{A})).
+   (\gp_\IL)^*\cE(\bar f,\bar g):=\left<(\gp_\IL\sqrt{A})\bar f,(\gp_\IL\sqrt{A})\bar g\right>_{L^2(Y,\mu_Y)}\ \text{ for } \bar f,\bar g\in\gp_*^{-1}(\scD(\sqrt{A})).
  \]
 \end{lem}
 \begin{proof}
-  We need to show that the intersection of $\cD(\gp_\IL\sqrt{A})=\gp_*^{-1}(\cD(\sqrt{A}))$ and $C_c(Y)$ is dense both in $C_c(Y)$ w.r.t $\|\cdot\|_{C_0(Y)}$ and in $\cD(\gp_\IL\sqrt{A})$ w.r.t. $((\gp_\IL)^*\cE)_1$ as introduced in definition \ref{defin:DF}.
+  We need to show that the intersection of $\scD(\gp_\IL\sqrt{A})=\gp_*^{-1}(\scD(\sqrt{A}))$ and $C_c(Y)$ is dense both in $C_c(Y)$ w.r.t $\|\cdot\|_{C_0(Y)}$ and in $\scD(\gp_\IL\sqrt{A})$ w.r.t. $((\gp_\IL)^*\cE)_1$ as introduced in definition \ref{defin:DF}.
   
-  For the first part, take $C_c(Y)\ni f=\gp_*^{-1} g$ for $g\in C_c(X)$. Then, there exists a sequence $(g_n)_{n\in\IN}\ssq \cD(\sqrt{A})\cap C_c(X)$ with $\|g_n-g\|_{C_0(X)}\to 0$ as $n\to\infty$. Since $\gp_*^{-1}$ is isometric, we conlude that $f_n:=\gp_*^{-1}g_n\in \cD(\gp_\IL\sqrt{A})\cap C_c(Y)$ converges to $f$ in 
+  For the first part, take $C_c(Y)\ni f=\gp_*^{-1} g$ for $g\in C_c(X)$. Then, there exists a sequence $(g_n)_{n\in\IN}\ssq \scD(\sqrt{A})\cap C_c(X)$ with $\|g_n-g\|_{C_0(X)}\to 0$ as $n\to\infty$. Since $\gp_*^{-1}$ is isometric, we conlude that $f_n:=\gp_*^{-1}g_n\in \scD(\gp_\IL\sqrt{A})\cap C_c(Y)$ converges to $f$ in 
   $\|\cdot\|_{C_0(Y)}$.
   
-  For the second part, we analogously take $\cD(\gp_\IL\sqrt{A})\ni f=\gp_*^{-1} g$ for $g\in\cD(\sqrt{A})$. By regularity of $\cE$, there exists again a sequence $(g_n)_{n\in\IN}\ssq\cD(\sqrt{A})\cap C_c(X)$ with $\cE_1[g_n-g]\to 0$ as $n\to\infty$. Setting $f_n:=\gp_*^{-1} g_n\in\cD(\gp_\IL\sqrt{A})\cap C_c(Y)$, we obtain
+  For the second part, we analogously take $\scD(\gp_\IL\sqrt{A})\ni f=\gp_*^{-1} g$ for $g\in\scD(\sqrt{A})$. By regularity of $\cE$, there exists again a sequence $(g_n)_{n\in\IN}\ssq\scD(\sqrt{A})\cap C_c(X)$ with $\cE_1[g_n-g]\to 0$ as $n\to\infty$. Setting $f_n:=\gp_*^{-1} g_n\in\scD(\gp_\IL\sqrt{A})\cap C_c(Y)$, we obtain
   \begin{align*}
     ((\gp_\IL)^*\cE)_1[f_n-f]
     &=\left\|\left(\gp_\IL\sqrt{A}\right)(f_n-f)\right\|_{L^2(Y,\mu_Y)}^2
@@ -146,7 +146,7 @@ $\gp_\IL \sqrt{A}$ generates a regular Dirichlet form if and only if $\sqrt{A}$ 
 Putting everything together, we observe that $A$ satisfies the assumptions in \ref{cond:A} iff $\gp_\IL A$ does whenever $\gp:X\to Y$ is a homeomorphism, and then $\dims(X,A)=\dims(Y,\gp_\IL A)$. The spectral dimension is therefore stable under a very large class of transformations. As it turns out, this will not be the case for Hausdorff and walk dimension. 
 
 \begin{prop}\label{prop:mmiso}
-  Let $(X,d_X,\mu)$ and $(Y,d_Y,\nu)$ be complete separable locally compact path-connected metric measure spaces with $\supp\mu=X$ and $\supp\nu=Y$ that are Lipschitz-isomorphic by virtue of the map $\gp:X\to Y$. Suppose the Einstein relation with constant $c$ holds on $X$ with respect to an operator $(A,\cD(A))$ satisfying assumptions \ref{cond:A}. Then, the Einstein relation also holds on $Y$ with the same constant $c$ and with respect to $\gp_{\IL} A$.
+  Let $(X,d_X,\mu)$ and $(Y,d_Y,\nu)$ be complete separable locally compact path-connected metric measure spaces with $\supp\mu=X$ and $\supp\nu=Y$ that are Lipschitz-isomorphic by virtue of the map $\gp:X\to Y$. Suppose the Einstein relation with constant $c$ holds on $X$ with respect to an operator $(A,\scD(A))$ satisfying assumptions \ref{cond:A}. Then, the Einstein relation also holds on $Y$ with the same constant $c$ and with respect to $\gp_{\IL} A$.
 \end{prop}
 \begin{proof}
   As the Hausdorff dimension is invariant under bi-Lipschitz maps we obtain $\dimh(X)=\dimh(Y)$, and as observed above, $\dims(X,A)=\dims(Y,\gp_{\IL} A)$. So, it remains to show $\dimw(X,M)=\dimw(X,M^{(\gp)})$ where $M$ is a Hunt process associated to $A$ and $M^{(\gp)}$ is one associated to $\gp_{\IL} A$. 
@@ -179,12 +179,12 @@ Putting everything together, we observe that $A$ satisfies the assumptions in \r
   Taking the limit for $r\searrow0$ and applying a standard squeezing argument, we obtain $\dimw(X,M)=\dimw(Y,N)$. 
 \end{proof}
 \begin{rem}\label{rem:ToS}
-  Note that we only needed the bi-Lipschitz property for determining 
+  Note that we required the bi-Lipschitz property for determining 
   $\dimh$ and $\dimw$, whereas we only needed $\gp$ to be a homeomorphism in order to show that $M^{(\gp)}$ and $N$ share the same semigroup. This allows us in the following sections -- given a homeomorphism $\gp:(X,d_X,\mu_X)\to(Y,d_Y)$ -- to transport the complete structure needed for the Einstein relation by 
   \begin{itemize}
     \item Endowing $(Y,\mu_Y)$ with the push-forward measure $\gp_*\mu_X$.
-    \item Mapping the generator $(A,\cD(A))$ to 
-    $(\gp_LA,\gp_*^{-1}\cD(A))$, thus also mapping the generated semigroup $T_t$ to $\gp_LT_t$.
+    \item Mapping the generator $(A,\scD(A))$ to 
+    $(\gp_LA,\gp_*^{-1}\scD(A))$, thus also mapping the generated semigroup $T_t$ to $\gp_LT_t$.
     \item Sending the Hunt process $M$ to $\gp(M)$. 
   \end{itemize}
   What we did so far ensures that all these constructions are compatible with each other. 
@@ -192,7 +192,7 @@ Putting everything together, we observe that $A$ satisfies the assumptions in \r
 
 From proposition \ref{prop:mmiso} we immediately obtain the following two corollaries:
 \begin{cor}
-  If $(X,d_X,\mu_X)\cong(Y,d_Y,\mu_Y)$ and the Einstein relation with constant $c$ holds on $X$ w.r.t. $(A,\cD(A))$ is an operator on $L^2(X,\mu)$, then it also holds on $Y$ with the same constant w.r.t. $\gp_{\IL}A$. 
+  If $(X,d_X,\mu_X)\cong(Y,d_Y,\mu_Y)$ and the Einstein relation with constant $c$ holds on $X$ w.r.t. $(A,\scD(A))$ is an operator on $L^2(X,\mu)$, then it also holds on $Y$ with the same constant w.r.t. $\gp_{\IL}A$. 
 \end{cor}
 \begin{cor}
   If $X\ssq\IR^n$ and $d_1$ and $d_2$ are metrics which are induced by norms, then $\id_X:(X,d_1,\mu)\to(X,d_2,\mu)$ will preserve the constant in the Einstein relation.
@@ -203,40 +203,204 @@ The second corollary follows from the well-known fact that all norms on a finite
 
 \section{H\"older regularity and graphs of functions}
 
-A natural question arising at this point is whether the invariance of the Einstein relation of propsition \ref{prop:mmiso} can be extended to a larger class of transformations. The following family of examples shows that this is not the case:
+A natural question arising at this point is whether the invariance of the Einstein relation of propsition \ref{prop:mmiso} can be extended to a larger class of transformations. In particular, what happens if $\gp$ is only a H\"older continuous map instead of a bi-Lipschitz one?
 
-Consider a 1-dimensional continuous $\ga$-self-similar time-homogeneous strong Markov process $(M_t)_{t\geq0}$ over a suitable probability space $(\gO,\scA,\Prob)$. Here, $\ga$-self-similar for $0<\ga\leq1$ means that the processes 
-$(M_t)_{t\geq0}$ and $\left(\xi^{-\ga}M_{\xi t}\right)_{t\geq0}$ have the same distribution. Denote by
+As we saw in the previous section, such $\gp$ does not impede the spectral dimension, but it is well-known that $\ga$-H\"older continuous transformations are not compatible with the Hausdorff dimension, besides the general estimate $\dimh(\gp(X))\leq\ga^{-1}\dimh(X)$ mentioned in chapter 1. We will see that a similar picture occurs for the walk dimension.
+
+\begin{defin}
+  Let $\ga\in(0,1]$. We say that a map $\gp:(X,d_X)\to(Y,d_Y)$ between two metric spaces is locally $\ga$-H\"older continuous at $x\in X$ if there exists an open neighbourhood $U\ssq X$ of $x$ and a constant $C>0$ such that
+  \[
+    d_Y(\gp(x),\gp(y))\leq Cd_X(x,y)^\ga
+  \]
+  for all $y\in U$. If this holds for all $x\in X$ we call $\gp$ locally $\ga$-H\"older continuous on $X$. 
+\end{defin}
+Note that if $\gp$ is $\ga$-H\"older continuity then it is also 
+$\gb$-H\"older continuous for any $\gb<\ga$ and that for $\ga=1$, we get back the definition of Lipschitz continuity. This allows us to define H\"older regularity as precisely the parameter $\ga$ at which the phase transition betweeen being H\"older continuous and not being H\"older continuous occurs.
+\begin{defin}
+  In extension of the previous definition, we say that $\gp$ is 
+  locally $\ga$-H\"older regular at $x\in X$ if $\ga$ is the supremum of all $\gb>0$ for which $\gp$ is locally $\gb$-H\"older continuous at $x$. Equivalently, such $\ga$ is the infimum of $1$ and all 
+  $\gc\leq1$ for which $\gp$ is not locally $\gc$-H\"older continuous at $x$. 
+\end{defin}
+
+Being prepared with these definitions, we can now take...
+
+\subsection{A closer look at the walk dimension}
+
+\begin{lem}\label{lem:dimuw1}
+  Let $\left(M_t^x\right)_{t\geq0}$ be a right-continuous stochastic process on $(X,d_X)$ starting in $x\in X$ and let $\gp:(X,d_X)\to(Y,d_Y)$ be a map which is locally $\ga$-H\"older regular at $x$ for some $\ga\in(0,1)$. Suppose further that the local walk dimension of $M$ at $x$ exists. Then the upper local walk dimension, defined by
+  \[
+    \dimuw(X,M;x):=\limsup_{r\searrow0}
+       \frac{\log\PTEp{\tau_r^{(M)}}{x}}{\log r},
+  \]
+  satisfies 
+  \begin{equation}\label{eq:estdimuw}
+    \dimuw\big(Y,\gp(M);\gp(x)\big)
+      \leq\frac{1}{\ga}\dimw(X,M;x).
+  \end{equation}
+\end{lem}
+\begin{proof}
+  Let $0<\gb<\ga$. Then, $\gp$ is locally $\gb$-H\"older continuous at $x$ and therefore, there exists a constant $C>0$ such that 
+  \[
+    \gp\left(B_X(x,r)\right)\ssq B_Y\left(\gp(x),Cr^\gb\right) 
+  \]
+  for all sufficiently small $r>0$. Thus, if $\gp(M)$ exits 
+  $B_Y\left(\gp(x),Cr^\gb\right)$, it already left $\gp(B_X(x,r))$.
+  Since $\gp(M_t)\notin\gp(B_X(x,r))$ implies $M_t\notin B_X(x,r)$ by comparing the preimages, we obtain the inequality
+  \[
+    \tau_r^{(M)}
+    \leq \tau_{\gp(B_X(x,r))}^{(\gp(M))}
+    \leq \tau_{Cr^\gb}^{(\gp(M))}.
+  \]
+  This implies for all $r$ small enough
+  \[
+    \frac{\log\PTEp{\tau_{Cr^\gb}^{(\gp(M))}}{\gp(x)}}{\log Cr^\gb}
+    \leq \frac{\log\PTEp{\tau_r^{(M)}}{x}}{\log r}
+      \cdot \frac{\log r}{\log Cr^\gb},
+  \]
+  where the right-hand side converges to $\gb^{-1}\dimw(X,M;x)$ as $r\searrow0$, thus showing
+  \[
+    \dimuw\big(Y,\gp(M);\gp(x)\big)\leq \frac{1}{\gb}\dimw(X,M;x).
+  \]
+  As all estimates are valid for every $\gb<\ga$ and since
+  $\dimuw\big(Y,\gp(M);\gp(x)$ does not depend on $\gb$, we can take the supremum over all $\gb<\ga$ to obtain
+  \[
+    \dimuw\big(Y,\gp(M);\gp(x)\big)\leq \frac{1}{\ga}\dimw(X,M;x)
+  \]
+  which concludes the proof.
+\end{proof}
+In general, equality in \eqref{eq:estdimuw} does not hold. Fix $0<\ga<1$. We consider the measure space $(\IR^2,\gl^2)$ endowed with two different metrics -- first with the metric 
 \[
- \gr(M)=\gr(M_\cdot(\go)):=\left\{(t,M_t(\go)):t\geq0 \right\}\ssq \IR^2
+  d_1^{(\ga)}(x,y)=|x_1-x_2|^\ga+|x_2-y_2|
+  \ \ \text{ for }\ x=(x_1,x_2),y=(y_1,y_2)\in\IR^2
+\]
+and second with the metric $d_1$ induced by the 1-norm. That is, we set $X=\left(\IR^2,d_\infty^{(\ga)},\gl^2\right)$ and 
+$Y=\left(\IR^2,d_1,\gl^2\right)$. By definition, 
+$\id:X\to Y$ provides a homeomorphism that is everywhere locally 
+$\ga$-Lipschitz continuous. Let $(W_t)_{t\geq0}$ be a 1-dimensional standard Wiener process, and regard $(0,W_t)$ as a process in $X$ which has $\dimw(X,(0,W_t),0)=2$. Therefore,
+\[
+  \dimw(Y,(0,W_t),0)=2<\frac{2}{\ga}.
+\]
+Despite this counterexample, we get equality in \eqref{eq:estdimuw} in the following setting:
+\begin{lem}\label{lem:dimuw2}
+  Let $(X,d_X)$ be a path-connected metric space not consisting of more than one single point and let $M=(M_t^x)_{t\geq0}$ be an $X$-valued continuous stochastic process starting in $x\in X$. Let 
+  $\gp:(X,d_X)\to(Y,d_Y)$ be locally $\ga$-H\"older regular at $x$. Suppose further that $\dimw(X,M;x)$ exists. Then
+  \[
+    \dimuw(Y,\gp(M);\gp(x))=\frac{1}{\ga}\dimw(X,M;x)
+  \]
+  holds, provided there exists a constant $C>1$ and a sequence 
+  $(r_n)_{n\in\IN}$ with $r_n\searrow 0$ such that for all $n\in\IN$, there exists a set $\gC_n\ssq B_X(x,Cr_n)\setminus B_X(x,r_n)$ subject to the following two conditions:
+  \begin{compactenum}[i.]
+    \item For all $y\in\gC_n$, $\gp$ violates an $\ga$-H\"older estimate: 
+    $d_Y(\gp(x),\gp(y))>d_X(x,y)^{\ga+\gep}$.
+    \item The complement of $\gC_n$, $X\setminus\gC_n$, splits into at least two non-empty path-connected components. 
+  \end{compactenum}
+\end{lem}
+\begin{proof}
+  Due to the previous lemma, it only remains to show ``$\geq$''. By 
+  $X_n$, we denote the connected component of $X\setminus\gC_n$ which contains $x$. Since $B_X(x,r_n)\ssq X_n \ssq B_X(x,Cr_n)$ by definition of $\gC_n$, assumption $i.$ implies that
+  \[
+    B_Y\left(\gp(x),r_n^{\ga}\right)
+    \ssq Y_n:=\gp(X_n)
+    \ssq \gp\left(B_X(x,Cr_n)\right).
+  \]
+  Thus, 
+  \[
+    \tau_{\gp(M)}\left(r_n^{\ga}\right)
+    \leq \tau_{\gp(M)}(Y_n)
+    \leq \tau_{\gp(M)}\left(\gp\left(B_X(x,Cr_n)\right)\right)
+    =\tau_M(Cr_n),
+  \]
+  which in turn yields to
+  \[
+    \frac{\log\PTEp{\tau_M(Cr_n)}{x}}{\log Cr_n}
+      \cdot\frac{\log Cr_n}{\log r_n^{\ga}}
+    \leq \frac{\log\PTEp{\tau_{\gp(M)}\left(r_n^{\ga}\right)}{\gp(x)}}
+      {\log r_n^{\ga}}
+  \]
+  and consequentially for $n\to\infty$ to
+  \begin{equation}\label{eq:w}
+    \frac{1}{\ga}\dimw(X,M;x)\leq \liminf_{n\to\infty}
+    \frac{\log\PTEp{\tau_{\gp(M^x)}\left(r_n^{\ga}\right)}{\gp(x)}}
+      {\log r_n^{\ga}}=: w.
+  \end{equation}
+  Thanks to lemma \ref{lem:dimuw1} we also have 
+  \[
+    w\leq \dimuw(Y,\gp(M);\gp(x))\leq \frac{1}{\ga}\dimw(X,M;x)
+  \]
+  which shows the assertion when combined with \eqref{eq:w}.
+\end{proof}
+\begin{rem} 
+  Suppose $N=\left(N_t^y\right)_{t\geq0}$ is a stochastic process with values in $(Y,d_Y)$ that is almost surely (locally) $\ga$-H\"older regular and satisfies the assumptions of lemma \ref{lem:dimuw2} with probability 1. Then we can always use lemma \ref{lem:dimuw2} to obtain
+  $\dimuw(Y,N;\cdot\ )=\ga^{-1}$ by setting 
+  $(X,d_X)=(\IR_{\geq0},|\cdot|)$, chosing $M$ deterministically as $M_t=t$ and regard $N$ as the (random) map $\gp=N:X\to Y$.
+\end{rem}
+In the special case where $X$ is an open domain in the 1-dimensional euclidean space and $M$ is a Brownian motion in $X$ we can disregard condition $ii.$ in lemma \ref{lem:dimuw2} since the exit time for the Brownian motion does only depend on the distance from the starting point. We will not go into greater detail here, but will expand on this idea in the section below.
+
+
+
+\subsection{Graphs of continuous functions}
+
+Given a continuous map $f:(X,d_X)\to (Y,d_Y)$ between two metric spaces, its graph
+\[
+  \gr(f):=\left\{(x,f(x))\in X\times Y:x\in X\right\}
+\]
+can be equipped with the restriction of the maximum metric on 
+$X\times Y$,
+\[
+  d_\infty\big((x,y),(x',y')\big):=d_X(x,x')\vee d_Y(y,y'),\ \ 
+  x,x'\in X, y,y'\in Y,
+\]
+to $\gr(f)\ssq X\times Y$. This makes $(\gr(f),d_\infty)$ a metric space that comes with a natural map $\gp:X\to\gr(f)$ sending $x\in X$ to 
+$\gp(x):=(x,f(x)$. Since $f$ is continuous, it is easy to check that 
+$\gp$ provides a homeomorphism between $X$ and $\gr(f)$ with the inverse given by the projection onto the first coordinate, $\pi$.
+We point out that while $\pi$ is always Lipschitz-continuous, $\gp$ is 
+(locally) $\ga$-H\"older continuous if and only if $f$ is. Indeed, we have 
+\[
+  d_Y(f(x),f(x'))<Cd_X(x,x')^\ga \Longleftrightarrow
+  d_X(x,x')\vee d_Y(f(x),f(x'))<(1\vee C)d_X(x,x')^\ga
+\]  
+whenever $d_X(x,x')<1$. 
+
+This setting is therefore a natural application to the arguments of the previous section. Unfortunately, not much is known about the Hausdorff dimension of these objects, 
+
+As deterministic $\ga$-H\"older regular functions are rather complicated objects to deal with, we will instead consider random functions, where we have the regularity result of the Kolmogorov-Chentsov theorem.
+
+
+Consider a 1-dimensional continuous $\ga$-self-similar process 
+$(X_t)_{t\in\IR}$ with stationary increments over a suitable probability space $(\gO,\scA,\Prob)$. Here, $\ga$-self-similar for 
+$0<\ga\leq1$ means that the processes $(X_t)_{t\in\IR}$ and 
+$\left(\xi^{-\ga}X_{\xi t}\right)_{t\in\IR}$ have the same distribution. This condition implies $X_0=0$ $\Prob$-almost surely. Denote by
+\[
+ \gr(M)=\gr(X_\cdot(\go)):=\left\{(t,X_t(\go)):t\in\IR \right\}
+     \ssq \IR^2
 \]
 the graph of $M$ for fixed $\go\in\gO$. 
 
-We endow $\gr(M)$ with the metric $d_\infty$ obtained by restricting the maximum norm $|(x,y)|_\infty=\max\{|x|,|y|\}$ of the surrounding space $\IR^2$ to $\gr(M)$. By construction, $\gr(M)$ comes with the natural map $\gp=\gp_\go:\IR_{\geq0}\to\gr(M)$ sending $t$ to 
-$(t,M_t)$, providing a homeomorphism between $[0,1]$ and $\gr(M)$. 
-While $\gp^{-1}$ is always Lipschitz-continuous since it is the projection onto the first coordinate, $\gp$ is in general only H\"older continuous with an exponent strictly smaller than 1. In fact, $\gp_\go$ is $\gc$-H\"older continuous if and only if the trajectory $M_\cdot(\go)$ is.
+We endow $\gr(M)$ with the metric $d_\infty$ obtained by restricting the maximum norm $|(x,y)|_\infty=\max\{|x|,|y|\}$ of the surrounding space $\IR^2$ to $\gr(M)$. By construction, $\gr(M)$ comes with the natural map $\gp=\gp_\go:\IR\to\gr(M)$ sending $t$ to 
+$(t,X_t)$, providing a homeomorphism between $\IR$ and $\gr(M)$. 
+While $\gp^{-1}$ is always Lipschitz-continuous since it is the projection onto the first coordinate, $\gp$ is in general only locally H\"older continuous with an exponent strictly smaller than 1. In fact, $\gp_\go$ is $\gc$-H\"older continuous if and only if the trajectory $X_\cdot(\go)$ is.
 
-As pointed out in remark \ref{rem:ToS}, we can now transfer the analytic structure of section 2.1 on the half-line $\IR_{\geq0}$ via $\gp$ to 
+As pointed out in remark \ref{rem:ToS}, we can now transfer the analytic structure of section 2.1 on the real line $\IR$ via $\gp$ to 
 $\gr(M)$. More explicitly, we have the measure $\gp_*\gl^1$ on $\gr(M)$ and an operator $\gp_L\gD_{\gl^1}$ acting on $L^2(\gr(M),\gp_*\gl^1)$ that generates the Hunt process $(\gp(W_s^t))_{s\geq0}$, where 
-$(W_s^t)_{s\geq0}$ is a Wiener process independent from $M$ with start in $t\geq0$.
+$(W_s^t)_{s\geq0}$ is a Wiener process independent from $M$ with start in $t\in\IR$.
 
 We note the following:
 \begin{itemize}
   \item From \cite{liu1998hausdorff}, we get $\dimh(\gr(M))=2-\ga$ provided $M$ satisfies the technical conditions that there exist positive constants $K,K'$ and $0<r_0<1/3$ such that 
-  \begin{equation}
+  \begin{equation}\label{eq:tech}
     p(1,x,B(x,r_0))\geq K\ \ \text{ and }\ \ 
     p(1,x,B(x,r))\leq K'(1\wedge r)
   \end{equation}
   holds for all $x\in\IR$ and every sufficiently small $r>0$. Here, $p(t,x,A)$ denotes the transition function for $M$.
   \item As discussed in the last section we have
   \[
-    \frac{1}{2}=\dims\left([0,1],-\frac{1}{2}\gD_{\gl^1}\right)
+    \frac{1}{2}=\dims\left(\IR,-\frac{1}{2}\gD_{\gl^1}\right)
     =\dims\left(\gr(B),\Phi \left(-\frac{1}{2}\gD_{\gl^1}\right)\right),
   \]
   where we once again appealed to Weyl's classical results. 
   \item It remains to evaluate the walk dimension for $\gp(W_s)$ on 
   $\gr(M)$. As will be seen in the subsequent lemmata, we have 
-  $\dimw(\gr(M_\cdot(\go)),\gp(W))=\frac{2}{\ga}$ $\Prob$-almost surely.
+  $\dimw(\gr(X_\cdot(\go)),\gp(W))=\frac{2}{\ga}$ $\Prob$-almost surely.
 \end{itemize}
 The Einstein relation -- despite holding with constant 1 on 
 $\left([0,1],-\frac{1}{2}\gD_{\gl^1},W\right)$ -- therefore changes its constant under application of $\gp$ to
@@ -244,36 +408,98 @@ $\left([0,1],-\frac{1}{2}\gD_{\gl^1},W\right)$ -- therefore changes its constant
   c(\ga)=\ga(2-\ga),\ \ \ga\in(0,1].
 \]
 \begin{lem}
-  With the notation just introduced, we have 
+  With the notation just introduced and under assumption of \eqref{eq:tech}, we have 
   \begin{equation}\label{eq:BMdimw}
-    \dimw\left(\gr(M_\cdot(\go)),\gp_\go(W),\big(T,M_T(\go)\big)\right)
+    \dimw\left(\gr(X_\cdot(\go)),\gp_\go(W),\big(T,X_T(\go)\big)\right)
     =\frac{2}{\ga}
   \end{equation}
   $\Prob$-almost surely for each $T>0$.
 \end{lem}
 \begin{proof}
-  For brevity, set $x=x(\go)=(T,M_T(\go))\in\gr(M_\cdot(\go))$ and chose $r>0$ small enough for $B_\infty(x,r)\ssq\IR_{\geq0}\times\IR$, where 
-  $B_\infty(x,r)$ stands for the open ball of radius $r$ around $x$ with respect to $d_\infty$.
+  For brevity, set $x=x(\go)=(T,X_T(\go))\in\gr(X_\cdot(\go))$ and chose $r>0$. Let $B_\infty(x,r)$ denote the open ball of radius $r$ around $x$ with respect to $d_\infty$.
   
   We begin by introducing the random times 
-  $\gT^+_r\big(M_\cdot(\go),T\big),\gT^-_r\big(M_\cdot(\go),T\big)$ to denote the time where the Markov process $M$ first resp. last exits 
-  $B_\infty(x,r)$ -- in other words,
+  $\gT^+_r\big(X_\cdot(\go),T\big),\gT^-_r\big(X_\cdot(\go),T\big)$ to denote the time where the process $M$ first exits resp. last enters $B_\infty(x,r)$ -- in other words,
   \begin{align}\label{eq:Theta}
-    \gT^+_r\big(M_\cdot(\go),T\big)&:=\inf\left\{1\geq t>T:M_t\notin B_\infty(x,r)\right\}\notag\\
-    \gT^-_r\big(M_\cdot(\go),T\big)&:=\sup\left\{0\leq t<T:M_t\notin B_\infty(x,r)\right\}.
+    \gT^+_r\big(X_\cdot(\go),T\big)
+    &:=\inf\left\{1\geq t>T:(t,X_t)\notin B_\infty(x,r)\right\}\notag\\
+    \gT^-_r\big(X_\cdot(\go),T\big)
+    &:=\sup\left\{0\leq t<T:(t,X_t)\notin B_\infty(x,r)\right\}.
   \end{align}
-  Note first that by the Markov property of Brownian motion as well as by its time symmetry, these random variables are independent and the shifted random variables $\gT^+_r\big(B_\cdot(\go),T\big)-T,T-\gT^-_r\big(B_\cdot(\go),T\big)$ share the same distribution.
-  
   By the standard result for the expectation of two-sided exit times for Brownian motion, we now obtain 
   \[
-    \PTEp{\tau_{B_\infty(x,r)}^{(\gp(\bar B))}}{x}=-\big(T^+_r(\go)-T\big)\big(T^-_r(\go)-T\big)
-  \]
+    \PTEp{\tau_{B_\infty(x,r)}^{(\gp(W))}}{x}
+    =-\left(\gT^+_r\big(X_\cdot(\go),T\big)-T\right)
+      \Big(\gT^-_r\big(X_\cdot(\go),T\big)-T\Big)
+  \]    
   and consequentially
+  \begin{equation}\label{eq:sumoflogs}
+    \frac{\log \PTEp{\tau_{B_\infty(x,r)}^{(\gp(W))}}{x}}{\log r}
+    =\frac{\log \big(\gT^+_r\big(X_\cdot(\go),T\big)-T\big)}{\log r}
+     +\frac{\log \big(T-\gT^-_r\big(X_\cdot(\go),T\big))\big)}{\log r}.
+  \end{equation}
+  We will show that both summands on the right-hand side converge to 
+  $1/\ga$ as $r\searrow 0$. To this end, we further introduce the random variables $\gvt_r^+$ and $\gvt_r^-$ by 
   \[
-    \frac{\log  \PTEp{\tau_{B_\infty(x,r)}^{(\gp(\bar B))}}{x}}{\log r}
-    =\frac{\log \big(\gT^+_r\big(B_\cdot(\go),T\big)-T\big)}{\log r}
-     +\frac{\log \big(T-\gT^-_r\big(B_\cdot(\go),T\big))\big)}{\log r}.
+    \gvt_r^\pm(T)
+      :=\inf\left\{s\geq0:X_{T\pm s}\notin(X_T-r,X_T+r)\right\}
+       =\inf\left\{s\geq0:X_{T\pm s}-X_T\notin(-r,r)\right\}.
   \]
+  It follows from the definitions that 
+  $\gvt_r^\pm\wedge r=\left|\gT^\pm_r(X,T)-T\right|$
+  which allows for the estimate 
+  \begin{equation}\label{eq:gvtest1}
+    \gvt_r^\pm\wedge r^{1/\ga}
+    \leq \left|\gT^\pm_r(X,T)-T\right|
+    \leq \gvt_r^{\pm}.
+  \end{equation}
+  We also observe that, due to the self-similarity and the stationary increments of $X$, 
+  \begin{align*}
+    \gvt_{\xi r}^\pm
+     &=\inf\left\{s\geq0:X_{T\pm s}-X_T\notin(-\xi r,\xi r)\right\}\\
+     &\stackrel{\cD}{=}\inf\left\{s\geq0:X_{\pm s}\notin
+         (-\xi r,\xi r)\right\}\\
+     &=\inf\left\{s\geq0:\xi^{-1}M_{\pm s}\notin(-r,r)\right\}\\
+     &\stackrel{\cD}{=}\inf\left\{s\geq0:X_{\pm\xi^{-1/\ga}s}
+         \notin (X_T-r,X_T+r)\right\}\\
+     &=\xi^{1/\ga}\inf\left\{s\geq0:X_{\pm s}\notin(-r,r)\right\}\\
+     &\stackrel{\cD}{=}\xi^{1/\ga}\gvt_r^{\pm}
+  \end{align*}
+  for all $\xi>0$. Hence, we can rewrite \eqref{eq:gvtest1} as
+  \begin{equation}\label{eq:gvtest2}
+    r^{1/\ga}\left(\gvt_1^\pm\wedge 1\right)
+    =\gvt_r^\pm\wedge r^{1/\ga}
+    \leq \left|\gT^\pm_r(M,T)-T\right|
+    \leq \gvt_r^{\pm}
+    =r^{1/\ga}\gvt_1^\pm
+  \end{equation}
+  After taking logarithms on both sides and dividing by $\log r$, we obtain
+  \[
+    \frac{1}{\ga}+\frac{\log \gvt^\pm_1}{\log r}
+    \leq \frac{\log \left|\gT^\pm_r(M,T)-T\right|}{\log r}
+    \leq \frac{1}{\ga}+\frac{\log \left(\gvt_1^\pm\wedge 1\right)}
+      {\log r}.
+  \]
+  When taking the limit for $r\searrow 0$, the fractions involving 
+  $\gvt_1^\pm$ vanish $\Prob$-almost surely since, by continuity of 
+  $X$, $\gvt_1^\pm>0$ with probability 1. This, combined with \eqref{eq:sumoflogs}, concludes the proof.
+\end{proof}
+\begin{lem}
+  In the setting of the previous lemma, $\dimw(\gr(X),\gp(W))=\frac{2}{\ga}$ holds with probability 1.
+\end{lem}
+\begin{proof}
+  By \eqref{eq:BMdimw} and the $\gs$-additivity of measures, we can asssume 
+  \[
+    \Prob\left[\dimw\big(\gr(X),\gp(W),(T,X_T)\big)=\frac{2}{\ga}\ \ 
+     \forall T\in\IQ\right]=1.
+  \]
+  Suppose $T\in\IR\setminus\IQ$ and let $\left(W^T_s\right)_{s\geq0}$ be a Wiener process with start in $T$. Define $\tau_\IQ$ to be the infimum of times $s>0$ with $W_s^T\in\IQ$. Due to Blumenthal's 0-1-law, we know that $\inf\left\{s>0:W_s^T\neq T\right\}=0$ with probability 1. At the same time, since the rationals are dense in the reals and the paths of $W^T$ are continuous, 
+  \[
+    0\leq\tau_\IQ\leq \inf\left\{s>0:W_s^T\neq T\right\}=0
+  \]
+  holds almost surely as well. 
+\end{proof}
+
   Therefore, it will suffice to show that $\Prob$-almost surely, 
   \begin{equation}\label{eq:limtwo}
     \lim_{r\searrow 0}\frac{\log \big(\gT^+_r\big(B_\cdot(\go),T\big)-T\big)}{\log r}
@@ -298,5 +524,4 @@ $\left([0,1],-\frac{1}{2}\gD_{\gl^1},W\right)$ -- therefore changes its constant
   $(Wf)(T)=(wf)(T)=\frac{1}{c}$ if $f$ is $\ga$-H\"{o}lder continuous in $T$ for all $\ga<c$ but not $\gb$-H\"{o}lder continuous for any $\gb>c$. 
   
   Having established this claim, the limit in equation \eqref{eq:limtwo} is a direct consequence of Paley-Zygmunds regularity theorem for paths of Brownian motion. Moreover, this also shows that the limit does not depend on $T\in(0,1)$. 
-\end{proof}
 

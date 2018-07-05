@@ -2,7 +2,7 @@
 kile_livePreviewEnabled=true
 kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-PDFLaTeX
-lastDocument=mt_ch2.tex
+lastDocument=mt_intro.tex
 
 [document-settings,item:mt_bib.bib]
 Bookmarks=173
@@ -16,7 +16,7 @@ Mode=BibTeX
 Mode Set By User=false
 
 [document-settings,item:mt_ch1.tex]
-Bookmarks=136
+Bookmarks=157
 Encoding=windows-1252
 FoldedColumns=
 FoldedLines=
@@ -27,7 +27,7 @@ Mode=LaTeX
 Mode Set By User=false
 
 [document-settings,item:mt_ch2.tex]
-Bookmarks=96
+Bookmarks=152
 Encoding=windows-1252
 FoldedColumns=
 FoldedLines=
@@ -42,6 +42,24 @@ Bookmarks=201
 Encoding=windows-1252
 FoldedColumns=
 FoldedLines=
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:mt_disc.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:mt_intro.tex]
+Bookmarks=
+Encoding=UTF-8
 Highlighting=LaTeX
 Highlighting Set By User=false
 Indentation Mode=normal
@@ -87,19 +105,27 @@ order=-1
 
 [item:mt_bib.bib]
 open=true
-order=6
+order=7
 
 [item:mt_ch1.tex]
 open=true
-order=1
+order=2
 
 [item:mt_ch2.tex]
 open=true
-order=2
+order=3
 
 [item:mt_ch3.tex]
 open=true
-order=3
+order=4
+
+[item:mt_disc.tex]
+open=true
+order=5
+
+[item:mt_intro.tex]
+open=true
+order=1
 
 [item:mt_main.tex]
 open=true
@@ -107,57 +133,71 @@ order=0
 
 [item:mt_preamble_options.tex]
 open=true
-order=4
+order=6
 
 [item:mt_preamble_packages.tex]
-open=true
-order=5
+open=false
+order=7
 
 [view-settings,view=0,item:mt_bib.bib]
-CursorColumn=25
-CursorLine=187
+CursorColumn=20
+CursorLine=210
 JumpList=
 TextFolding=[]
-ViMarks=.,195,0,[,186,0,],195,0,a,173,0
+ViMarks=.,210,19,[,210,8,],210,19,a,173,0
 
 [view-settings,view=0,item:mt_ch1.tex]
-CursorColumn=32
-CursorLine=192
+CursorColumn=0
+CursorLine=0
 JumpList=
 TextFolding=[]
-ViMarks=.,136,453,[,136,439,],136,453,a,136,0
+ViMarks=.,151,38,[,151,38,],151,38,a,157,0
 
 [view-settings,view=0,item:mt_ch2.tex]
-CursorColumn=22
-CursorLine=84
+CursorColumn=189
+CursorLine=2
 JumpList=
 TextFolding=[]
-ViMarks=.,84,21,[,84,21,],84,21,a,96,0
+ViMarks=.,2,189,[,2,189,],2,189,a,152,0
 
 [view-settings,view=0,item:mt_ch3.tex]
-CursorColumn=59
-CursorLine=264
+CursorColumn=9
+CursorLine=47
 JumpList=
 TextFolding=[]
-ViMarks=.,262,16,[,262,16,],262,16,a,201,0,b,201,0
+ViMarks=.,336,0,[,336,0,],336,0,a,201,0,b,201,0
+
+[view-settings,view=0,item:mt_disc.tex]
+CursorColumn=112
+CursorLine=23
+JumpList=
+TextFolding=[]
+ViMarks=.,5,83,[,5,71,],5,83
+
+[view-settings,view=0,item:mt_intro.tex]
+CursorColumn=37
+CursorLine=2
+JumpList=
+TextFolding=[]
+ViMarks=.,2,36,[,2,0,],2,36
 
 [view-settings,view=0,item:mt_main.tex]
-CursorColumn=0
-CursorLine=68
+CursorColumn=18
+CursorLine=60
 JumpList=
 TextFolding=[]
-ViMarks=.,37,41,[,37,40,],37,41,a,37,0
+ViMarks=.,83,28,[,83,28,],83,28,a,37,0
 
 [view-settings,view=0,item:mt_preamble_options.tex]
-CursorColumn=19
-CursorLine=44
+CursorColumn=16
+CursorLine=72
 JumpList=
 TextFolding=[]
-ViMarks=.,44,18,[,44,18,],44,18,a,27,0
+ViMarks=.,72,15,[,72,15,],72,15,a,27,0
 
 [view-settings,view=0,item:mt_preamble_packages.tex]
-CursorColumn=40
-CursorLine=39
+CursorColumn=21
+CursorLine=19
 JumpList=
 TextFolding=[]
 ViMarks=

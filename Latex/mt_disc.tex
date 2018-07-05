@@ -1,0 +1,66 @@
+\chapter*{Discussion}
+\addcontentsline{toc}{chapter}{Discussion} 
+
+As we saw in the preceeding chapter, the Einstein relation is an invariant of metric measure spaces. Under H\"older continuous tranformations, its behaviour depends on the Hausdorff and walk dimensions, for both of which we have the same upper bound, but in general different behaviour. Besides the open conjecture about Brownian motion on the graph of a fractional Brownian motion, there remains a plethora of further questions to discuss such as (arranged in order of increasing speculativeness):
+
+\textbf{Is there a general lemma providing lower estimates for the walk dimension?} This question is almost self-explanatory, and it aims at a statement that plays a similar role for the walk dimension as the mass-distribution principle does for the Hausdorff dimension.
+
+\textbf{Is the Hausdorff dimension the ``right'' fractal dimension for the Einstein relation?} There are several alternative ways to define geometric dimensions for fractals, such as the packing dimension or the box-counting dimension. Of course, any reasonably well-behaved notion of dimension should be definable on a large class of metric spaces and should be invariant under isometries. Naturally, then the arguments used in the proof of proposition \ref{prop:mmiso} in the stricter setting of mm-isomorphisms show that the Einstein relation will still be an invariant of mm-spaces. 
+  
+When evaluating how ``good'' a fractal dimension for this purpose is, two questions should be asked: 
+\begin{compactenum}
+  \item \emph{Can this variant of the Einstein relation distinguish between nonisomorphic mm-spaces and if so, does it better than other variants?}
+  \item \emph{Are there general theorems for this variant that give explanations on why the Einstein relation should hold with constant $c$ on interesting classes of spaces?}
+\end{compactenum}
+Of course, the latter questions are difficult to answer and not much is understood yet even for $\dimh$. 
+
+A similar question is whether there exists a variation to the Einstein relation that can tell apart spaces that are Lipschitz- but not mm-isomorphic.
+
+\textbf{Is it possible to extend the Einstein relation \eqref{eq:ER} to graphs in such a way that it is compatible with the discrete version from section 2.2?}
+We saw in section 2.3 that the local walk dimension is better suited for bounded metric spaces. On the other hand, approximating spaces by a sequence of finite graphs as in the case of the Sierpinski gasket is a useful tool to have. However, for graphs the limit $r\searrow0$ in the definition of the walk dimension does not make sense. 
+
+One way to circumvent these problems with a unified approach might be to consider metric graphs $\scG$. Here, a metric graph is a disjoint collection of closed intervals $I_i$, where either $I_i=[a_i,b_i]$ or $I_i=[a_i,\infty)$ for $a_i,b_i\in\IR$, $i\in\scI$ an index set, together with an equivalence relation $\sim$ on the set of boundary points $\{a_i,b_i:i\in\scI\}$, where the boundary points are identified according to $\sim$. In other words, $\scG$ is the quotient space
+\[
+  \Big(\bigsqcup_{i\in\scI} I_i\Big)\Big/\!\sim.
+\]
+As stochastic processes on metric graphs have been investigated in recent years (cf. \cite{werner2016brownian}), it is a natural question to ask whether one can replace the approximation of the Brownian motion on $\SG$ by random walks on $G_n$ with an approximation by Brownian motions on $\scG_n$, where $\scG_n$ are the metric graphs with the metric structure coming from the embedding of $G_n$ in $\IR^2$. If this happens to be the case, one can furthermore ask if definition \ref{def:dimw}, applied to the approximating processes on $\scG_n$, yields an approximation of the walk dimension on $\SG$. 
+
+\textbf{What are the topological properties of the Einstein relation?} This question aims at finding a general setting in which the Einstein relation on a given space can be approximated by Einstein relations on other spaces.
+
+The class of isomorphism classes of (compact!) mm-spaces, 
+$\mathsf{cMM}_{\leq1}\big/\!\cong$, can be endowed with different topologies, perhaps the most well-known way of doing this is via the Gromov-Hausdorff-Prohorov metric, defined in the following way: 
+  
+Let $(X,d_X,\mu_X)$ and $(Y,d_Y,\mu_Y)$ be compact mm-spaces. Denote by $d_H$ the usual Hausdorff distance between closed sets in a metric space (cf. section 1.1) and by $d_P$ the Prohorov distance between probability measures $\nu,\nu'$ on $Z$,
+\[
+  d_P(\nu,\nu'):=\inf\left\{\gep>0: \nu(B(A,\gep))>\nu'(A)-\gep\
+    \text{ for any } A\in\scB(Z)\right\}.
+\]  
+Then,
+\[
+  d_{GHP}(Z;\gi_X,\gi_Y):=\inf_{\gi_X,\gi_Y}
+     \Big(d_H\big(\gi_X(X),\gi_Y(Y)\big)
+     +d_P\big((\gi_X)_*\mu_X,(\gi_Y)_*\mu_Y\big)\Big),
+\]
+where the infimum is taken over all metric spaces $(Z,d_Z)$ and all isometric embeddings $\gi_X:X\hookrightarrow Z$, 
+$\gi_Y:Y\hookrightarrow Z$ of $X,Y$ into $Z$. This defines a pseudo-metric on $\mathsf{cMM}_{\leq1}\big/\!\cong$. 
+  
+Now take a subset $\mathsf{X}\ssq\mathsf{cMM}_{\leq1}$ and a mapping 
+\[
+  \mathsf{X}\ni(X,d_X,\mu_X) \mapsto (A_X,\scD(A_X))\in\IL(L^2(X,\mu_X))
+\]
+that assigns to each mm-space an operator that satisfies the conditions \ref{cond:A}. After taking the quotient, we are left with a map that sends each mm-isomorphism class to a linear operators on a representative of this class,
+\[
+  \left(\mathsf{X}\big/\!\cong\right) \ni [(X,d_X,\mu_X)]_{\cong}
+  \mapsto (A_X,\scD(A_X)) \in \IL(L^2(X,\mu_X)),
+\]
+where the right-hand side is unique up to the transport of structure induced by mm-isomorphisms as discussed in section 3.1. In particular, we can now regard the constant in the Einstein relation as a function 
+\begin{align}
+  \scE:\mathsf{X}\big/\!\cong&\to \IR_{\geq0}\notag\\
+  \left[(X,d_X,\mu_X)\right]_{\cong} &\mapsto 
+    c=\frac{\dimh(X)}{\dims(X,A_X)\dimw(X,M^{A_X})}
+\end{align}
+In general, fixing a topology $\scT$ on $\mathsf{cMM}_{\leq1}\big/\!\cong$, a set $\mathsf{X}$ as above and an assignment 
+$A_X$ (which should, in some sense, depend continuously on 
+$[X]$), what can be said about the topological properties of 
+$\scE$? Is it continuous w.r.t $\scT$? Are at least the preimages of single points closed?
+

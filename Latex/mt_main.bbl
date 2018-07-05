@@ -21,21 +21,21 @@
   \datalist[entry]{anyt/global//global/global}
     \entry{barlow1998diffusions}{incollection}{}
       \name{author}{1}{}{%
-        {{hash=aace1a7625f0af60868ff5993346ece9}{%
+        {{hash=1d0a8555705b8793e3f67175207ab1f6}{%
            family={Barlow},
            familyi={B\bibinitperiod},
-           given={Martin\bibnamedelima T},
-           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+           given={M.T.},
+           giveni={M\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Springer}%
       }
-      \strng{namehash}{aace1a7625f0af60868ff5993346ece9}
-      \strng{fullhash}{aace1a7625f0af60868ff5993346ece9}
-      \strng{bibnamehash}{aace1a7625f0af60868ff5993346ece9}
-      \strng{authorbibnamehash}{aace1a7625f0af60868ff5993346ece9}
-      \strng{authornamehash}{aace1a7625f0af60868ff5993346ece9}
-      \strng{authorfullhash}{aace1a7625f0af60868ff5993346ece9}
+      \strng{namehash}{1d0a8555705b8793e3f67175207ab1f6}
+      \strng{fullhash}{1d0a8555705b8793e3f67175207ab1f6}
+      \strng{bibnamehash}{1d0a8555705b8793e3f67175207ab1f6}
+      \strng{authorbibnamehash}{1d0a8555705b8793e3f67175207ab1f6}
+      \strng{authornamehash}{1d0a8555705b8793e3f67175207ab1f6}
+      \strng{authorfullhash}{1d0a8555705b8793e3f67175207ab1f6}
       \field{labelalpha}{Bar98}
       \field{sortinit}{B}
       \field{sortinithash}{276475738cc058478c1677046f857703}
@@ -85,6 +85,32 @@
       \verb{url}
       \verb https://doi.org/10.1214/EJP.v11-377
       \endverb
+    \endentry
+    \entry{evans2010partial}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9e363b80f3b9a1c66ebffb1c8f043188}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={L.C.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Society}%
+      }
+      \strng{namehash}{9e363b80f3b9a1c66ebffb1c8f043188}
+      \strng{fullhash}{9e363b80f3b9a1c66ebffb1c8f043188}
+      \strng{bibnamehash}{9e363b80f3b9a1c66ebffb1c8f043188}
+      \strng{authorbibnamehash}{9e363b80f3b9a1c66ebffb1c8f043188}
+      \strng{authornamehash}{9e363b80f3b9a1c66ebffb1c8f043188}
+      \strng{authorfullhash}{9e363b80f3b9a1c66ebffb1c8f043188}
+      \field{labelalpha}{Eva10}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Graduate studies in mathematics}
+      \field{title}{Partial Differential Equations}
+      \field{year}{Providence, 2010}
     \endentry
     \entry{falconer2007fractal}{book}{}
       \name{author}{1}{}{%
@@ -151,18 +177,18 @@
     \endentry
     \entry{freiberg2012einstein}{article}{}
       \name{author}{1}{}{%
-        {{hash=ce22b36f9185f81f0188e010d1e41c2e}{%
+        {{hash=67aec1504c4e59882cd80005533cf3c4}{%
            family={Freiberg},
            familyi={F\bibinitperiod},
-           given={Uta},
+           given={U.R.},
            giveni={U\bibinitperiod}}}%
       }
-      \strng{namehash}{ce22b36f9185f81f0188e010d1e41c2e}
-      \strng{fullhash}{ce22b36f9185f81f0188e010d1e41c2e}
-      \strng{bibnamehash}{ce22b36f9185f81f0188e010d1e41c2e}
-      \strng{authorbibnamehash}{ce22b36f9185f81f0188e010d1e41c2e}
-      \strng{authornamehash}{ce22b36f9185f81f0188e010d1e41c2e}
-      \strng{authorfullhash}{ce22b36f9185f81f0188e010d1e41c2e}
+      \strng{namehash}{67aec1504c4e59882cd80005533cf3c4}
+      \strng{fullhash}{67aec1504c4e59882cd80005533cf3c4}
+      \strng{bibnamehash}{67aec1504c4e59882cd80005533cf3c4}
+      \strng{authorbibnamehash}{67aec1504c4e59882cd80005533cf3c4}
+      \strng{authornamehash}{67aec1504c4e59882cd80005533cf3c4}
+      \strng{authorfullhash}{67aec1504c4e59882cd80005533cf3c4}
       \field{labelalpha}{Fre12}
       \field{sortinit}{F}
       \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
@@ -176,11 +202,11 @@
     \endentry
     \entry{hambly_kigami_kumagai_2002}{article}{}
       \name{author}{3}{}{%
-        {{hash=7aec73978627f7dd41002c0c95153ceb}{%
+        {{hash=127e4cfba6c3818308607584ec9fa30e}{%
            family={Hambly},
            familyi={H\bibinitperiod},
-           given={B.\bibnamedelimi M.},
-           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           given={B.M.},
+           giveni={B\bibinitperiod}}}%
         {{hash=a19df97a07c2b8ad42daced00bc4dd8e}{%
            family={Kigami},
            familyi={K\bibinitperiod},
@@ -195,12 +221,12 @@
       \list{publisher}{1}{%
         {Cambridge University Press}%
       }
-      \strng{namehash}{90979a8e1df6c4ff32e69983faf32a26}
-      \strng{fullhash}{90979a8e1df6c4ff32e69983faf32a26}
-      \strng{bibnamehash}{90979a8e1df6c4ff32e69983faf32a26}
-      \strng{authorbibnamehash}{90979a8e1df6c4ff32e69983faf32a26}
-      \strng{authornamehash}{90979a8e1df6c4ff32e69983faf32a26}
-      \strng{authorfullhash}{90979a8e1df6c4ff32e69983faf32a26}
+      \strng{namehash}{616fa50418b0caad58c4b42abf851ae8}
+      \strng{fullhash}{616fa50418b0caad58c4b42abf851ae8}
+      \strng{bibnamehash}{616fa50418b0caad58c4b42abf851ae8}
+      \strng{authorbibnamehash}{616fa50418b0caad58c4b42abf851ae8}
+      \strng{authornamehash}{616fa50418b0caad58c4b42abf851ae8}
+      \strng{authorfullhash}{616fa50418b0caad58c4b42abf851ae8}
       \field{labelalpha}{HKK02}
       \field{sortinit}{H}
       \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
@@ -308,26 +334,26 @@
     \endentry
     \entry{liu1998hausdorff}{article}{}
       \name{author}{2}{}{%
-        {{hash=b6d3d4bef510feacc2c3e3029c6c79ba}{%
+        {{hash=7c6d82e5c8ee8a22f5632301a8146619}{%
            family={Liu},
            familyi={L\bibinitperiod},
-           given={Luqin},
+           given={L.},
            giveni={L\bibinitperiod}}}%
-        {{hash=f0f4bfd9bcc2482e8ba4ed3278df932f}{%
+        {{hash=7e331faa68edd1b1e6179dc71ddbced3}{%
            family={Xiao},
            familyi={X\bibinitperiod},
-           given={Yimin},
+           given={Y.},
            giveni={Y\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {WROCLAW UNIVERSITY PRESS}%
       }
-      \strng{namehash}{a2ed2d1fd0d001fa20019e83e2fe4081}
-      \strng{fullhash}{a2ed2d1fd0d001fa20019e83e2fe4081}
-      \strng{bibnamehash}{a2ed2d1fd0d001fa20019e83e2fe4081}
-      \strng{authorbibnamehash}{a2ed2d1fd0d001fa20019e83e2fe4081}
-      \strng{authornamehash}{a2ed2d1fd0d001fa20019e83e2fe4081}
-      \strng{authorfullhash}{a2ed2d1fd0d001fa20019e83e2fe4081}
+      \strng{namehash}{4a4317d4f96218a034ac136e9382fa8b}
+      \strng{fullhash}{4a4317d4f96218a034ac136e9382fa8b}
+      \strng{bibnamehash}{4a4317d4f96218a034ac136e9382fa8b}
+      \strng{authorbibnamehash}{4a4317d4f96218a034ac136e9382fa8b}
+      \strng{authornamehash}{4a4317d4f96218a034ac136e9382fa8b}
+      \strng{authorfullhash}{4a4317d4f96218a034ac136e9382fa8b}
       \field{labelalpha}{LX98}
       \field{sortinit}{L}
       \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
@@ -501,6 +527,29 @@
       \field{series}{Lecture Notes in Mathematics}
       \field{title}{The Art of Random Walks}
       \field{year}{Berlin Heidelberg, 2006}
+    \endentry
+    \entry{werner2016brownian}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=7dc71fb50edfbf997343e3554c60569d}{%
+           family={Werner},
+           familyi={W\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{7dc71fb50edfbf997343e3554c60569d}
+      \strng{fullhash}{7dc71fb50edfbf997343e3554c60569d}
+      \strng{bibnamehash}{7dc71fb50edfbf997343e3554c60569d}
+      \strng{authorbibnamehash}{7dc71fb50edfbf997343e3554c60569d}
+      \strng{authornamehash}{7dc71fb50edfbf997343e3554c60569d}
+      \strng{authorfullhash}{7dc71fb50edfbf997343e3554c60569d}
+      \field{labelalpha}{Wer16}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Brownian motions on metric graphs}
+      \field{type}{phdthesis}
+      \field{year}{Mannheim, 2016}
     \endentry
     \entry{Weyl1911}{article}{}
       \name{author}{1}{}{%

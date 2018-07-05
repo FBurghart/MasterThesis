@@ -1,32 +1,33 @@
 \chapter{Examples and Non-examples}
 
-In this chapter, we will discuss the necessity of some of the restrictive assumptions made previously and explore the Einstein relation by examining some examples and will motivate some of the more general results of the next chapter.
+In this chapter, we will discuss the necessity of some of the restrictive assumptions made previously and explore the Einstein relation by examining some examples and -- by doing so -- will motivate some of the more general results of the next chapter.
 
 \section{Euclidean Space}
 
-We start by examining the classical setting of paragraph 1.2.1 in greater detail: Let once again $E\ssq\IR^n$ be an open, bounded, non-empty domain, equipped with Euclidean metric and $n$-dimensional Lebesgue-measure $\gl^n$. Trivially, $\dimh(E)=n$. 
+We start by examining the classical setting of paragraph 1.2.1 in greater detail: Let once again $X\ssq\IR^n$ be an open, bounded, non-empty domain, equipped with Euclidean metric and $n$-dimensional Lebesgue-measure $\gl^n$. Trivially, $\dimh(X)=n$. 
 
-\subsection{The Dirichlet--Laplace operator}
-
-TO DO: The Dirichlet boundary conditions translate to a BM killed on the boundary, I should pay some more attention to that (results hold regardless).\\
-
-For the Dirichlet--Laplace operator as introduced earlier, we obtain $\dims(E,-\gD)=\frac{n}{2}$ due to \eqref{eq:DECF}-\eqref{eq:dims}. Simultaneously, it is well-known that $\frac{1}{2}\gD$ is the generator of the $n$-dimensional Brownian motion $B_t$, which can easily be seen as follows:
+For the Dirichlet-Laplace operator as introduced earlier, we obtain 
+$\dims(X,-\gD)=\frac{n}{2}$ due to \eqref{eq:DECF}-\eqref{eq:dims}. Simultaneously, it is well-known that $\frac{1}{2}\gD$ is the generator of the $n$-dimensional Brownian motion $B_t$, which can easily be seen as follows:
 
 By \eqref{eq:MPtoOp}, the semigroup $(T_t)_{t\geq0}$ induced by $B_t$ reads
 \[
-  T_tf(x)=\PTEp{f(X_t)}{x}=\frac{1}{(2\pi t)^{n/2}}\int_{\IR^n} \exp\left(-\frac{|x-y|^2}{2t}\right)f(y)\,\Di y,\ f\in L^2(\IR^n,\gl^n)\cap C_c(E),
+  T_tf(x)
+   =\PTEp{f(B_t)}{x}
+   =\frac{1}{(2\pi t)^{n/2}}\int_{\IR^n} 
+     \exp\left(-\frac{|x-y|^2}{2t}\right)f(y)\,\Di y,
+  \ f\in L^2(\IR^n,\gl^n)\cap C_c(E),
 \]
-Comparing this expression to the well-known convolution formula
+Comparing this expression to the well-known convolution formula (see \cite[p.47]{evans2010partial})
 \[
   u(x,t)=\frac{1}{(4\pi t)^{n/2}}\int_{\IR^n} \exp\left(-\frac{|x-y|^2}{4t}\right)f(y)\,\Di y,\ x\in\IR^n, t\geq0,
 \]
-for the solution of the heat equation $\gD u=\partial_t u$ with initial value $u(x,0)=f(x)$, we can quickly derive that $\gD T_tf(x)=2\partial_t T_tf(x)$ and thus obtain by definition \ref{def:semigroup} the generator
+for the solution of the heat equation $\gD u=\partial_t u$ on $\IR^n$ with initial value $u(x,0)=f(x)$, we can quickly derive that $\gD T_tf(x)=2\partial_t T_tf(x)$. Since imposing the Dirichlet boundary conditions on $\gD$ corresponds to killing $B_t$ at the boundary of $X$, we thus obtain by definition \ref{def:semigroup} the generator
 \[
   Af=\frac{1}{2}\gD f,
 \]
 extended to its maximal domain $H_0^1(E,\mu)$. We conclude that the Markov process associated with $\gD$ is $2B_t$.
 
-It remains to determine the walk dimension of the $n$-dimensional Brownian motion. This can be done in several ways, for example by appealing to Brownian scaling or by invoking Dynkin's formula after a standard truncation argument: By applying \cite[Lemma 19.21]{kallenberg2002foundations} to the function $u_x(y)=\frac{1}{2}|y|^2-x$, we get
+It remains to determine the walk dimension of the $n$-dimensional Brownian motion. This can be done in several ways, for example by appealing to Brownian scaling or by invoking Dynkin's formula after a standard truncation argument: By applying \cite[Lemma 19.21]{kallenberg2002foundations} to the function $u_x(y)=\frac{1}{2}|y-x|^2$, we get
 \[
   \PTEp{\tau_{B(x,r)}}{x}
   =\PTEp{\int_0^{\tau_{B(x,r)}}\gD u_x(2B_s)\,\Di s}{x}
@@ -36,10 +37,6 @@ It remains to determine the walk dimension of the $n$-dimensional Brownian motio
 \]
 Therefore, by definition \ref{def:dimw}, we obtain $\dimw(E,2B_t)=2$ which implies together with the results obtained previously that the Einstein relation (with constant 1) holds on $E$. 
 
-
-\subsection{Other partial differential operators}
-
-TO DO: Get spectral estimates for more general second-order partial differential operators; afterwards, the walk dimension should follow again from Dynkin's formula. 
 
 
 \section{The Sierpinski Gasket}
@@ -80,37 +77,111 @@ It is possible to approximate $\SG$ by a sequence of graphs $G_n$. Those graphs 
   \left\{(0,0),(0,1),\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)\right\}\\
   V_{n+1}&:=(S_1\cup S_2\cup S_3)(V_n),\ \ n\geq0.
 \end{align*}
+Additionally, set 
+\[
+  V*:=\bigcup_{n\geq0} V_n.
+\]
 Note that $V_0\ssq V_1\ssq...\ssq V_n\ssq ...$ and that
 \[
   V_n=\bigcup_{w\in\gS^n} w(V_0).
 \]
-In $G_n$, connect two vertices by a straight edge iff they belong to the same $n$-cell, cf PICTURE!!
+It also follows from the proof of Hutchinson's theorem that 
+$d_H(V_n,\SG)\to 0$ as $n\to\infty$, so indeed, the graphs $G_n$ approximate $\SG$. 
+
+In $G_n$, connect two vertices $x,y\in V_n$ by a straight edge $xy$ iff they belong to the same $n$-cell, cf PICTURE!!, in which case we will call them neighbours and write $x\sim_n y$. By $E_n$ we mean the set of all edges in $G_n$. 
 
 
 
-\subsection{Approximation by Dirichlet forms}
+\subsection[Approximation by Dirichlet forms]{Approximation by Dirichlet forms\protect\footnote{The material in this section is an overview of the construction given in \cite[chapter I]{strichartz2006differential}}}
 
-This analytic approach works by establishing so-called energy forms on graphs $G_n$
-
-TO DO: Give an overview of these constructions, \cite{strichartz2006differential} for the approach via graph approximation and \cite{barlow1998diffusions} for the probabilistic approach.
-
-\newpage
-
-\section{Combs and inhomogenous graphs}
-
-In this section, we start by considering the graph $\bC_2$, called the two-dimensional integer comb, with vertex set $\IZ^2$ and edge set given by
+This analytic approach works by establishing so-called energy forms on graphs $G_n$ -- these are graph-theoretic discretisations of the Dirichlet form attached to the Laplace operator. For $n\in\IN$, define a bilinear form $\tilde\cE_n$ on $L^2(V_n)\cong \IR^{\# V_n}$ by 
 \[
-  \left\{\{(n_1,n_2),(m_1,m_2)\}\in\IZ^2\times\IZ^2:|n_1-m_1|=1,n_2=m_2=0\ \text{ or }\ |n_2-m_2|=1,n_1=m_1\right\}
+  \tilde\cE_n(f,g):=\sum_{xy\in E_n}(f(x)-f(y))(g(x)-g(y)), 
+  \ \ \ f,g\in L^2(V_n).
 \]
-TO DO: This example satisfies the Einstein relation with a constant $c\neq1$ \cite{bertacchi2006}, but it also requires an adapted definition of wak dimension, since the vertex set is not path connected. The usual way to solve this problem is by considering the quantity (cf. \cite{freiberg2012einstein})
+It is easy to check that this defines a local Dirichlet form on $L^2(V_n)$. As we will see, these bilinear forms are compatible with each other after a suitable renormalisation. Starting from $\tilde\cE_0$, consider a function 
+$u\in\IR^3\cong L^2(V_0)$. Under all possible extensions 
+$\tilde u$ to $\IR^6\cong L^2(V_1)$, which function is the harmonic extension of $u$, i.e. minimises $\tilde\cE_1[\tilde u]$? 
+
+To answer this question, we label each vertex in $V_0$ by its value under $u$, say $a,b,c$ and each vertex in $V_1\setminus V_0$ by its value under $\tilde u$, say $x,y,z$ as in PICTURE 3!!!. Since we assume $u$ to be a fixed given function, the values $a,b,c$ are fixed, and we obtain 
+\begin{multline}\label{eq:E1}
+  \tilde\cE_1[\tilde u]=\left[(x-b)^2+(x-c)^2+(y-a)^2+(y-c)^2+(z-a)^2+(z-b)^2\right.\\
+  \left.+(x-y)^2+(y-z)^2+(z-x)^2\right]
+\end{multline}
+Finding the minimising values for $x,y,z$ now becomes an exercise in multivariable calculus. Setting the partial derivatives equal to 0 yields the following system of linear equations:
+\begin{align*}
+  \begin{array}{c}
+    8x=2(b+c+y+z)\\
+    8y=2(a+c+x+z)\\
+    8z=2(a+b+x+y)\\
+  \end{array}\Longleftrightarrow
+  \begin{array}{c}
+    5x=a+2b+2c\\
+    5y=2a+b+2c\\
+    5z=2a+2b+c\\
+  \end{array}
+\end{align*}
+Plugging this solution as $\tilde u$ in \eqref{eq:E1} to evaluate $\tilde\cE_1[\tilde u]$ gives
+\begin{align*}
+  \tilde\cE_1[\tilde u]
+  &=\frac{1}{25}\left[(a-3b+2c)^2+(a+2b-3c)^2+(-3a+b+2c)^2
+    +(2a+b-3c)^2\right.\\
+  &\qquad\qquad \left.+(-3a+2b+c)^2+(2a-3b+c)^2
+    +(b-a)^2+(c-b)^2+(a-c)^2\right]\\
+  &=\frac{30}{25}\left[a^2+b^2+c^2-ab-ac-bc\right]\\
+  &=\frac{3}{5}\tilde\cE_0[u]
+\end{align*}
+Using the fact that the vertices in $V_{n+1}\setminus V_n$ are in $G_n$ only adjacent to vertices in $V_n$ and that 
+$\tilde\cE_{n+1}$ is local on $n$-cells it is possible to show by induction that each $u\in L^2(V_n)$ allows for a unique harmonic extension $\tilde u\in L^2(V_{n+1})$ and that 
+\[
+  \tilde\cE_{n+1}[\tilde u]=\frac{3}{5}\tilde\cE_n[u]
+\]
+for all $n\geq0$. This allows us to renormalise the bilinear form $\tilde\cE_n$ via 
+\[
+  \cE_{n+1}:=\left(\frac{3}{5}\right)^n\tilde\cE_n
+\]
+thus ensuring $\cE_{n+1}[\tilde u]=\cE_n[u]$ and therefore
+$\cE_{n+1}[\hat u]\geq\cE_n[u]$ for any extension $\hat u$ of $u$.
+
+Consider now any function $u:V^*\to\IR$ and denote its restriction to $V_n$ by $u_n$. Then, $\cE_n[u_n]$ is a nondecreasing sequence of nonnegative real numbers and therefore converges against 
+\[
+  \cE[u]:=\lim_{n\to\infty} \cE_n[u_n]\in[0,\infty].
+\]
+Define $\scD(\cE)$ to be the set of all functions $u:V^*\to\IR$ for which this limit is finite. It can be shown that $u\in\cE$ implies that $u$ is H\"older continuous and can therefore be uniquely extended to a continuous function on all of $\SG$. By abuse of notation we shall denote this extension by $u$ as well and set $\cE[u]:=\cE[u|_{V^*}]$ whenever the right-hand side is defined. Hence, by polarisation, we obtain a bilinear form $\cE(\cdot,\cdot)$ on $\scD(\cE)$. 
+
+We further introduce the measure 
+$\mu(\cdot):=\cH^s(\SG)^{-1}\cH^s(\cdot)$ on $\SG$. It is possible to show that the biliner form $(\cE,\scD(\cE))$ is a local regular Dirichlet form on $L^2(\SG,\mu)$ which in turn is attached to an operator as in equation \eqref{eq:DFtoOp}. This operator is what is known as standard Laplacian on $\SG$, and its spectral dimension is known to be $\frac{\log 3}{\log 5}$ (see e.g. \cite[section 3.5]{strichartz2006differential} or \cite{kigami1993weyl}). 
+
+\subsection[Approximation by random walks]{Approximation by random walks\protect\footnote{The material in this section is an overview of the construction given in \cite[chapter II]{barlow1998diffusions}}}
+
+It remains to discuss the walk dimension of the diffusion process generated by the standard Laplace operator on $\SG$. Once again, this construction uses the approximating graphs $G_n$. 
+
+For $n\geq0$, let $Y^{(n)}_k, k\in\IN_0$ be a simple random walk on $G_n$, i.e. given $Y^{(n)}_k=v\in V_n$, the process has equal probability to jump to each of the neighbours of $v$ in $V_n$. 
+
+Take $v\in V_{n-1}$. Then, $v$ is contained in either 1 or 2 $(n-1)$-cells with conjunction points 
+$\{x_1,...,x_i\}\ssq V_n\setminus\{v\}$, $i\in\{2,4\}$ depending on whether or not $v\in V_0$. Assume $Y^{(n)}_0=v$, $n\geq1$. The only way for $Y^{(n)}$ to leave the $(n-1)$-cells containing $v$ is via the points $\{x_1,...,x_i\}$. However, due to the symmetry, the probabilities of hitting $x_j, j=1,...,i$ first are equal. If we set 
+\begin{align*}
+  T^{n,m}_0&=\inf\left\{t\in\IN_0:Y^{(n)}_t\in V_m\right\}\\
+  T^{n,m}_{k+1} &=\inf\left\{t\in\IN_0, t>T^{n+1,m}_k:
+     Y^{(n)}_t\in V_m\setminus \left\{Y^{(n)}_{T^{n,m}_k}\right\}\right\},\ \ k\geq0,
+\end{align*}
+for $n>m$, then $\left(Y^{(n)}_{T^{n,m}_k}\right)_{k\in\IN_0}$ is a standard random walk on $G_m$ and therefore equal to 
+$\left(Y^{(m)}_k\right)_{k\in\IN_0}$ in distribution. Using self-similarity and standard arguments for finite Markov-chains, it can be shown that $\PTE{T^{n,m}_{k+1}-T^{n,m}_k}=5^{n-m}$ and that $Y^{(n)}$ overcomes a distance (in graph metric) of $2^{n-m}$. The renormalised processes $X^{(n)}_k:=Y^{(n)}_{5^nk}$, $k\in\IN_0$ furthermore converge almost surely and uniformly on compact intervals to a continuous limit process $(X_t)_{t\geq0}$ with values in $\SG$. Additionally, the infinitesimal generator of $X$ coincides with the $\SG$-Laplacian introduced above. 
+By construction, this process possesses a self-similarity, in the sense that $(X_{5t})_{t\geq0}=(2X_t)_{t\geq0}$ in distribution for sufficiently small $t$, and it is not hard to show that $\dimw(\SG,X)=\frac{\log 5}{\log 2}$
+
+Putting everything together, we obtain for the Sierpinski gasket:
+\[
+  \frac{\log 3}{\log 2}=\dimh(\SG)=\dims(\SG,\gD)\dimw(\SG,X)
+  =\frac{\log 3}{\log 5}\frac{\log 5}{\log 2},
+\]
+so indeed, the Einstein relation holds on $\SG$.
+
+
+\section{The real line as bounded metric space}
+
 \begin{equation}\label{eq:defdimwrong}
   \lim_{R\nearrow\infty}\frac{\log \PTEp{\tau_{B(x,R)}}{x}}{\log R}.
 \end{equation}
-On a countable connected graph, this limit will be independent of $x$. 
-
-
-\section{Bounded metric spaces}
-
 Bounded metric spaces form the most important class of spaces for which too naive of an adaption of \eqref{eq:defdimwrong} does not yield useful results. Indeed, consider the metric measure space 
 $E=(\IR,d_{\arctan},\gl^1)$, where the metric is defined as $d_{\arctan}(x,y)=|\arctan(x)-\arctan(y)|$. Since 
 \[
@@ -139,10 +210,6 @@ However, the local walk dimension from definition \ref{def:dimw} works out quite
 \end{multline*}
 by using the mean value theorem. Taking the limit for $r\searrow0$ on both sides implies $\xi_1,\xi_2\to y$ and thus $\dimw(E,2B_t,x)=2$. 
 
-TO DO: At present, this is still a bit surprising to me, because it suggests that the ER is more stable under a deformation of the underlying space than I expected it. I suspect that the reason for this behavior is that $\tan$ is locally Lipschitz-continuous. 
-
-Also TO DO: Prof. Freiberg suggested to look at a metric variant of the Laplace operator on $(\IR,d_{\arctan},\gl^1)$ instead, defined as in \cite[def. 7.43]{shioya2016metric}.
-Moreover, this example is open to generalisations to other weak differential operators, much in the spirit of my plans for 2.1.2
 
 
 

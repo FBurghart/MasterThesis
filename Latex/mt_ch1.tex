@@ -1,6 +1,6 @@
 \chapter{Fractal Dimensions and the Einstein Relation}
 
-In this introductory chapter, we wish to briefly expose the ingredients of the Einstein relation - the Hausdorff dimension $\dimh$, the spectral dimension $\dims$, and the walk dimension $\dimw$ - and state some of their properties. 
+In this introductory chapter, we wish to briefly expose the ingredients of the Einstein relation -- the Hausdorff dimension $\dimh$, the spectral dimension $\dims$, and the walk dimension $\dimw$ -- and state some of their properties. 
 
 \section{Hausdorff measure and Hausdorff dimension}
 
@@ -10,7 +10,7 @@ Although the concepts of Hausdorff measure and dimension are well-known, we give
   \[
     \cH^s_\gd(S)
       :=\inf \left\{\sum_{i\in I}(\diam U_i)^s:
-            |I|\leq\aleph_0,S\ssq\bigcup_{i\in I}U_i\ssq E,\diam U_i\leq\gd\right\},
+            |I|\leq\aleph_0,S\ssq\bigcup_{i\in I}U_i\ssq X,\diam U_i\leq\gd\right\},
   \]
   i.e. the infimum is taken over all countable coverings of $S$ with diameter at most $\gd$. The $s$-dimensional Hausdorff outer measure of $S$ is now defined to be
   \begin{equation}\label{eq:DHM}
@@ -35,19 +35,19 @@ Due to the above discussion, we have the following equalities:
 \end{align*}
 providing some alternative characterisations of the Hausdorff dimension.
 
-We further collect some important facts. To this end, let $S,S'$ and $S_1,S_2,...$ be subsets of $E$ as before. Then, the following properties hold (cf. \cite[p.32f]{falconer2007fractal} for a discussion in the Euclidean setting; however all arguments adapt to our more general situation without complication):
-\begin{compactdesc}
+We further collect some important facts. To this end, let $S,S'$ and $S_1,S_2,...$ be subsets of $X$ as before. Then, the following properties hold (cf. \cite[p.32f]{falconer2007fractal} for a discussion in the Euclidean setting; however all arguments adapt to our more general situation without complication):
+\begin{description}
   \item[Monotonicity.] If $S\ssq S'$ then $\dimh(S)\leq\dimh(S')$. 
   \item[Countable Stability.] For a sequence $(S_n)_{n\geq1}$, we have the equality
   \[ 
-    \dimh\left(\bigcup_{n\geq1}S_n\right)=\sup_{n\geq1} \dimh(S_n).
+    \dimh\Big(\bigcup_{n\geq1}S_n\Big)=\sup_{n\geq1} \dimh(S_n).
   \]
   \item[Countable Sets.] If $|S|\leq\aleph_0$ then $\dimh(S)=0$.
   \item[H\"older continuous maps.] If $(X',d')$ is another metric space and $f:X\to X'$ is $\ga$-H\"older continuous for some $\ga\in(0,1]$ then $\dimh(f(S))\leq \ga^{-1}\dimh(S)$. In particular, the Hausdorff dimension is invariant under a bi-Lipschitz transformation (i.e. an invertible map $f$ with H\"older exponent $\ga=1$ for both $f$ and $f^{-1}$).
   \item[Euclidean Case.] If $(X,d)$ happens to be an Euclidean space (or more generally a continuously differentiable manifold) of dimension $n$ and $S$ is an open subset then $\dimh(S)=n$.
-\end{compactdesc}
+\end{description}
 
-We conclude this section by citing Hutchinson's theorem about the Hausdorff dimension of self-similar sets which will provide us with a plethora of interesting examples. For this, we recall that a map $F:X\to X$ on a metric space $(X,d)$ is a strict contraction if its Lipschitz constant satisfies
+We conclude this section by discussing Hutchinson's theorem about the Hausdorff dimension of self-similar sets. For this, we recall that a map $F:X\to X$ on a metric space $(X,d)$ is a strict contraction if its Lipschitz constant satisfies
 \begin{equation}\label{eq:Lip}
   \Lip_F:=\sup_{\stackrel{x,y\in X}{x\neq y}}\frac{d(F(x),F(y))}{d(x,y)}<1.
 \end{equation}
@@ -57,23 +57,34 @@ If the stronger condition $d(F(x),F(y))=\Lip_F d(x,y)$ holds for all $x,y\in X$,
   \[
     |\scS|=\bigcup_{i=1}^N S_i(|\scS|).
   \]
-  Furthermore, assume that $|\scS|$ satisfies the open set condition (OSC) meaning that there exists a nonempty open set $O\ssq E$ with the properties $S_i(O)\ssq O$ and $S_i(O)\cap S_j(O)=\emptyset$ for all $i,j=1,...,N$ with $i\neq j$. Also assume that the maps $S_i$ are similitudes with contraction factor $r_i\in(0,1)$. Then, $s=\dimh(|\scS|)$ is the unique solution to the equation
+  Furthermore, assume that $|\scS|$ satisfies the open set condition (OSC) meaning that there exists a nonempty open set $O\ssq X$ with the properties $S_i(O)\ssq O$ and $S_i(O)\cap S_j(O)=\emptyset$ for all $i,j=1,...,N$ with $i\neq j$. Also assume that the maps $S_i$ are similitudes with contraction factor $r_i\in(0,1)$. Then, $s=\dimh(|\scS|)$ is the unique solution to the equation
   \[
     \sum_{i=1}^N r_i^s=1
   \]
   and we have $0<\cH^s(|\scS|)<\infty$. 
 \end{thm}
-While uniqueness and existence of $|\scS|$ are still ensured for maps on a complete metric space, the open set condition is not sufficient for statements about the Hausdorff dimension, see \cite{schief1996self} for further discussion. 
+The proof is based on two different ideas: Existence and uniqueness can be shown in any complete metric space $(X,d)$ by envoking the Banach fixed point theorem for the map $\bigcup_{i=1}^N S_i$ acting on the space $(\cF(X),d_H)$ of all closed subsets of $X$ equipped with Hausdorff distance:
+\[
+  d_H(A,A'):=\inf\left\{\gep>0:A'\ssq B(A,\gep)\ \text{ and }\ 
+         A\ssq B(A',\gep)\right\}\ \ \text{ for }\ A,A'\in\cF(X).
+\]
+Indeed, $d_H$ is a complete metric if $d$ is. The statement about the Hausdorff dimension and measure relies on a rather easy upper estimate on $\dimh$ and an application of the mass distribution principle to get $\cH^s(|\scS|)>0$: 
+\begin{lem}[Mass distribution principle, Frostmann, 
+{\cite[Thm 8.8]{mattila1999geometry}}]
+  For a Borel set $X\ssq\IR^n$, we have $\cH^s(X)>0$ if and only if there exists a Borel measure $\mu$ on $X$ such that 
+  $\mu(B(x,r))\leq r^s$ for $x\in\IR^n$ and $r>0$.
+\end{lem}
+While uniqueness and existence of $|\scS|$ in theorem \ref{thm:hutchinson} are still ensured for maps on a complete metric space, the open set condition is not sufficient for statements about the Hausdorff dimension, see \cite{schief1996self} for further discussion. 
 
 
 
 \section{Weyl asymptotics and spectral dimension}
 
-The idea of introducing spectral dimension is inspired by Weyl's law for the eigenvalues of the Dirichlet-Laplace operator which we will discuss here shortly.
+The idea of introducing spectral dimension is inspired by Weyl's law for the eigenvalues of the Dirichlet-Laplace operator which we will discuss here shortly before defining a larger class of operators that have similar spectral properties and are infinitesimal generators of Markov processes.
 
 \subsection{The classical case}
 
-Given a bounded open domain $E\ssq\IR^n$, consider the Laplace operator $\gD$ on $E$ acting on functions satisfying the Dirichlet boundary condition $u\equiv0$ on $\partial E$. Then, the spectrum of $-\gD$ consists of non-negative eigenvalues with a single limit point at $\infty$. Hence we can order them in a non-increasing way, counting the geometric multiplicities, as
+Given a bounded open domain $U\ssq\IR^n$, consider the Laplace operator $\gD$ on $X$ acting on functions satisfying the Dirichlet boundary condition $u\equiv0$ on $\partial U$. Then, the spectrum of $-\gD$ consists of non-negative eigenvalues with a single accumulation point at $\infty$. Hence we can order them in a non-increasing way, counting the geometric multiplicities, as
 \begin{equation}\label{eq:EVs}
   0\leq\gl_1\leq\gl_2\leq...\leq\gl_n\leq...\ \text{ with }\ \gl_n\nearrow\infty. 
 \end{equation}
@@ -83,115 +94,130 @@ In this setting, it makes sense to define the eigenvalue counting function via
 \end{equation}
 Weyl's law now states that there is the asymptotic equivalence\footnote{We adopt the notation $f\sim g$ for the equivalence relation given by $\lim\frac{f}{g}=1$.}
 \begin{equation}\label{eq:WL}
-  N_{-\gD}(x)\sim C_n\cH^n(E)x^{n/2},\quad x\nearrow\infty,
+  N_{-\gD}(x)\sim C_n\cH^n(U)x^{n/2},\quad x\nearrow\infty,
 \end{equation}
-where the constant $C_n$ is independent of the domain $E$ (see \cite{Weyl1911} and \cite{Weyl1912} for the original publications). Motivated by \eqref{eq:WL}, we define the spectral dimension of $-\gD$ on $E$ by
+where the constant $C_n$ is independent of the domain $U$ (see \cite{Weyl1911} and \cite{Weyl1912} for the original publications). Motivated by \eqref{eq:WL}, we define the spectral dimension of $-\gD$ on $U$ by
 \begin{equation}\label{eq:dims}
-  \dims(E,-\gD):=\lim_{x\to\infty}\frac{\log N_{-\gD}(x)}{\log x}
+  \dims(U,-\gD):=\lim_{x\to\infty}\frac{\log N_{-\gD}(x)}{\log x}
 \end{equation}
-which yields $n/2$ in the situation examined by Weyl's law. Note that the usual definition of $\dims$ differs by a factor of 2 (cf. \cite{kigami1993weyl},\cite{hambly_kigami_kumagai_2002}) so that $\dims(E,\gD)$ normally coincides with $\dimh(E)=n$, however coming at the cost of an additional factor in the Einstein relation. Moreover, it can be argued that the spectral dimension is rather a property of the operator $-\gD$ than of the underlying space $E$. Therefore, we take the liberty to deviate from the established convention in this minor aspect.
+which yields $n/2$ in the situation examined by Weyl's law. Note that the usual definition of $\dims$ differs by a factor of 2 (cf. \cite{kigami1993weyl},\cite{hambly_kigami_kumagai_2002}) so that $\dims(U,\gD)$ normally coincides with $\dimh(U)=n$. However, this comes at the cost of an additional factor in the Einstein relation. Moreover, it can be argued that the spectral dimension is rather a property of the operator $-\gD$ than of the underlying space $U$. Therefore, we take the liberty to deviate from the established convention in this minor aspect.
 
 \subsection{The general case}
 
-How can we generalise the concepts just introduced to sets $E$ which are not bounded open subsets of $\IR^n$? For this, suppose we are given a metric measure space $(E,d,\mu)$, where $(E,d)$ is a locally compact separable metric space and $\mu$ is a Radon measure on $E$.
+How can we generalise the concepts just introduced to sets which are not bounded open subsets of $\IR^n$? For this, suppose we are given a metric measure space 
+$(X,d,\mu)$, where $(X,d)$ is a locally compact separable metric space and $\mu$ is a Radon measure on $X$.
 
-Of course, the notion of an eigenvalue counting function as outlined above works for any operator $A$ whose set of eigenvalues possesses only one limit point at $+\infty$. However, as we will explain in the next section, we also wish to associate a reasonably well-behaved Markov process with state space $E$ to $A$. Therefore, we choose to impose the following conditions on $A$:
+Of course, the notion of an eigenvalue counting function as outlined above works for any operator $A$ whose set of eigenvalues possesses only one limit point at $+\infty$. However, as we will explain in the next section, we also wish to associate a reasonably well-behaved Markov process with state space $X$ to $A$. This requires several additional assumptions that will be motivated in this and the next section. More precisely, we choose to impose the following conditions on $A$:
 \begin{cond}\label{cond:A}
-For an operator $A:L^2(E,d)\supseteq\cD(A)\to L^2(E,d)$, we assume the following holds:
+For an operator $A:L^2(X,d)\supseteq\scD(A)\to L^2(X,d)$, we assume the following holds:
 \begin{compactdesc}
-  \item[Self-adjointness.] $A$ is a densely defined, self-adjoint operator on the Hilbert space $L^2(E,\mu)$.
+  \item[Self-adjointness.] $A$ is a densely defined, self-adjoint (and therefore closed) operator on the Hilbert space $L^2(X,\mu)$.
   \item[Eigenvalues.] The spectrum is contained in $\IR_{\geq0}$ and the set of eigenvalues can be enumerated as in \eqref{eq:EVs}.
-  \item[Dissipativeness.] $-A$ is dissipative. In other words, for all $f\in\cD(A)$ and all $\gl>0$, we have 
-  $\|(\gl+A)f\|\geq\gl\|f\|$.
+  \item[Regularity (of the corresponding Dirichlet form).] The set\footnote{We denote by $C_c(X)$ the space of all compactly supported continuous functions on $X$} $\scD(\sqrt{A})\cap C_c(X)$ is dense in $C_c(X)$ with respect to the sup-norm and is dense in the domain $\scD(\sqrt{A})$ endowed with the graph norm 
+  \[
+    \|f\|_{\sqrt{A}}:=\|f\|_{L^2}+\|\sqrt{A}f\|_{L^2},\ \ f\in\scD(\sqrt{A})
+  \]
+  \item[Dissipativeness.] $-A$ is dissipative. In other words, for all $f\in\scD(A)$ and all $\gl>0$, we have $\|(\gl+A)f\|\geq\gl\|f\|$.
 \end{compactdesc}
 \end{cond}
+Here, $\sqrt{A}$ denotes an operator satisfying $\sqrt{A}\circ\sqrt{A}=A$ that can be defined via a standard spectral-theoretic construction. We will not go into greater detail here and refer to [QUXLLX!] instead.
+
 The first of these assumptions guarantees that $A$ is a closed operator, whereas the second ensures that $\gl+A$ is surjective for at least one $\gl>0$. Thus, the Hille-Yosida theorem states that there is a strongly continuous semigroup of contractive linear operators $T_t$ on $H$ such that $-A$ is its infinitesimal generator. That is to say:
 \begin{defin}\label{def:semigroup}
   A strongly continuous semigroup $(T_t)_{t\geq0}$ on a Hilbert space $H$ is a monoid homomorphism $t\mapsto T_t$ from $(\IR_{\geq0},+)$ to the space of bounded linear operators $(\IB(H),\cdot)$ on $H$ (equipped with composition) satisfying for all $f\in H$ the additional property
   \[
     \lim_{t\searrow0} \|T_tf-f\|=0.
   \]
-  The infinitesimal generator $(-A,\cD(A))$ of $(T_t)_{t\geq0}$ is defined via
+  The infinitesimal generator $(-A,\scD(A))$ of $(T_t)_{t\geq0}$ is defined via
   \[
-    (-A)f=\lim_{t\searrow0}\frac{1}{t}(T_tf-f),\ f\in\cD(A),
+    (-A)f=\lim_{t\searrow0}\frac{1}{t}(T_tf-f),\ f\in\scD(A),
   \]
-  where $\cD(A)$ is the set of elements in $H$ for which this limit exists.
+  where $\scD(A)$ is the set of elements in $H$ for which this limit exists.
 \end{defin}
-\begin{thm}[Hille--Yosida]\label{thm:HY}
-  An operator $(-A,\cD(A))$ is the generator of a strongly continuous semigroup $(T_t)_{t\geq0}$ with $\|T_t\|\leq1$ for all $t\geq0$ if and only if $-A$ is a densely defined, closed, dissipative operator such that for some $\gl>0$, the map $\gl+A$ is surjective. 
+\begin{thm}[Hille--Yosida,\cite{ma2012introduction}]\label{thm:HY}
+  An operator $(-A,\scD(A))$ is the generator of a strongly continuous semigroup $(T_t)_{t\geq0}$ with $\|T_t\|\leq1$ for all $t\geq0$ if and only if $-A$ is a densely defined, closed, dissipative operator such that for some $\gl>0$, the map $\gl+A$ is surjective. 
 \end{thm}
 It can be shown that there is a one-to-one correspondence between contractive semigroups and operators that satisfy the Hille-Yosida theorem, that is, the semigroup in the above theorem is uniquely determined by $A$. 
 
+\begin{rem}
+  In the above list of assumptions, dissipativeness is redundant as we regard operators on Hilbert spaces. In this setting, $-A$ is dissipative if $A$ is a positive operator since
+  \[
+    \|(\gl+A)f\|^2-\gl^2\|f\|^2=\|Af\|^2+2\gl\left<f,Af\right>\geq0
+  \]
+
+\end{rem}
+
+
 Having discussed the motivation for the assumptions \ref{cond:A}, we now proceed to adapt the definitions made in \eqref{eq:DECF} and \eqref{eq:dims} in a rather straightforward way:
 \begin{defin}
-  Given an operator $(A,\cD(A))$ on $L^2(E,\mu)$ satisfying the assumptions \ref{cond:A}, its eigenvalue counting function is defined by
-  \begin{equation}\label{eq:defEVCF}
+  Given an operator $(A,\scD(A))$ on $L^2(X,\mu)$ satisfying the assumptions \ref{cond:A}, its eigenvalue counting function is defined by
+  \begin{equation}\label{eq:defXVCF}
     N_A(x):=\max\{n\in\IN:\gl_n\leq x\},\ x\in\IR_{\geq0},
   \end{equation}
   and the spectral dimension of $A$ by
   \begin{equation}\label{eq:defdims}
-    \dims(E,A):=\lim_{x\to\infty}\frac{\log N_A(x)}{\log x}.
+    \dims(X,A):=\lim_{x\to\infty}\frac{\log N_A(x)}{\log x}
   \end{equation}
+  if the limit exists.
 \end{defin}
 
-TO DO: Provide examples for operators satisfying assumptions 1.4 - e.g. one-sided inverses of injective bounded compact operators. Also, streamline those assumptions, as of now, they are somewhat redundant. Stronger emphasis on Feller semigroups might also be needed, since Dynkin's probabilistic characterisation of the generator \cite[Theorem 19.23]{kallenberg2002foundations} might help in providing some general results concerning the validity of the Einstein relation.
 
 
 \section{Markov processes and walk dimension}
 
 \subsection{From Dirichlet forms to Markov processes}
 
-The theory presented here is mostly taken from \cite{fukushima2011dirichlet} and \cite[ch. 4]{ma2012introduction}. Set $H=L^2(E,\mu)$ where $\mu$ is a $\gs$-finite Borel-measure on $E$. 
+The theory presented here is mostly taken from \cite{fukushima2011dirichlet} and \cite[ch. 4]{ma2012introduction}. Set $H=L^2(X,\mu)$ where $\mu$ is a $\gs$-finite Borel-measure on $X$. 
 \begin{defin}\label{defin:DF}
-  A map $\cE:\cD(\cE)\times\cD(\cE)\to\IR$ is a Dirichlet form if it satisfies the following conditions:
+  A map $\cE:\scD(\cE)\times\scD(\cE)\to\IR$ is a Dirichlet form if it satisfies the following conditions:
   \begin{compactenum}[i.]
-  \item The domain $\cD(\cE)\ssq H$ of $\cE$ is a dense linear subspace.
+  \item The domain $\scD(\cE)\ssq H$ of $\cE$ is a dense linear subspace.
   \item $\cE$ is a symmetric, non-negative definite bilinear form.
-  \item This form is closed, that is, the inner product space $(\cD(\cE),\cE_\ga)$ equipped with the scalar product
+  \item This form is closed, that is, the inner product space $(\scD(\cE),\cE_\ga)$ equipped with the scalar product
   \[
-    \cE_\ga(u,v):=\cE(u,v)+\ga\left<u,v\right>\ \text{ for }\ u,v\in\cD(\cE_\ga)=\cD(\cE),\ \ga>0,
+    \cE_\ga(u,v):=\cE(u,v)+\ga\left<u,v\right>\ \text{ for }\ u,v\in\scD(\cE_\ga)=\scD(\cE),\ \ga>0,
   \]
   is complete (and thus itself a Hilbert space).
-  \item $\cE$ is a Markovian form, i.e. for all $u\in\cD(\cE)$, $v:=(0\vee u)\wedge 1\in\cD(\cE)$ and we have $\cE[v]\leq\cE[u]$ for the quadratic form of $\cE$. 
+  \item $\cE$ is a Markovian form, i.e. for all $u\in\scD(\cE)$, $v:=(0\vee u)\wedge 1\in\scD(\cE)$ and we have $\cE[v]\leq\cE[u]$ for the quadratic form of $\cE$. 
   \end{compactenum}
 \end{defin}
-We remark that the choice of $\ga>0$ is irrelevant for the completeness of $(\cD(\cE),\cE_\ga)$ since all induced norms are equivalent to each other. 
+We remark that the choice of $\ga>0$ is irrelevant for the completeness of $(\scD(\cE),\cE_\ga)$ since all induced norms are equivalent to each other. 
 \begin{defin}
-  A Dirichlet form $(\cE,\cD(\cE))$ on $L^2(E,\mu)$ is said to be
+  A Dirichlet form $(\cE,\scD(\cE))$ on $L^2(X,\mu)$ is said to be
   \begin{compactenum}[i.]
-    \item regular if it possesses a core, that is, the space $\cD(\cE)\cap C_c(E)$ is simultaneously dense in $\cD(\cE)$ with respect to the $\cE_1$-norm and in $C_c(E)$ with respect to the uniform norm. 
-    \item local if $\cE(u,v)=0$ whenever $u,v\in\cD(\cE)$ have disjoint compact support.
-    \item strongly local if $\cE(u,v)=0$ whenever $u,v\in\cD(\cE)$ have compact support and $v$ is constant on a neighbourhood of $\supp(u)$.
+    \item regular if it possesses a core, that is, the space $\scD(\cE)\cap C_c(X)$ is simultaneously dense in $\scD(\cE)$ with respect to the $\cE_1$-norm and in $C_c(X)$ with respect to the uniform norm. 
+    \item local if $\cE(u,v)=0$ whenever $u,v\in\scD(\cE)$ have disjoint compact support.
+    \item strongly local if $\cE(u,v)=0$ whenever $u,v\in\scD(\cE)$ have compact support and $v$ is constant on a neighbourhood of $\supp(u)$.
   \end{compactenum}
-  If additionally $\mu(E)<\infty$, we say that $\cE$ is
+  If additionally $\mu(X)<\infty$, we say that $\cE$ is
   \begin{compactenum}[i.]
     \setcounter{enumi}{3}
-    \item conservative if $1\in\cD(\cE)$ and $\cE[1]=0$.
+    \item conservative if $1\in\scD(\cE)$ and $\cE[1]=0$.
     \item irreducible if it is conservative and $\cE[f]$ implies that $f$ is constant. 
   \end{compactenum}
 \end{defin}
 We can uniquely attach a positively semidefinite operator $A$ to a Dirchlet form (and vice versa) via the relation 
 \begin{equation}\label{eq:DFtoOp}
-  \cE(u,v)=\left<Au,v\right>,\  u\in\cD(A),v\in\cD(\cE).
+  \cE(u,v)=\left<Au,v\right>,\  u\in\scD(A),v\in\scD(\cE).
 \end{equation}
 In particular, if $A$ meets the requirements of \ref{cond:A}, we not only have precisely one strongly continuous contraction semigroup on $H$ as explained by theorem \ref{thm:HY}, but also a unique Dirichlet form thanks to \eqref{eq:DFtoOp}. In similar style, we would also like to attach a unique Markov process to $A$ - or, equivalently, to the semigroup or the Dirichlet form. 
 
-To define a suitable stochastic process with values in $E$, we first adjoin a cemetary state $*$ in such a way that if $E$ is non-compact, $E_*:=E\sqcup\{*\}$ is the one-point compactification of $E$, whereas $*$ is supposed to be an isolated point if $E$ is compact. Let $X=\left(\gO,\scA,(X_t)_{t\geq0},(\Prob_x)_{x\in E_*}\right)$ be a stochastic process on a measurable space $(\gO,\scA)$ with values in $E_*$, where we adapt the notation that $\Prob_x[X_0=x]=1$ for all 
-$x\in E_*$ and $\Prob_*[X_t=*]=1$ for all $t\geq0$. Note that $X$ induces a filtration $\scF=(\scF_t)_{t\geq0}$ on $\scA$ by 
+To define a suitable stochastic process with values in $X$, we first adjoin a cemetary state $*$ in such a way that if $X$ is non-compact, $X_*:=X\sqcup\{*\}$ is the one-point compactification of $X$, whereas $*$ is supposed to be an isolated point if $X$ is compact. Let $X=\left(\gO,\scA,(X_t)_{t\geq0},(\Prob_x)_{x\in X_*}\right)$ be a stochastic process on a measurable space $(\gO,\scA)$ with values in $X_*$, where we adapt the notation that $\Prob_x[X_0=x]=1$ for all 
+$x\in X_*$ and $\Prob_*[X_t=*]=1$ for all $t\geq0$. Note that $X$ induces a filtration $\scF=(\scF_t)_{t\geq0}$ on $\scA$ by 
 \[
   \scF_t=\bigcap_{\Prob\in\cM^+_1(\gO,\scA)} \big(\gs\{X_s:0\leq s\leq t\}\big)^\Prob.
 \]
-Here, $\cM^+_1$ denotes the set of all probability measures on $(\gO,\scA)$, $\gs\{\cdot\}$ denotes the the $\gs$-algebra generated by $\{\cdot\}$ and $\scB^\Prob$ denotes the completion of a $\gs$-algebra $\scB$ with respect to the measure $\Prob$. Henceforth, we will only consider stochastic processes $X$ that satisfy the strong Markov property with respect to $\scF$ and are time-homogenous. Such $X$ is called Hunt process if it additionally has right-continuous trojectories and is quasi-left-continuous, i.e.  any sequence $\tau_n\nearrow\tau$ of $\scF$-stopping times satisfies
+Here, $\cM^+_1$ denotes the set of all probability measures on $(\gO,\scA)$, $\gs\{\cdot\}$ denotes the the $\gs$-algebra generated by $\{\cdot\}$ and $\scB^\Prob$ denotes the completion of a $\gs$-algebra $\scB$ with respect to the measure $\Prob$. Henceforth, we will only consider stochastic processes $X$ that satisfy the strong Markov property with respect to $\scF$ and are time-homogenous. Such $X$ is called Hunt process if it additionally has right-continuous trajectories with left-limits and is quasi-left-continuous, i.e.  any sequence $\tau_n\nearrow\tau$ of $\scF$-stopping times satisfies
 \[
   \Prob_\ga\left[\lim_{n\to\infty} X_{\tau_n}=X_\tau,\tau<\infty\right]=\Prob_\ga[\tau<\infty]
 \]
-for any initial distribution $\ga$. We can now easily translate Markov processes to contractive semigroups by setting
+for any initial distribution $\ga$. We can now translate Markov processes to contractive semigroups by setting
 \begin{equation}\label{eq:MPtoOp}
   (T_tf)(x):=\PTEp{f(X_t)}{x},\ t\geq0.
 \end{equation}
 The other direction is more involved, and the process attached to a Dirichlet form is generally non-unique. We have, however, (cf. \cite[theorems 7.2.1 and 7.2.2]{fukushima2011dirichlet})
 \begin{thm}\label{thm:fukushima}
-  Let $\cE$ be a regular Dirichlet form on $L^2(X,\mu)$. Then, there exists a Hunt process $X$ on $(E,d)$ such that the operators $T_t, t\geq0$, from \eqref{eq:MPtoOp} are symmetric and $\cE$ is the Dirichlet form belonging to this semigroup.
+  Let $\cE$ be a regular Dirichlet form on $L^2(X,\mu)$. Then, there exists a Hunt process $X$ on $(X,d)$ such that the operators $T_t, t\geq0$, from \eqref{eq:MPtoOp} are symmetric and $\cE$ is the Dirichlet form belonging to this semigroup.
   
   Moreover, if $\cE$ is local, $X$ is a diffusion process.
 \end{thm}
@@ -200,21 +226,21 @@ As hinted above, those processes are not unique: One can modify $X$ to $\tilde X
 
 \subsection{Local walk dimension and Einstein relation}
 
-The walk dimension is meant to quantify how fast a given Markov process on $E$ moves away from its starting point $x$. This is best expressed in terms of the stopping time $\tau_{B(x,r)}$, which is supposed to be the first exit time of the Ball $B(x,r)=\{y\in E:d(x,y)<r\}$. Note that this is indeed an $\scF$-stopping time by right continuity of the process in question and by \cite[Lemma 7.6]{kallenberg2002foundations}.
+The walk dimension is meant to quantify how fast a given Markov process on $X$ moves away from its starting point $x$. This is best expressed in terms of the stopping time $\tau_{B(x,r)}$, which is supposed to be the first exit time of the Ball $B(x,r)=\{y\in X:d(x,y)<r\}$. Note that this is indeed an $\scF$-stopping time by right continuity of the process in question and by \cite[Lemma 7.6]{kallenberg2002foundations}.
 
-For the next definition to make sense, we need to impose some additional assumption on the metric space $(E,d)$. We choose to demand for now that $E$ is path connected, but will discuss other scenarios in the next chapter. 
+For the next definition to make sense, we need to impose some additional assumption on the metric space $(X,d)$. We choose to demand for now that $X$ is path connected, but will discuss other scenarios in the next chapter. 
 \begin{defin}\label{def:dimw}(Cf. \cite{hambly_kigami_kumagai_2002})
   We define the quantity
   \[
-    \dimw(E,X,x)=\lim_{r\searrow0}\frac{\log \PTEp{\tau_{B(x,r)}}{x}}{\log r}
+    \dimw(X,X,x)=\lim_{r\searrow0}\frac{\log \PTEp{\tau_{B(x,r)}}{x}}{\log r}
   \]
-  and call it the (local) walk dimension of $(E,d)$ at $x\in E$ with respect to the Markov process $(X_t)_{t\geq0}$. If $\dimw(E,X,x)$ is $\mu$--a.e. constant on $E$, we shorten our notation to $\dimw(E,X)$.
+  and call it the (local) walk dimension of $(X,d)$ at $x\in X$ with respect to the Markov process $(X_t)_{t\geq0}$. If $\dimw(X,X,x)$ is $\mu$--a.e. constant on $X$, we shorten our notation to $\dimw(X,X)$.
 \end{defin}
 We are now finally able to state the Einstein relation: 
 \begin{defin}
-  Let $(E,d,\mu)$ be a locally compact separable metric measure space and let $(A,\cD(A))$ be an operator on $L^2(E,\mu)$ satisfying assumptions \ref{cond:A}. Suppose $X=\big((X_t)_{t\geq0},(\Prob_x)_{x\in E_*}\big)$ is a Markov process associated to $A$ via the Dirichlet form $\cE(\cdot,\cdot)=\left<A\,\cdot,\cdot\right>$. We then say that the Einstein relation with constant $c$ holds on $E$ with respect to $A$ if
+  Let $(X,d,\mu)$ be a locally compact separable metric measure space and let $(A,\scD(A))$ be an operator on $L^2(X,\mu)$ satisfying assumptions \ref{cond:A}. Suppose $X=\big((X_t)_{t\geq0},(\Prob_x)_{x\in X_*}\big)$ is a Markov process associated to $A$ via the Dirichlet form $\cE(\cdot,\cdot)=\left<A\,\cdot,\cdot\right>$. We then say that the Einstein relation with constant $c$ holds on $X$ with respect to $A$ if
   \begin{equation}\label{eq:ER}
-    \dimh(E)=c\dims(E,A)\dimw(E,X).
+    \dimh(X)=c\dims(X,A)\dimw(X,X).
   \end{equation}
   We omit mentioning the constant if $c=1$.
 \end{defin}
