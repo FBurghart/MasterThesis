@@ -1,6 +1,6 @@
 \chapter{The Einstein Relation on Metric Measure Spaces}
 
-This chapter is devoted to the investigation of the Einstein relation in the setting of an abstract mm-space. First, we focus on the behaviour under morphisms between mm-spaces to derive invariance properties of the Einstein relation. 
+This chapter is devoted to the investigation of the Einstein relation in the setting of an abstract mm-space. Let us recall that by an mm-space, we mean a complete separable metric space with a Radon measure. Whenever we want to be able to define the Einstein relation on an mm-space, we additionally assume that the space is locally compact, path-connected, and contains strictly more than one point. Furthermore, if the space is compact, we will always assume that the measure is a probability measure.
 
 \section{The Einstein Relation under Lipschitz-isomorphisms}
 
@@ -168,13 +168,13 @@ Putting everything together, we observe that $A$ satisfies the assumptions in \r
     \ssq B_Y\big(\gp(x),r\big) 
     \ssq \gp\big(B_X(x,Cr)\big)
   \]
-  where $C>0$ is the two-sided Lipschitz constant of $\gp$. Hence, $\tau_{C^{-1}r}^{(M)}\leq \tau_r^{(N)}\leq \tau_{Cr}^{(M)}$. From this, we get for all sufficiently small $r>0$
+  where $C>0$ is the two-sided Lipschitz constant of $\gp$. Hence, $\tau_M(C^{-1}r)\leq \tau_N(r)\leq \tau_M(Cr)$. From this, we get for all sufficiently small $r>0$
   \[
     \frac{\log Cr}{\log r}
-     \cdot\frac{\log \PTEp{\tau_{Cr}^{(M)}}{x}}{\log Cr}
-    \leq \frac{\log \PTEp{\tau_r^{(N)}}{\gp(x)}}{\log r}
+     \cdot\frac{\log \PTEp{\tau_M(Cr)}{x}}{\log Cr}
+    \leq \frac{\log \PTEp{\tau_N(r)}{\gp(x)}}{\log r}
     \leq \frac{\log C^{-1}r}{\log r}
-     \cdot\frac{\log \PTEp{\tau_{C^{-1}r}^{(M)}}{x}}{\log C^{-1}r}.
+     \cdot\frac{\log \PTEp{\tau_M(C^{-1}r)}{x}}{\log C^{-1}r}.
   \]
   Taking the limit for $r\searrow0$ and applying a standard squeezing argument, we obtain $\dimw(X,M)=\dimw(Y,N)$. 
 \end{proof}
@@ -230,7 +230,7 @@ Being prepared with these definitions, we can now take...
   Let $\left(M_t^x\right)_{t\geq0}$ be a right-continuous stochastic process on $(X,d_X)$ starting in $x\in X$ and let $\gp:(X,d_X)\to(Y,d_Y)$ be a map which is locally $\ga$-H\"older regular at $x$ for some $\ga\in(0,1)$. Suppose further that the local walk dimension of $M$ at $x$ exists. Then the upper local walk dimension, defined by
   \[
     \dimuw(X,M;x):=\limsup_{r\searrow0}
-       \frac{\log\PTEp{\tau_r^{(M)}}{x}}{\log r},
+       \frac{\log\PTEp{\tau_M(r)}{x}}{\log r},
   \]
   satisfies 
   \begin{equation}\label{eq:estdimuw}
@@ -247,14 +247,14 @@ Being prepared with these definitions, we can now take...
   $B_Y\left(\gp(x),Cr^\gb\right)$, it already left $\gp(B_X(x,r))$.
   Since $\gp(M_t)\notin\gp(B_X(x,r))$ implies $M_t\notin B_X(x,r)$ by comparing the preimages, we obtain the inequality
   \[
-    \tau_r^{(M)}
-    \leq \tau_{\gp(B_X(x,r))}^{(\gp(M))}
-    \leq \tau_{Cr^\gb}^{(\gp(M))}.
+    \tau_M(r)
+    \leq \tau_{\gp(M)}\big(\gp(B_X(x,r))\big)
+    \leq \tau_{\gp(M)}(Cr^\gb).
   \]
   This implies for all $r$ small enough
   \[
-    \frac{\log\PTEp{\tau_{Cr^\gb}^{(\gp(M))}}{\gp(x)}}{\log Cr^\gb}
-    \leq \frac{\log\PTEp{\tau_r^{(M)}}{x}}{\log r}
+    \frac{\log\PTEp{\tau_{\gp(M)}(Cr^\gb)}{\gp(x)}}{\log Cr^\gb}
+    \leq \frac{\log\PTEp{\tau_M(r)}{x}}{\log r}
       \cdot \frac{\log r}{\log Cr^\gb},
   \]
   where the right-hand side converges to $\gb^{-1}\dimw(X,M;x)$ as $r\searrow0$, thus showing
@@ -334,9 +334,9 @@ Despite this counterexample, we get equality in \eqref{eq:estdimuw} in the follo
   $\dimuw(Y,N;\cdot\ )=\ga^{-1}$ by setting 
   $(X,d_X)=(\IR_{\geq0},|\cdot|)$, chosing $M$ deterministically as $M_t=t$ and regard $N$ as the (random) map $\gp=N:X\to Y$.
 \end{rem}
-In the special case where $X$ is an open domain in the 1-dimensional euclidean space and $M$ is a Brownian motion in $X$ we can disregard condition $ii.$ in lemma \ref{lem:dimuw2} since the exit time for the Brownian motion does only depend on the distance from the starting point. We will not go into greater detail here, but will expand on this idea in the section below.
+In the special case where $X$ is an open domain in the 1-dimensional euclidean space and $M$ is a Brownian motion in $X$ we can disregard condition $ii.$ in lemma \ref{lem:dimuw2} since the exit time for the Brownian motion does only depend on the distance from the starting point. We will not go into greater detail here, but will expand on this idea in the proof of lemma \ref{lem:BMdimuw}.
 
-
+\newpage
 
 \subsection{Graphs of continuous functions}
 
@@ -363,120 +363,116 @@ whenever $d_X(x,x')<1$.
 
 This setting is therefore a natural application to the arguments of the previous section. Unfortunately, not much is known about the Hausdorff dimension of these objects, 
 
-As deterministic $\ga$-H\"older regular functions are rather complicated objects to deal with, we will instead consider random functions, where we have the regularity result of the Kolmogorov-Chentsov theorem.
-
-
-Consider a 1-dimensional continuous $\ga$-self-similar process 
-$(X_t)_{t\in\IR}$ with stationary increments over a suitable probability space $(\gO,\scA,\Prob)$. Here, $\ga$-self-similar for 
+As deterministic $\ga$-H\"older regular functions are rather complicated objects to deal with, we will instead consider random functions. More precisely, we will look at 1-dimensional continuous $\ga$-self-similar process $(X_t)_{t\in\IR}$ with stationary increments over a suitable probability space $(\gO,\scA,\Prob)$. Here, $\ga$-self-similar for 
 $0<\ga\leq1$ means that the processes $(X_t)_{t\in\IR}$ and 
-$\left(\xi^{-\ga}X_{\xi t}\right)_{t\in\IR}$ have the same distribution. This condition implies $X_0=0$ $\Prob$-almost surely. Denote by
-\[
- \gr(M)=\gr(X_\cdot(\go)):=\left\{(t,X_t(\go)):t\in\IR \right\}
-     \ssq \IR^2
-\]
-the graph of $M$ for fixed $\go\in\gO$. 
+$\left(\xi^{-\ga}X_{\xi t}\right)_{t\in\IR}$ have the same distribution. By a theorem of Taqqu, see \cite[Thm1.3.1]{embrechts2002selfsimilar}, such a process is automatically a fractional Brownian motion, up to a constant factor. 
 
-We endow $\gr(M)$ with the metric $d_\infty$ obtained by restricting the maximum norm $|(x,y)|_\infty=\max\{|x|,|y|\}$ of the surrounding space $\IR^2$ to $\gr(M)$. By construction, $\gr(M)$ comes with the natural map $\gp=\gp_\go:\IR\to\gr(M)$ sending $t$ to 
-$(t,X_t)$, providing a homeomorphism between $\IR$ and $\gr(M)$. 
-While $\gp^{-1}$ is always Lipschitz-continuous since it is the projection onto the first coordinate, $\gp$ is in general only locally H\"older continuous with an exponent strictly smaller than 1. In fact, $\gp_\go$ is $\gc$-H\"older continuous if and only if the trajectory $X_\cdot(\go)$ is.
+Recall that fractional Brownian motion $B^H$ with Hurst index $H\in(0,1)$ is the centered Gaussian process with $B^H_0=0$ and covariance function
+\[
+  \PTE{B^H_s,B^H_t}=\frac{1}{2}\left(t^{2H}+s^{2H}-|t-s|^{2H}\right).
+\]
+It is easy to check that this defines a self-similar process with 
+$\ga=H$. By the theorems 4.1.1 and 4.1.3 in \cite{embrechts2002selfsimilar}, there exists a version of $B^H$ which is almost surely everywhere locally $H$-H\"older regular. 
 
 As pointed out in remark \ref{rem:ToS}, we can now transfer the analytic structure of section 2.1 on the real line $\IR$ via $\gp$ to 
-$\gr(M)$. More explicitly, we have the measure $\gp_*\gl^1$ on $\gr(M)$ and an operator $\gp_L\gD_{\gl^1}$ acting on $L^2(\gr(M),\gp_*\gl^1)$ that generates the Hunt process $(\gp(W_s^t))_{s\geq0}$, where 
-$(W_s^t)_{s\geq0}$ is a Wiener process independent from $M$ with start in $t\in\IR$.
+$\gr(B^H)$. More explicitly, we have the measure $\gp_*\gl^1$ on $\gr(B^H)$ and an operator $\gp_L\gD_{\gl^1}$ acting on $L^2(\gr(B^H),\gp_*\gl^1)$ that generates the Hunt process $(\gp(W_s^t))_{s\geq0}$, where $(W_s^t)_{s\geq0}$ is a Wiener process independent from $B^H$ with start in $t\in\IR$.
 
 We note the following:
 \begin{itemize}
-  \item From \cite{liu1998hausdorff}, we get $\dimh(\gr(M))=2-\ga$ provided $M$ satisfies the technical conditions that there exist positive constants $K,K'$ and $0<r_0<1/3$ such that 
-  \begin{equation}\label{eq:tech}
-    p(1,x,B(x,r_0))\geq K\ \ \text{ and }\ \ 
-    p(1,x,B(x,r))\leq K'(1\wedge r)
-  \end{equation}
-  holds for all $x\in\IR$ and every sufficiently small $r>0$. Here, $p(t,x,A)$ denotes the transition function for $M$.
+  \item From \cite{ayache2004hausdorff}, we get $\dimh(\gr(B^H))=2-H$ with probability 1.  
   \item As discussed in the last section we have
   \[
     \frac{1}{2}=\dims\left(\IR,-\frac{1}{2}\gD_{\gl^1}\right)
-    =\dims\left(\gr(B),\Phi \left(-\frac{1}{2}\gD_{\gl^1}\right)\right),
+    =\dims\left(\gr(B^H),\Phi \left(-\frac{1}{2}\gD_{\gl^1}\right)\right),
   \]
   where we once again appealed to Weyl's classical results. 
   \item It remains to evaluate the walk dimension for $\gp(W_s)$ on 
-  $\gr(M)$. As will be seen in the subsequent lemmata, we have 
-  $\dimw(\gr(X_\cdot(\go)),\gp(W))=\frac{2}{\ga}$ $\Prob$-almost surely.
+  $\gr(B^H)$.
 \end{itemize}
-The Einstein relation -- despite holding with constant 1 on 
-$\left([0,1],-\frac{1}{2}\gD_{\gl^1},W\right)$ -- therefore changes its constant under application of $\gp$ to
+For the last point, we belief:
+\begin{conjec}\label{conjec}
+  $\Prob$-almost surely, $\dimw(\gr(B^H),\gp(W))=\frac{2}{H}$. 
+\end{conjec}
+As will be seen from the subsequent lemmata, we have 
+$\dimw(\gr(B^H),\gp(W);x)=\frac{2}{\ga}$ $\Prob$-almost surely, which implies that the local walk dimension satisfies conjecture \ref{conjec} simultaneously on any countable sets of points, due to the sigma-additivity of measures. 
+
+Under the assumption that conjecture \ref{conjec} holds, the Einstein relation -- despite holding with constant 1 on 
+$\IR$ with $-\frac{1}{2}\gD_{\gl^1}$ -- would therefore change its constant under application of $\gp$ to
 \[
-  c(\ga)=\ga(2-\ga),\ \ \ga\in(0,1].
+  c(H)=H(2-H),\ \ H\in(0,1).
 \]
+This would be remarkable, as we generally only have the upper bound $2-\ga$ for both $\dimh$ and $\dimw$ under $\ga$-H\"older regular transformations $\IR\to\IR$ -- see \cite[chapter 16]{falconer2007fractal} for the upper bound on the Hausdorff dimension. The conjecture than gives an example where both dimensions get changed differently.
 \begin{lem}
-  With the notation just introduced and under assumption of \eqref{eq:tech}, we have 
+  Fix $T\in\IR$. With the notation just introduced, 
   \begin{equation}\label{eq:BMdimw}
-    \dimw\left(\gr(X_\cdot(\go)),\gp_\go(W),\big(T,X_T(\go)\big)\right)
-    =\frac{2}{\ga}
+    \dimw\left(\gr(B^H_\cdot(\go)),\gp_\go(W),\left(T,B^H_T(\go)\right)\right)
+    =\frac{2}{H}
   \end{equation}
-  $\Prob$-almost surely for each $T>0$.
+  holds $\Prob$-almost surely.
 \end{lem}
 \begin{proof}
-  For brevity, set $x=x(\go)=(T,X_T(\go))\in\gr(X_\cdot(\go))$ and chose $r>0$. Let $B_\infty(x,r)$ denote the open ball of radius $r$ around $x$ with respect to $d_\infty$.
+  For brevity, set $x=x(\go)=(T,B^H_T(\go))\in\gr(B^H_\cdot(\go))$ and chose $r>0$. Let $B_\infty(x,r)$ denote the open ball of radius $r$ around $x$ with respect to $d_\infty$.
   
   We begin by introducing the random times 
-  $\gT^+_r\big(X_\cdot(\go),T\big),\gT^-_r\big(X_\cdot(\go),T\big)$ to denote the time where the process $M$ first exits resp. last enters $B_\infty(x,r)$ -- in other words,
+  $\gT^+_r\big(B^H_\cdot(\go),T\big),
+  \gT^-_r\big(B^H_\cdot(\go),T\big)$ to denote the time where the process $B^H$ first exits resp. last enters $B_\infty(x,r)$ -- in other words,
   \begin{align}\label{eq:Theta}
-    \gT^+_r\big(X_\cdot(\go),T\big)
-    &:=\inf\left\{1\geq t>T:(t,X_t)\notin B_\infty(x,r)\right\}\notag\\
-    \gT^-_r\big(X_\cdot(\go),T\big)
-    &:=\sup\left\{0\leq t<T:(t,X_t)\notin B_\infty(x,r)\right\}.
+    \gT^+_r\big(B^H_\cdot(\go),T\big)
+    &:=\inf\left\{1\geq t>T:(t,B^H_t)\notin B_\infty(x,r)\right\}\notag\\
+    \gT^-_r\big(B^H_\cdot(\go),T\big)
+    &:=\sup\left\{0\leq t<T:(t,B^H_t)\notin B_\infty(x,r)\right\}.
   \end{align}
   By the standard result for the expectation of two-sided exit times for Brownian motion, we now obtain 
   \[
-    \PTEp{\tau_{B_\infty(x,r)}^{(\gp(W))}}{x}
-    =-\left(\gT^+_r\big(X_\cdot(\go),T\big)-T\right)
-      \Big(\gT^-_r\big(X_\cdot(\go),T\big)-T\Big)
+    \PTEp{\tau_{\gp(W)}(B_\infty(x,r))}{x}
+    =-\left(\gT^+_r\big(B^H_\cdot(\go),T\big)-T\right)
+      \Big(\gT^-_r\big(B^H_\cdot(\go),T\big)-T\Big)
   \]    
   and consequentially
   \begin{equation}\label{eq:sumoflogs}
-    \frac{\log \PTEp{\tau_{B_\infty(x,r)}^{(\gp(W))}}{x}}{\log r}
-    =\frac{\log \big(\gT^+_r\big(X_\cdot(\go),T\big)-T\big)}{\log r}
-     +\frac{\log \big(T-\gT^-_r\big(X_\cdot(\go),T\big))\big)}{\log r}.
+    \frac{\log \PTEp{\tau_{\gp(W)}(B_\infty(x,r))}{x}}{\log r}
+    =\frac{\log \left(\gT^+_r\big(B^H_\cdot(\go),T\big)-T\right)}{\log r}
+     +\frac{\log \left((T-\gT^-_r\big(B^H_\cdot(\go),T\big))\right)}{\log r}.
   \end{equation}
   We will show that both summands on the right-hand side converge to 
-  $1/\ga$ as $r\searrow 0$. To this end, we further introduce the random variables $\gvt_r^+$ and $\gvt_r^-$ by 
+  $1/H$ as $r\searrow 0$. To this end, we further introduce the random variables $\gvt_r^+$ and $\gvt_r^-$ by 
   \[
     \gvt_r^\pm(T)
-      :=\inf\left\{s\geq0:X_{T\pm s}\notin(X_T-r,X_T+r)\right\}
-       =\inf\left\{s\geq0:X_{T\pm s}-X_T\notin(-r,r)\right\}.
+      :=\inf\left\{s\geq0:B^H_{T\pm s}\notin(B^H_T-r,B^H_T+r)\right\}
+       =\inf\left\{s\geq0:B^H_{T\pm s}-B^H_T\notin(-r,r)\right\}.
   \]
   It follows from the definitions that 
-  $\gvt_r^\pm\wedge r=\left|\gT^\pm_r(X,T)-T\right|$
+  $\gvt_r^\pm\wedge r=\left|\gT^\pm_r(B^H,T)-T\right|$
   which allows for the estimate 
   \begin{equation}\label{eq:gvtest1}
-    \gvt_r^\pm\wedge r^{1/\ga}
-    \leq \left|\gT^\pm_r(X,T)-T\right|
+    \gvt_r^\pm\wedge r^{1/H}
+    \leq \left|\gT^\pm_r(B^H,T)-T\right|
     \leq \gvt_r^{\pm}.
   \end{equation}
-  We also observe that, due to the self-similarity and the stationary increments of $X$, 
+  We also observe that, due to the self-similarity and the stationary increments of $B^H$, 
   \begin{align*}
     \gvt_{\xi r}^\pm
-     &=\inf\left\{s\geq0:X_{T\pm s}-X_T\notin(-\xi r,\xi r)\right\}\\
-     &\stackrel{\cD}{=}\inf\left\{s\geq0:X_{\pm s}\notin
+     &=\inf\left\{s\geq0:B^H_{T\pm s}-B^H_T\notin(-\xi r,\xi r)\right\}
+      \stackrel{\cD}{=}\inf\left\{s\geq0:B^H_{\pm s}\notin
          (-\xi r,\xi r)\right\}\\
-     &=\inf\left\{s\geq0:\xi^{-1}M_{\pm s}\notin(-r,r)\right\}\\
-     &\stackrel{\cD}{=}\inf\left\{s\geq0:X_{\pm\xi^{-1/\ga}s}
-         \notin (X_T-r,X_T+r)\right\}\\
-     &=\xi^{1/\ga}\inf\left\{s\geq0:X_{\pm s}\notin(-r,r)\right\}\\
-     &\stackrel{\cD}{=}\xi^{1/\ga}\gvt_r^{\pm}
+     &=\inf\left\{s\geq0:\xi^{-1}B^H_{\pm s}\notin(-r,r)\right\}
+      \stackrel{\cD}{=}\inf\left\{s\geq0:B^H_{\pm\xi^{-1/\ga}s}
+         \notin (B^H_T-r,B^H_T+r)\right\}\\
+     &=\xi^{1/\ga}\inf\left\{s\geq0:B^H_{\pm s}\notin(-r,r)\right\}
+      \stackrel{\cD}{=}\xi^{1/\ga}\gvt_r^{\pm}
   \end{align*}
   for all $\xi>0$. Hence, we can rewrite \eqref{eq:gvtest1} as
   \begin{equation}\label{eq:gvtest2}
     r^{1/\ga}\left(\gvt_1^\pm\wedge 1\right)
     =\gvt_r^\pm\wedge r^{1/\ga}
-    \leq \left|\gT^\pm_r(M,T)-T\right|
+    \leq \left|\gT^\pm_r(B^H,T)-T\right|
     \leq \gvt_r^{\pm}
     =r^{1/\ga}\gvt_1^\pm
   \end{equation}
   After taking logarithms on both sides and dividing by $\log r$, we obtain
   \[
     \frac{1}{\ga}+\frac{\log \gvt^\pm_1}{\log r}
-    \leq \frac{\log \left|\gT^\pm_r(M,T)-T\right|}{\log r}
+    \leq \frac{\log \left|\gT^\pm_r(B^H,T)-T\right|}{\log r}
     \leq \frac{1}{\ga}+\frac{\log \left(\gvt_1^\pm\wedge 1\right)}
       {\log r}.
   \]
@@ -484,44 +480,47 @@ $\left([0,1],-\frac{1}{2}\gD_{\gl^1},W\right)$ -- therefore changes its constant
   $\gvt_1^\pm$ vanish $\Prob$-almost surely since, by continuity of 
   $X$, $\gvt_1^\pm>0$ with probability 1. This, combined with \eqref{eq:sumoflogs}, concludes the proof.
 \end{proof}
-\begin{lem}
-  In the setting of the previous lemma, $\dimw(\gr(X),\gp(W))=\frac{2}{\ga}$ holds with probability 1.
+We can also show that the global upper walk dimension equals $2/H$:
+\begin{lem}\label{lem:BMdimuw}
+  In the same setting as before, with probability one, 
+  \[
+    \dimuw\left(\gr\big(B^H_{\cdot}(\go)\big),\gp(W)\right)=\frac{2}{H}.
+  \]
 \end{lem}
 \begin{proof}
-  By \eqref{eq:BMdimw} and the $\gs$-additivity of measures, we can asssume 
+  By the same arguments as in the proof of the preceeding lemma, we can obtain \eqref{eq:sumoflogs}. It then remains to show that $\Prob$-almost surely, 
+  \begin{equation}\label{eq:limtwo}
+    \limsup_{r\searrow 0}\frac{\log\left|\gT^{\pm}_r\big(B^H_\cdot(\go),T\big)-T\right|}{\log r}=\frac{1}{H}\ \ \ \forall T\in\IR,
+  \end{equation}
+  where both equalities can be shown independently.
+  In \eqref{eq:limtwo}, the inequality ``$\leq$''  is guaranteed due to lemma \ref{lem:dimuw1} and the $H$-H\"older continuity of $B^H$.
+  Thus, it will suffice to show ``$\geq$'' $\Prob$-almost surely. 
+  
+  Chose $\gb>H$ and an arbitrary $T\in\IR$. Then, there exist a sequences $T-r^-_n\nearrow T$ and $T+r^+_n\searrow T$ such that 
   \[
-    \Prob\left[\dimw\big(\gr(X),\gp(W),(T,X_T)\big)=\frac{2}{\ga}\ \ 
-     \forall T\in\IQ\right]=1.
+    \left|B^H_T-B^H_{T\pm r^{\pm}_n}\right|>(r^{\pm}_n)^\gb,
   \]
-  Suppose $T\in\IR\setminus\IQ$ and let $\left(W^T_s\right)_{s\geq0}$ be a Wiener process with start in $T$. Define $\tau_\IQ$ to be the infimum of times $s>0$ with $W_s^T\in\IQ$. Due to Blumenthal's 0-1-law, we know that $\inf\left\{s>0:W_s^T\neq T\right\}=0$ with probability 1. At the same time, since the rationals are dense in the reals and the paths of $W^T$ are continuous, 
+  because $B^H_{\cdot}(\go)$ is nowhere locally $\gb$-H\"{o}lder continuous. From this we deduce 
   \[
-    0\leq\tau_\IQ\leq \inf\left\{s>0:W_s^T\neq T\right\}=0
+    \gT^{\pm}_{(r_n)^\gb}(B^H,T)\leq r_n \implies
+    \frac{\log \gT^{\pm}_{r_n^\gb}(B^H,T)}{\log r_n^\gb} 
+    \geq \frac{1}{\gb},
   \]
-  holds almost surely as well. 
+  where $r_n:=r_n^{\pm}$ for brevity. Hence, 
+  \[
+    \limsup_{r\searrow 0}\frac{\log\left|\gT^{\pm}_r\big(B^H_\cdot(\go),T\big)-T\right|}{\log r}\geq\frac{1}{\gb}\ \ \ \forall T\in\IR
+  \]
+  and because the left-hand side does not depend on $\gb$, we can take the limit for $\gb\searrow H$ to obtain ``$\geq$'' in \eqref{eq:limtwo}. 
 \end{proof}
 
-  Therefore, it will suffice to show that $\Prob$-almost surely, 
-  \begin{equation}\label{eq:limtwo}
-    \lim_{r\searrow 0}\frac{\log \big(\gT^+_r\big(B_\cdot(\go),T\big)-T\big)}{\log r}
-    =\lim_{r\searrow 0}\frac{\log \big(T-\gT^-_r\big(B_\cdot(\go),T\big)\big)}{\log r}=2,
-  \end{equation}
-  where it is enough to prove that one of the limits exist and equals 2. To this end, we consider more generally for a continuous function $f:[0,1]\to \IR$ the functionals
-  \begin{align*}
-    w:f(T)\mapsto &\liminf_{r\searrow0}\frac{\log\big(\gT^+_r(f,T)-T\big)}{\log r}\\
-    W:f(T)\mapsto &\limsup_{r\searrow0}\frac{\log\big(\gT^+_r(f,T)-T\big)}{\log r}
-  \end{align*}
-  where $\gT^\pm_r(f,T)$ is defined analogously to \eqref{eq:Theta}. Suppose now that $f$ is $\ga$-H\"{o}lder 
-  continuous ($0<\ga\leq 1$) in a given point $T\in[0,1]$, that is, there exists a constant $C>0$ and a 
-  $\gep$-neighbourhood of $T$ such that for all $s$ inside this neighbourhood,
+We get the following corollary for free:
+\begin{cor}
+  If $(X,d_X)$ is a measure space and $f:\IR\to X$ is everywhere locally $\ga$-H\"older regular, then 
   \[
-    |f(T)-f(s)|\leq C|T-s|^\ga
+    \dimuw\left(\gr(f),\gp(W)\right)=\frac{2}{\ga}.
   \]
-  is satisfied. This yields $\gT^+_r(f,T)\geq (r/C)^{1/\ga}$ for $r<\gep$ and therefore $(Wf)(T)\leq \frac{1}{\ga}$. Conversely, suppose that $f$ is not $\gb$-H\"{o}lder continuous ($\ga<\gb\leq 1$) in $T$. In particular, there exists a sequence $s_n=T+r_n\to T$ fulfilling the estimate 
-  \[
-    |f(T)-f(s_n)|>|T-s_n|^\gb=r_n^\gb,
-  \]
-  from which we deduce $\gT^+_{r_n}(f,T)\leq r_n^{1/\gb}$ and thus $(wf)(T)\geq\frac{1}{\gb}$. In particular, 
-  $(Wf)(T)=(wf)(T)=\frac{1}{c}$ if $f$ is $\ga$-H\"{o}lder continuous in $T$ for all $\ga<c$ but not $\gb$-H\"{o}lder continuous for any $\gb>c$. 
-  
-  Having established this claim, the limit in equation \eqref{eq:limtwo} is a direct consequence of Paley-Zygmunds regularity theorem for paths of Brownian motion. Moreover, this also shows that the limit does not depend on $T\in(0,1)$. 
+\end{cor}
+\begin{proof}
+  Replace in the previous lemma $B^H$ by $f$. 
+\end{proof}
 

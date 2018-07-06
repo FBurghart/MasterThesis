@@ -19,6 +19,38 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
+    \entry{ayache2004hausdorff}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=aadf84d7509278e31b966a86f8e286e3}{%
+           family={Ayache},
+           familyi={A\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Departamento de Matem{á}ticas, Universidad Aut{ó}noma de Madrid}%
+      }
+      \strng{namehash}{7d073727d28fc2f6d4714927b7309f87}
+      \strng{fullhash}{7d073727d28fc2f6d4714927b7309f87}
+      \strng{bibnamehash}{7d073727d28fc2f6d4714927b7309f87}
+      \strng{authorbibnamehash}{7d073727d28fc2f6d4714927b7309f87}
+      \strng{authornamehash}{7d073727d28fc2f6d4714927b7309f87}
+      \strng{authorfullhash}{7d073727d28fc2f6d4714927b7309f87}
+      \field{labelalpha}{Aya+04}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Matem{á}tica Iberoamericana}
+      \field{number}{2}
+      \field{title}{Hausdorff dimension of the graph of the fractional Brownian sheet}
+      \field{volume}{20}
+      \field{year}{2004}
+      \field{pages}{395\bibrangedash 412}
+      \range{pages}{18}
+    \endentry
     \entry{barlow1998diffusions}{incollection}{}
       \name{author}{1}{}{%
         {{hash=1d0a8555705b8793e3f67175207ab1f6}{%
@@ -76,15 +108,66 @@
       \field{year}{2006}
       \field{pages}{1184\bibrangedash 1203}
       \range{pages}{20}
-      \verb{doi}
-      \verb 10.1214/EJP.v11-377
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1214/EJP.v11-377
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1214/EJP.v11-377
-      \endverb
+    \endentry
+    \entry{birman2012spectral}{book}{}
+      \name{author}{2}{}{%
+        {{hash=85840e2332f56d0b6c92a313debfc4c6}{%
+           family={Birman},
+           familyi={B\bibinitperiod},
+           given={M.S.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=eccaa04c806519bf73dd22458b894cfa}{%
+           family={Solomjak},
+           familyi={S\bibinitperiod},
+           given={M.Z.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{2867918d9fc759e9978ffd19550ee809}
+      \strng{fullhash}{2867918d9fc759e9978ffd19550ee809}
+      \strng{bibnamehash}{2867918d9fc759e9978ffd19550ee809}
+      \strng{authorbibnamehash}{2867918d9fc759e9978ffd19550ee809}
+      \strng{authornamehash}{2867918d9fc759e9978ffd19550ee809}
+      \strng{authorfullhash}{2867918d9fc759e9978ffd19550ee809}
+      \field{labelalpha}{BS12}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Spectral theory of self-adjoint operators in Hilbert space}
+      \field{year}{2012}
+    \endentry
+    \entry{embrechts2002selfsimilar}{book}{}
+      \name{author}{2}{}{%
+        {{hash=8094e6e97bd16dc1d6476a0533c94f92}{%
+           family={Embrechts},
+           familyi={E\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3f4b806bdd0fb6e97a0f4aedd0e892b3}{%
+           family={Maejima},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{7d4eb4081651cd6eef6bdb97eb436153}
+      \strng{fullhash}{7d4eb4081651cd6eef6bdb97eb436153}
+      \strng{bibnamehash}{7d4eb4081651cd6eef6bdb97eb436153}
+      \strng{authorbibnamehash}{7d4eb4081651cd6eef6bdb97eb436153}
+      \strng{authornamehash}{7d4eb4081651cd6eef6bdb97eb436153}
+      \strng{authorfullhash}{7d4eb4081651cd6eef6bdb97eb436153}
+      \field{labelalpha}{EM02}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Selfsimilar processes}
+      \field{year}{Princeton, 2002}
     \endentry
     \entry{evans2010partial}{book}{}
       \name{author}{1}{}{%
@@ -331,40 +414,6 @@
       \field{year}{1993}
       \field{pages}{93\bibrangedash 125}
       \range{pages}{33}
-    \endentry
-    \entry{liu1998hausdorff}{article}{}
-      \name{author}{2}{}{%
-        {{hash=7c6d82e5c8ee8a22f5632301a8146619}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={L.},
-           giveni={L\bibinitperiod}}}%
-        {{hash=7e331faa68edd1b1e6179dc71ddbced3}{%
-           family={Xiao},
-           familyi={X\bibinitperiod},
-           given={Y.},
-           giveni={Y\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {WROCLAW UNIVERSITY PRESS}%
-      }
-      \strng{namehash}{4a4317d4f96218a034ac136e9382fa8b}
-      \strng{fullhash}{4a4317d4f96218a034ac136e9382fa8b}
-      \strng{bibnamehash}{4a4317d4f96218a034ac136e9382fa8b}
-      \strng{authorbibnamehash}{4a4317d4f96218a034ac136e9382fa8b}
-      \strng{authornamehash}{4a4317d4f96218a034ac136e9382fa8b}
-      \strng{authorfullhash}{4a4317d4f96218a034ac136e9382fa8b}
-      \field{labelalpha}{LX98}
-      \field{sortinit}{L}
-      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{PROBABILITY AND MATHEMATICAL STATISTICS-WROCLAW UNIVERSITY}
-      \field{title}{Hausdorff dimension theorems for self-similar Markov processes}
-      \field{volume}{18}
-      \field{year}{1998}
-      \field{pages}{369\bibrangedash 383}
-      \range{pages}{15}
     \endentry
     \entry{mattila1999geometry}{book}{}
       \name{author}{1}{}{%

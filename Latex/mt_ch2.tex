@@ -4,10 +4,10 @@ In this chapter, we will discuss the necessity of some of the restrictive assump
 
 \section{Euclidean Space}
 
-We start by examining the classical setting of paragraph 1.2.1 in greater detail: Let once again $X\ssq\IR^n$ be an open, bounded, non-empty domain, equipped with Euclidean metric and $n$-dimensional Lebesgue-measure $\gl^n$. Trivially, $\dimh(X)=n$. 
+We start by examining the classical setting of paragraph 1.2.1 in greater detail: Let once again $U\ssq\IR^n$ be an open, bounded, non-empty domain, equipped with Euclidean metric and $n$-dimensional Lebesgue-measure $\gl^n$. Trivially, $\dimh(U)=n$. 
 
 For the Dirichlet-Laplace operator as introduced earlier, we obtain 
-$\dims(X,-\gD)=\frac{n}{2}$ due to \eqref{eq:DECF}-\eqref{eq:dims}. Simultaneously, it is well-known that $\frac{1}{2}\gD$ is the generator of the $n$-dimensional Brownian motion $B_t$, which can easily be seen as follows:
+$\dims(U,-\gD)=\frac{n}{2}$ due to \eqref{eq:DECF}-\eqref{eq:dims}. Simultaneously, it is well-known that $\frac{1}{2}\gD$ is the generator of the $n$-dimensional Brownian motion $B_t$, which can easily be seen as follows:
 
 By \eqref{eq:MPtoOp}, the semigroup $(T_t)_{t\geq0}$ induced by $B_t$ reads
 \[
@@ -21,33 +21,38 @@ Comparing this expression to the well-known convolution formula (see \cite[p.47]
 \[
   u(x,t)=\frac{1}{(4\pi t)^{n/2}}\int_{\IR^n} \exp\left(-\frac{|x-y|^2}{4t}\right)f(y)\,\Di y,\ x\in\IR^n, t\geq0,
 \]
-for the solution of the heat equation $\gD u=\partial_t u$ on $\IR^n$ with initial value $u(x,0)=f(x)$, we can quickly derive that $\gD T_tf(x)=2\partial_t T_tf(x)$. Since imposing the Dirichlet boundary conditions on $\gD$ corresponds to killing $B_t$ at the boundary of $X$, we thus obtain by definition \ref{def:semigroup} the generator
+for the solution of the heat equation $\gD u=\partial_t u$ on $\IR^n$ with initial value $u(x,0)=f(x)$, we can quickly derive that $\gD T_tf(x)=2\partial_t T_tf(x)$. Since imposing the Dirichlet boundary conditions on $\gD$ corresponds to killing $B_t$ at the boundary of $U$, we thus obtain by definition \ref{def:semigroup} the generator
 \[
   Af=\frac{1}{2}\gD f,
 \]
-extended to its maximal domain $H_0^1(E,\mu)$. We conclude that the Markov process associated with $\gD$ is $2B_t$.
+extended to its maximal domain $H_0^1(U,\mu)$. We conclude that the Markov process associated with $\gD$ is $2B_t$.
 
 It remains to determine the walk dimension of the $n$-dimensional Brownian motion. This can be done in several ways, for example by appealing to Brownian scaling or by invoking Dynkin's formula after a standard truncation argument: By applying \cite[Lemma 19.21]{kallenberg2002foundations} to the function $u_x(y)=\frac{1}{2}|y-x|^2$, we get
 \[
-  \PTEp{\tau_{B(x,r)}}{x}
-  =\PTEp{\int_0^{\tau_{B(x,r)}}\gD u_x(2B_s)\,\Di s}{x}
-  =\PTEp{u_x\left(2B_{\tau_{B(x,r)}}\right)-u_x(0)}{x}
+  \PTEp{\tau(r)}{x}
+  =\PTEp{\int_0^{\tau(r)}\gD u_x(2B_s)\,\Di s}{x}
+  =\PTEp{u_x\left(2B_{\tau(r)}\right)-u_x(0)}{x}
   =\PTEp{\frac{2r^2}{n}}{x}
   =\frac{2r^2}{n}
 \]
-Therefore, by definition \ref{def:dimw}, we obtain $\dimw(E,2B_t)=2$ which implies together with the results obtained previously that the Einstein relation (with constant 1) holds on $E$. 
+Therefore, by definition \ref{def:dimw}, we obtain $\dimw(U,2B_t)=2$ which implies together with the results obtained previously that the Einstein relation (with constant 1) holds on $U$. 
 
 
 
 \section{The Sierpinski Gasket}
 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=7]{sg.pdf}
+\caption{An approximation of $\SG$}\label{fig:sg}
+\end{figure}
 The Sierpinski Gasket is a simple example of an iterated function fractal and can be described according to theorem \ref{thm:hutchinson} as the unique non-empty compact set $\SG\ssq\IR^2$ which is invariant under the three similitudes 
 \[
   S_1(x,y)=\left(\frac{x}{2},\frac{y}{2}\right),\ 
   S_2(x,y)=\left(\frac{x+1}{2},\frac{y}{2}\right),\ 
   S_3(x,y)=\left(\frac{2x+1}{4},\frac{2y+\sqrt{3}}{4}\right),
 \]
-see PICTURE! Since $\SG$ satisfies the (OSC), e.g. by taking the open equilateral triangle with corners $(0,0), (0,1)$ and $(1/2,\sqrt{3}/2)$, we obtain both 
+see figure \ref{fig:sg}. Since $\SG$ satisfies the (OSC), e.g. by taking the open equilateral triangle with corners $(0,0), (0,1)$ and $(1/2,\sqrt{3}/2)$, we obtain both 
 \begin{equation}\label{eq:SGdimh}
   s=\dimh(\SG)=\frac{\ln 3}{\ln 2}
 \end{equation}
@@ -88,7 +93,13 @@ Note that $V_0\ssq V_1\ssq...\ssq V_n\ssq ...$ and that
 It also follows from the proof of Hutchinson's theorem that 
 $d_H(V_n,\SG)\to 0$ as $n\to\infty$, so indeed, the graphs $G_n$ approximate $\SG$. 
 
-In $G_n$, connect two vertices $x,y\in V_n$ by a straight edge $xy$ iff they belong to the same $n$-cell, cf PICTURE!!, in which case we will call them neighbours and write $x\sim_n y$. By $E_n$ we mean the set of all edges in $G_n$. 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{gn.pdf}
+\caption{The graphs $G_0,G_1,G_2$}\label{fig:gn}
+\end{figure}
+
+In $G_n$, connect two vertices $x,y\in V_n$ by a straight edge $xy$ iff they belong to the same $n$-cell, cf. figure \ref{fig:gn}, in which case we will call them neighbours and write $x\sim_n y$. By $E_n$ we mean the set of all edges in $G_n$. 
 
 
 
@@ -103,7 +114,13 @@ It is easy to check that this defines a local Dirichlet form on $L^2(V_n)$. As w
 $u\in\IR^3\cong L^2(V_0)$. Under all possible extensions 
 $\tilde u$ to $\IR^6\cong L^2(V_1)$, which function is the harmonic extension of $u$, i.e. minimises $\tilde\cE_1[\tilde u]$? 
 
-To answer this question, we label each vertex in $V_0$ by its value under $u$, say $a,b,c$ and each vertex in $V_1\setminus V_0$ by its value under $\tilde u$, say $x,y,z$ as in PICTURE 3!!!. Since we assume $u$ to be a fixed given function, the values $a,b,c$ are fixed, and we obtain 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{g1.pdf}
+\caption{The values of $u$ on $V_1$}\label{fig:g1}
+\end{figure}
+
+To answer this question, we label each vertex in $V_0$ by its value under $u$, say $a,b,c$ and each vertex in $V_1\setminus V_0$ by its value under $\tilde u$, say $x,y,z$ as in figure \ref{fig:g1}. Since we assume $u$ to be a fixed given function, the values $a,b,c$ are fixed, and we obtain 
 \begin{multline}\label{eq:E1}
   \tilde\cE_1[\tilde u]=\left[(x-b)^2+(x-c)^2+(y-a)^2+(y-c)^2+(z-a)^2+(z-b)^2\right.\\
   \left.+(x-y)^2+(y-z)^2+(z-x)^2\right]
@@ -179,31 +196,29 @@ so indeed, the Einstein relation holds on $\SG$.
 
 \section{The real line as bounded metric space}
 
-\begin{equation}\label{eq:defdimwrong}
-  \lim_{R\nearrow\infty}\frac{\log \PTEp{\tau_{B(x,R)}}{x}}{\log R}.
-\end{equation}
+
 Bounded metric spaces form the most important class of spaces for which too naive of an adaption of \eqref{eq:defdimwrong} does not yield useful results. Indeed, consider the metric measure space 
-$E=(\IR,d_{\arctan},\gl^1)$, where the metric is defined as $d_{\arctan}(x,y)=|\arctan(x)-\arctan(y)|$. Since 
+$X=(\IR,d_{\arctan},\gl^1)$, where the metric is defined as $d_{\arctan}(x,y)=|\arctan(x)-\arctan(y)|$. Since 
 \[
   \tan:\left(\left(-\frac{\pi}{2},\frac{\pi}{2}\right),|\cdot|\right)\to(\IR,d_{\arctan}) 
 \]
-provides an isometry, we have $\dimh(E)=1$. On this space, we consider the negative of the usual weak Laplace operator, $-\gD_{\gl^1}$, defined by mapping a function $u\in H_0^1(\IR,\gl^1)$ to the unique $g\in L^2(\IR,\gl^1)$ such that
+provides an isometry, we have $\dimh(X)=1$. On this space, we consider the negative of the usual weak Laplace operator, $-\gD_{\gl^1}$, defined by mapping a function $u\in H_0^1(\IR,\gl^1)$ to the unique $g\in L^2(\IR,\gl^1)$ such that
 \[
   \int_\IR g\gp\,\Di\gl^1=\int_\IR \partial_x u\partial_x \gp\,\Di\gl^1
 \]
-holds for all $\gp\in H_0^1(\IR,\gl^1)$. Notice how this does not differ from the negative weak Laplace operator on $(\IR,|\cdot|,\gl^1)$ since we did not change the measure and both metrics induce the same topology. Thus, we get from Weyl's classical result $\dims(E,-\gD_{\gl^1})=\frac{1}{2}$ and from the arguments developed in section 2.1 that the associated Markov process is $2(B_t)_{t\geq0}$. 
+holds for all $\gp\in H_0^1(\IR,\gl^1)$. Notice how this does not differ from the negative weak Laplace operator on $(\IR,|\cdot|,\gl^1)$ since we did not change the measure and both metrics induce the same topology. Thus, we get from Weyl's classical result $\dims(X,-\gD_{\gl^1})=\frac{1}{2}$ and from the arguments developed in section 2.1 that the associated Markov process is $2(B_t)_{t\geq0}$. 
 
 It is now easy to see that \eqref{eq:defdimwrong} does not provide a useful notion of a walk dimension: Since $B_{\arctan}(x,R)=\IR$ for every radius $R\geq\pi$, the expression diverges to $\infty$. Even the more careful approach 
 \[
-  \lim_{R\nearrow\frac{\pi}{2}}\frac{\log \PTEp{\tau_{B(x,R)}}{0}}{\log R}
+  \lim_{R\nearrow\frac{\pi}{2}}\frac{\log \PTEp{\tau(R)}{0}}{\log R}
 \]
-runs into similar problems: Using the formula $\PTE{\tau_{[a,b]}}=-ab$ for the exit time of a standard Brownian motion from the intervall $[a,b]\ni 0$, we get
+runs into similar problems: Using the formula $\PTE{\tau([a,b])}=-ab$ for the exit time of a standard Brownian motion from the intervall $[a,b]\ni 0$, we get
 \[
-  \log \PTEp{\tau_{B_{\arctan}(0,R)}}{0}=2\log \tan R =\infty.
+  \log \PTEp{\tau(B_{\arctan}(0,R))}{0}=2\log \tan R =\infty.
 \]
 However, the local walk dimension from definition \ref{def:dimw} works out quite elgantly: Setting $y=\arctan x\in\left(-\frac{\pi}{2},\frac{\pi}{2}\right)$, we obtain for some $\xi_1\in (y,y+r),\xi_2\in(y-r,y)$
 \begin{multline*}
-  \frac{\log \PTEp{\tau_{B_{\arctan}(0,R)}}{0}}{\log r}
+  \frac{\log \PTEp{\tau\big(B_{\arctan}(0,R)\big)}{0}}{\log r}
   =\frac{\log\left(\tan(y+r)-\tan y\right)}{\log r}+\frac{\log\left(\tan y-\tan (y-r)\right)}{\log r}\\
   =\frac{\log\frac{r}{\cos^2 \xi_1}}{\log r}+\frac{\log\frac{r}{\cos^2 \xi_2}}{\log r}
   =2-\frac{\log \cos^2 \xi_1}{\log r}-\frac{\log\cos^2 \xi_2}{\log r}

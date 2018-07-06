@@ -29,26 +29,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}The Sierpinski Gasket}{15}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Approximation by Dirichlet forms}{16}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Approximation by Dirichlet forms}{17}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Approximation by random walks}{18}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}The real line as bounded metric space}{18}{section.2.3}
+\contentsline {section}{\numberline {2.3}The real line as bounded metric space}{19}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}The Einstein Relation on Metric Measure Spaces}{20}{chapter.3}
+\contentsline {chapter}{\numberline {3}The Einstein Relation on Metric Measure Spaces}{21}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}The Einstein Relation under Lipschitz-isomorphisms}{20}{section.3.1}
+\contentsline {section}{\numberline {3.1}The Einstein Relation under Lipschitz-isomorphisms}{21}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Lipschitz and mm-isomorphisms}{20}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.1}Lipschitz and mm-isomorphisms}{21}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Transport of structure}{21}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Transport of structure}{22}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}H\"older regularity and graphs of functions}{25}{section.3.2}
+\contentsline {section}{\numberline {3.2}H\"older regularity and graphs of functions}{26}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}A closer look at the walk dimension}{25}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}A closer look at the walk dimension}{26}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Graphs of continuous functions}{27}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Graphs of continuous functions}{29}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Discussion}{32}{chapter*.3}
+\contentsline {chapter}{Discussion}{33}{chapter*.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{35}{chapter*.4}
+\contentsline {chapter}{Bibliography}{36}{chapter*.4}
